@@ -39,7 +39,7 @@ class CreateGamesTable extends Migration
         });
     }
 
-
+ 
     /**
      * Reverse the migrations.
      *
