@@ -24,7 +24,7 @@ class CreateStoriesTable extends Migration
             $table->string('synopsis', 200);
             $table->integer('difficulte');
             $table->string('genre', 45);
-            $table->tinyInteger('public');
+            $table->tinyInteger('publish');
             $table->dateTime('date');
             $table->integer('users_id');
 
