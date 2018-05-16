@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+// Création de personnage
+Route::get('/personnage', function () {
+    return view('personnage.index');
+});
