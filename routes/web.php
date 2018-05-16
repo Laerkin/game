@@ -20,3 +20,14 @@ Route::get('/', function () {
 });
 
 
+//summernote form
+Route::get('/richtext', function () {
+    return view('richtext.index');
+});
+
+
+//summernote store route
+Route::post('/richtext','richtextController@store')->name('richtextPersist');
+
+//summernote display route
+Route::get('/richtext_display','richtextController@show')->name('richtextDispay');
