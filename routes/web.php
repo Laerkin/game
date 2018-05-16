@@ -20,6 +20,13 @@ Route::get('/template', function () {
     return view('template.index');
 });
 
-Route::get('/playMedia', function () {
-    return view('playMedia.index');
-});
+
+
+
+
+Route::get('/audio', 'audioController@index');
+Route::post('/audio', 'audioController@store');
+
+
+Route::get('/video', 'videoController@index');
+Route::post('/video', 'videoController@store');
