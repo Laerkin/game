@@ -19,3 +19,8 @@ Route::get('/', function () {
 // Create Story
 Route::get('/edit', 'CreateStoryController@index');
 Route::post('/edit', 'CreateStoryController@store');
+
+// Create Map
+Route::get('/map', function() {
+    return view('create_map.index');
+});
