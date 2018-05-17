@@ -1,9 +1,5 @@
 @extends('layouts.master')
 
-        <!DOCTYPE html>
-<html lang="{{ app()->getLocale() }}">
-
-<head>
 
     @section('head')
 
@@ -34,9 +30,6 @@
 
 
     @endsection
-</head>
-
-<body>
 
     @section('header')
         <nav class="navbar navbar-dark bg-dark">
@@ -79,7 +72,3 @@
         </div>
 
     @endsection
-
-</body>
-</html>
-

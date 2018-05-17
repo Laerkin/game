@@ -20,6 +20,9 @@ Route::get('/template', function () {
     return view('template.index');
 });
 
+Route::get('/landing', function () {
+    return view('landing.index');
+});
 
 
 
