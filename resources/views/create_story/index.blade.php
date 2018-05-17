@@ -79,7 +79,6 @@
                             <label for="difficulte">{{ trans('create_story.form.difficulty')}}</label>
                             <input type="range" class="custom-range" min="0" max="2" id="difficulte" name="difficulte" onchange="range.value=value">
                             <output id="range" class="text-center">1</output>
-
                         </div>
                         <div class="col-md-6 mt-2">
                             @if ($errors->has('difficulte'))
@@ -93,6 +92,9 @@
                             @endif
                         </div>
                     </div>
+                    <input id="publish" name="publish" type="hidden" value="0">
+
+
 
 
                     <button type="submit" class="btn btn-outline-success btn-block">{{ trans('create_story.form.save')}}</button>
