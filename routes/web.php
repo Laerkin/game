@@ -19,3 +19,4 @@ Route::get('/', function () {
 Route::get('/personnage', function () {
     return view('personnage.index');
 });
+
