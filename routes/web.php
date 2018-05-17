@@ -11,12 +11,11 @@
 |
 */
 
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
 Route::get('/', function () {
     return view('welcome');
 });
 
 
+// Create Story
+Route::get('/edit', 'CreateStoryController@index');
+Route::post('/edit', 'CreateStoryController@store');
