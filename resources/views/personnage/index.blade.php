@@ -1,8 +1,8 @@
 <form method="post" enctype="multipart/form-data" style="text-align: center;">
     <div>
-        <label for="image_uploads">Pour sélectionner une image d'avatar (PNG, JPG, GIF) <br>
+        <label for="image_uploads">Pour sélectionner une image d'avatar (PNG, JPG) <br>
             <span style="color: red;font-weight: bold; text-align: center;">Cliquez ici</span></label>
-        <input type="file" id="image_uploads" name="image_uploads" accept=".jpg, .jpeg, .png, .gif" multiple>
+        <input type="file" id="image_uploads" name="image_uploads" accept=".jpg, .jpeg, .png" multiple>
      </div>
 
     <br>
@@ -99,3 +99,4 @@
 
 
 </script>
+
