@@ -14,6 +14,7 @@
 
 @yield('content')
 
+
 @yield('footer')
 
 </body>
