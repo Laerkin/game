@@ -22,3 +22,7 @@ Route::get('/template', function () {
 Route::get('/editor', function () {
     return view('ui-editor-(main).index');
 });
+
+Route::get('/homepage', function () {
+    return view('ui-homepage-(main).index');
+});
