@@ -1,8 +1,9 @@
 <form method="post" enctype="multipart/form-data" style="text-align: center;">
+    @csrf
     <div>
-        <label for="image_uploads">Pour sélectionner une image d'avatar (PNG, JPG) <br>
+        <label for="img">Pour sélectionner une image d'avatar (PNG, JPG) <br>
             <span style="color: red;font-weight: bold; text-align: center;">Cliquez ici</span></label>
-        <input type="file" id="image_uploads" name="image_uploads" accept=".jpg, .jpeg, .png" multiple>
+        <input type="file" id="img" name="img" accept=".jpg, .jpeg, .png" multiple>
      </div>
 
     <br>
@@ -19,6 +20,8 @@
         <button type="submit" value="submit">Envoyer</button>
     </div>
 </form>
+
+
 
 
 

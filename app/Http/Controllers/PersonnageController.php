@@ -26,4 +26,6 @@ class PersonnageController extends Controller
         return Redirect::back();
 
     }
+
+
 }

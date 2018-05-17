@@ -15,8 +15,20 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
 // Création de personnage
 Route::get('/personnage', function () {
     return view('personnage.index');
 });
 
+
+
+// Template
+Route::get('/template', function () {
+    return view('template.index');
+});
+
+
+
+Route::get('/personnage', 'PersonnageController@index');
+Route::post('/personnage', 'PersonnageController@store');
