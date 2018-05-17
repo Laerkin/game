@@ -18,3 +18,7 @@ Route::get('/', function () {
 Route::get('/template', function () {
     return view('template.index');
 });
+
+Route::get('/editor', function () {
+    return view('ui-editor-(main).index');
+});
