@@ -6,26 +6,33 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-6">
-            <div class="titre"> <h1> {{ $stories->titre }} </h1> </div>
+            <div class="titre"> <h1> {{ $story->titre }} </h1> </div>
           </div>
           <div class="col-md-6">
             <a class="btn btn-block btn-success border border-primary" href="#">Start !</a>
           </div>
         </div>
         <div class="row my-1 h-25" id="synopsis">
-          <p> {{ $stories->synopsis }} </p>
+          <p> {{ $story->synopsis }} </p>
         </div>
         <div class="row my-1">
-          <div class="col-md-6"> <p> {{ $stories->difficulte }} </p> </div>
-          <div class="col-md-6"> <p> {{ $stories->genre }} </p> </div>
+          <div class="col-md-6"> <p> {{ $story->difficulte }} </p> </div>
+          <div class="col-md-6"> <p> {{ $story->genre }} </p> </div>
         </div>
+
         <div class="row my-1" id="commentaires">
-          @if(! empty ($commentaires) )
-            @foreach( $commentaires as $commentaire )
-            <h4> {{ $user_id }} </h4>
-              <p>{{ $commentaire->text }}</p>
+         
+
+
+          @if(! empty( $story->commentaires() ) )
+          <div class="col-12">
+             @foreach( $story->commentaires() as $commentaire )
+            <h4>UTILISATEUR :  {{ $commentaire->user()->email }} </h4>
+              <p>COMMENTAIRE : {{ $commentaire->text }}</p>
               
             @endforeach
+          </div>
+           
           @endif
         </div>
       </div>

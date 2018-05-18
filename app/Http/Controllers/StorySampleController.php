@@ -8,10 +8,11 @@ use Illuminate\Http\Request;
 
 class StorySampleController extends Controller
 {
-    public function index($titre){
-    	$stories = Story::get();
-    	$commentaires = commentaire::get();
+    public function index($id){
     	
-    	return view('story-sample.index', ['stories' => Story::findOrFail($id)])->with('stories', $stories);
+    	$story = Story::find($id);
+    	
+    	
+    	return view('story-sample.index')->with('story', $story);
     }
 }
