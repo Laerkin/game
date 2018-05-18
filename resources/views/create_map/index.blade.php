@@ -18,7 +18,7 @@
     <script>
       // In the following example, markers appear when the user clicks on the map.
       // Each marker is labeled with a single alphabetical character.
-        var labels = '123456789';
+        var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
         var labelIndex = 5;
         // for (var labelIndex = 0; labelIndex < 20; labelIndex++) {
         //     console.log(labelIndex);
