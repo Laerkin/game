@@ -19,8 +19,8 @@ Route::get('/template', function () {
     return view('template.index');
 });
 
-Route::get('/editor', function () {
-    return view('ui-editor-(main).index');
+Route::get('/editeur', function () {
+    return view('editeur.index');
 });
 
 Route::get('/homepage', function () {
@@ -30,3 +30,4 @@ Route::get('/homepage', function () {
 Route::get('/fiche-{id}', function ($id) {
     return view('story-sample.index')->with('id', $id);
 });
+ 
