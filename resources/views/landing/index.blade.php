@@ -11,7 +11,7 @@
 
         body {
 
-            background-image: url("https://c.pxhere.com/photos/bb/60/airplane_flying_sky_cloud_peace_the_landscape_image_view_azure-609091.jpg!d");
+            background-image: url("");
             background-position: center center;
             background-attachment: fixed;
             background-size: cover;
