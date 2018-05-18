@@ -26,3 +26,7 @@ Route::get('/editor', function () {
 Route::get('/homepage', function () {
     return view('ui-homepage-(main).index');
 });
+
+Route::get('/fiche-{id}', function ($id) {
+    return view('story-sample.index')->with('id', $id);
+});
