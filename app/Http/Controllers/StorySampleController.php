@@ -14,5 +14,5 @@ class StorySampleController extends Controller
     	$story = Story::find($id);
     	
     	
-    	return view('story-sample.index')->with('story', $story);
+    	return view('story-sample.index')->with('story', $story);}
 }
