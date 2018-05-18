@@ -20,17 +20,17 @@ Route::get('/template', function () {
     return view('template.index');
 });
 
-Route::get('/editor', function () {
-    return view('ui-editor-(main).index');
+Route::get('/editeur', function () {
+    return view('editeur.index');
 });
 
 Route::get('/homepage', function () {
     return view('ui-homepage-(main).index');
 });
 
-// Route::get('/fiche-{id}', function ($id) {
-//     return view('story-sample.index')->with('id', $id);
-// });
-
 Route::get('/fiche-{id}', 'StorySampleController@index');
+
+Route::get('/fiche-{id}', function ($id) {
+    return view('story-sample.index')->with('id', $id);
+});
 
