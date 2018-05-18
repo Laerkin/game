@@ -32,6 +32,8 @@ Route::get('/landing', function () {
 
 
 
+/** ROUTES AUDIO/VIDEO  **/
+
 Route::get('/audio', 'audioController@index');
 Route::post('/audio', 'audioController@store');
 
