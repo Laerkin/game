@@ -21,6 +21,7 @@ Route::get('/', function () {
 
 
 
+
 Route::get('/template', function () {
     return view('template.index');
 });
@@ -58,4 +59,17 @@ Route::get('/homepage', function () {
 Route::get('/edit', 'CreateStoryController@index');
 Route::post('/edit', 'CreateStoryController@store');
 
+
+// rich text routes
+//summernote form
+Route::get('/richtext', function () {
+    return view('richtext.index');
+});
+
+
+//summernote store route
+Route::post('/richtext','richtextController@store')->name('richtextPersist');
+
+//summernote display route
+Route::get('/richtext_display','richtextController@show')->name('richtextDispay');
 
