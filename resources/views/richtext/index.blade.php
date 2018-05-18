@@ -20,7 +20,7 @@
 </script>
 
 <div class="toto">
-    <form action="{{route('richtextPersist')}}" method="POST">
+    <form action="{{ route('richtextPersist') }}" method="POST">
         {{ csrf_field() }}
         <textarea name="richtextArea" class="summernote"></textarea>
 
