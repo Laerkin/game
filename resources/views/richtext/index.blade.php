@@ -12,6 +12,7 @@
         width:350px;
     }
 </style>
+
 <script>
     $(document).ready(function() {
         $('.summernote').summernote();
@@ -19,10 +20,10 @@
 </script>
 
 <div class="toto">
-<form action="{{route('richtextPersist')}}" method="POST">
-    {{ csrf_field() }}
-    <textarea name="richtextArea" class="summernote"></textarea>
-    <br>
-    <button type="submit">Submit</button>
-</form>
+    <form action="{{route('richtextPersist')}}" method="POST">
+        {{ csrf_field() }}
+        <textarea name="richtextArea" class="summernote"></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
 </div>
