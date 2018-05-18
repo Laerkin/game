@@ -22,11 +22,11 @@ class CreateLocTable extends Migration
         if (Schema::hasTable($this->set_schema_table)) return;
         Schema::create($this->set_schema_table, function (Blueprint $table) {
             $table->increments('id');
-            $table->timestamps();
             $table->string('intitule', 200);
             $table->decimal('lat');
             $table->decimal('lng');
             $table->string('icon', 45);
+            $table->timestamps();
             $table->integer('users_id');
 
             $table->index(["users_id"], 'fk_loc_users1_idx');

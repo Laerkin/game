@@ -18,11 +18,12 @@ class CreatePersonnagesTable extends Migration
         if (Schema::hasTable($this->set_schema_table)) return;
         Schema::create($this->set_schema_table, function (Blueprint $table) {
             $table->increments('id');
-            $table->timestamps();
             $table->string('name', 45);
             $table->string('path');
             $table->string('bio');
+            $table->timestamps();
             $table->integer('slides_elements_id');
+
             $table->integer('users_id');
 
             $table->index(["users_id"], 'fk_personnages_users1_idx');

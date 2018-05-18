@@ -17,10 +17,12 @@ class CreateSlidesLocTable extends Migration
         if (Schema::hasTable($this->set_schema_table)) return;
         Schema::create($this->set_schema_table, function (Blueprint $table) {
             $table->increments('id');
-            $table->timestamps();
+
             $table->integer('type');
+            $table->timestamps();
             $table->integer('loc_id');
             $table->integer('slides_id');
+
 
             $table->index(["loc_id"], 'fk_slides_loc_loc1_idx');
 

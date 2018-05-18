@@ -19,7 +19,6 @@ class CreateSlidesElementsTable extends Migration
         if (Schema::hasTable($this->set_schema_table)) return;
         Schema::create($this->set_schema_table, function (Blueprint $table) {
             $table->increments('id');
-            $table->timestamps();
             $table->integer('type');
             $table->integer('width');
             $table->integer('height');
@@ -27,6 +26,7 @@ class CreateSlidesElementsTable extends Migration
             $table->integer('left');
             $table->tinyInteger('isobject');
             $table->string('path');
+            $table->timestamps();
             $table->integer('slides_id');
 
             $table->index(["slides_id"], 'fk_slides_elements_slides1_idx');

@@ -11,13 +11,10 @@
 |
 */
 
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
 Route::get('/', function () {
     return view('welcome');
 });
+
 
 
 
@@ -55,4 +52,10 @@ Route::get('/editor', function () {
 Route::get('/homepage', function () {
     return view('editeur.index');
 });
+
+
+// Create Story
+Route::get('/edit', 'CreateStoryController@index');
+Route::post('/edit', 'CreateStoryController@store');
+
 
