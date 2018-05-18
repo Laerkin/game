@@ -17,6 +17,11 @@
 
 @yield('footer')
 
+
+
+@yield('foot')
+
+
 </body>
 
 </html>
