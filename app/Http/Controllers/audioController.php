@@ -12,7 +12,7 @@ class audioController extends Controller
 {
     public function index(){
 
-        $toto = Storage::url('Alarm01.wav');
+        $toto = Storage::url('Alarm01.wav'); // fait un commande php pour recup last ID insert
 
         return view('media.audio.index')->with("toto", $toto);
     }
@@ -35,12 +35,12 @@ class audioController extends Controller
 
         // Stock avec un autre nom
         $ext = strtolower($file->getClientOriginalExtension());
-        $file->storeAs('public/audio', 'mon_nujkiol.'.$ext);
+        $file->storeAs('public/audio',str_random(8).$ext);
 
         //$file->storeAs('public', 'dd.' . strtolower($file->getClientOriginalExtension()));
 
         //Déplacement dans le bon dossier
-        $file->move(public_path('/compagnies/'), 'toto.' . $ext);
+        //$file->move(public_path('/compagnies/'), 'toto.' . $ext);
         return Redirect::back();
 
     }
