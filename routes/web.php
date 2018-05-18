@@ -20,3 +20,22 @@ Route::get('/', function () {
 });
 
 
+
+Route::get('/template', function () {
+    return view('template.index');
+});
+
+Route::get('/landing', function () {
+    return view('landing.index');
+});
+
+
+
+
+Route::get('/audio', 'audioController@index');
+Route::post('/audio', 'audioController@store');
+
+
+Route::get('/video', 'videoController@index');
+Route::post('/video', 'videoController@store');
+
