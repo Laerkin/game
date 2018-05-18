@@ -17,9 +17,9 @@ class CreateGamesSlidesTable extends Migration
         if (Schema::hasTable($this->set_schema_table)) return;
         Schema::create($this->set_schema_table, function (Blueprint $table) {
             $table->increments('id');
-            $table->timestamps();
             $table->integer('slides_id');
             $table->integer('games_id');
+            $table->timestamps();
             $table->index(["slides_id"], 'fk_games_slides_slides1_idx');
 
 

@@ -13,7 +13,7 @@ use Validator;
 class CreateStoryController extends Controller
 {
     public function index() {
-        return view('create_story.index');
+        return view('editeur.index');
     }
 
     public function store() {
@@ -37,10 +37,9 @@ class CreateStoryController extends Controller
             'genre.required'      => 'Le genre est requis.',
             'difficulte.integer'  => 'La difficulté est invalide.',
             'difficulte.required' => 'La difficulté est requise.',
-            'publish.integer'     => 'invalide',
         ]);
 
-        // dd($values);
+
         if($validator->fails())
         {
 
@@ -55,13 +54,15 @@ class CreateStoryController extends Controller
         $story->synopsis = $values['synopsis'];
         $story->difficulte = $values['difficulte'];
         $story->genre = $values['genre'];
-        $story->publish = $values['publish'];
+        $story->publish = "0";
+//        $story->date = date("Y-m-d H:i:s");
+        //$story->users_id = auth()->user()->id;
+        $story->users_id = "0";
 
-        // $story->date = $values['date'];
 
         $story->save();
 
-        return view('create_story.index')
+        return view('editeur.index')
                     ->with('successMessage', 'Création réussie !');
     }
 }

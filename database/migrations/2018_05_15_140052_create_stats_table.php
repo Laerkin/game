@@ -18,9 +18,9 @@ class CreateStatsTable extends Migration
     {
         Schema::create('stats', function (Blueprint $table) {
             $table->increments('id');
-            $table->timestamps();
             $table->integer('type');
             $table->integer('score');
+            $table->timestamps();
             $table->integer('users_id');
 
             $table->index(["users_id"], 'fk_stats_users_idx');

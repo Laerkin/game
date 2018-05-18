@@ -22,5 +22,5 @@ Route::post('/edit', 'CreateStoryController@store');
 
 // Create Map
 Route::get('/map', function() {
-    return view('create_map.index');
+    return view('editeur.index');
 });
