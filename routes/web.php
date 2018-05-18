@@ -30,4 +30,3 @@ Route::get('/homepage', function () {
 Route::get('/fiche-{id}', function ($id) {
     return view('story-sample.index')->with('id', $id);
 });
- 
