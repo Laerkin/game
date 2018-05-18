@@ -3,7 +3,6 @@
 @section('content')
     <div class="container">
         <section>
-
                 <form method="POST" action="" id="createStory">
                     @csrf
                     <div class="form-row">
@@ -23,8 +22,6 @@
                             @endif
                         </div>
                     </div>
-
-
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="synopsis">{{ trans('create_story.form.synopsis')}}</label>
@@ -42,10 +39,6 @@
                             @endif
                         </div>
                     </div>
-
-
-
-
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="genre">{{ trans('create_story.form.type')}}</label>
@@ -73,7 +66,6 @@
                             @endif
                         </div>
                     </div>
-
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="difficulte">{{ trans('create_story.form.difficulty')}}</label>
@@ -93,16 +85,9 @@
                         </div>
                     </div>
                     <input id="publish" name="publish" type="hidden" value="0">
-
-
-
-
                     <button type="submit" class="btn btn-outline-success btn-block">{{ trans('create_story.form.save')}}</button>
                 </form>
 
-
-
-            </div>
             <div class="row">
                 <div class="col-md-12">
                     @if ( !empty($successMessage) )
@@ -114,7 +99,7 @@
                         </div>
                     @endif
                 </div>
-
+            </div>
         </section>
     </div>
 

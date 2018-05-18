@@ -28,7 +28,6 @@ class CreateStoryController extends Controller
             // 'date'       => 'dateTime',
         ];
 
-
         $validator = Validator::make($values, $rules, [
             'titre.string'        => 'Titre invalide.',
             'titre.required'      => 'Titre requis.',
@@ -39,9 +38,6 @@ class CreateStoryController extends Controller
             'difficulte.integer'  => 'La difficulté est invalide.',
             'difficulte.required' => 'La difficulté est requise.',
             'publish.integer'     => 'invalide',
-            // 'date.dateTime'       => 'invalide',
-
-
         ]);
 
         // dd($values);
@@ -63,18 +59,10 @@ class CreateStoryController extends Controller
 
         // $story->date = $values['date'];
 
-
-
-
         $story->save();
-
-
 
         return view('create_story.index')
                     ->with('successMessage', 'Création réussie !');
-
-
-
     }
 }
 
