@@ -24,9 +24,9 @@ class CreateStoriesTable extends Migration
             $table->string('synopsis', 200);
             $table->integer('difficulte');
             $table->string('genre', 45);
-            $table->tinyInteger('publish')->nullable();
-            $table->timestamp('date')->useCurrent();
-            $table->integer('users_id')->nullable();
+            $table->tinyInteger('publish');
+            $table->timestamp('date');
+            $table->integer('users_id');
 
             $table->index(["users_id"], 'fk_stories_users1_idx');
 
