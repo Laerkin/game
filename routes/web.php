@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-	dd('toto');
+	
     return view('welcome');
 });
 
@@ -29,8 +29,3 @@ Route::get('/homepage', function () {
 });
 
 Route::get('/fiche-{id}', 'StorySampleController@index');
-
-Route::get('/fiche-{id}', function ($id) {
-    return view('story-sample.index')->with('id', $id);
-});
-
