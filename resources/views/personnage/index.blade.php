@@ -34,11 +34,7 @@
 
 
 
-<!--
-Arrêtez de mme laisser dans la merde les gars !!!!
-Je suis performant dans certains domaines mais on les laisse à d'autres ("tu feras la landinding page de chez toi pour la proposée, moi je la fais en journée de boulot (si je suis là la journée ou si je sui à l'heure...), je te laisse dans la merde et je prends ton boulot où tu es compétent et feras gagner du temps au projet !"
-C'est comme les lois et le côté juridique: "tout le monde s'en fout à part toi" c'est "inutile, on s'en fout" ! BAH NON !!! C'est la base pour pas se faire convoqué devant le barreau et protéger aussi les utilisateurs...
-<!---->
+
 
 
 @endsection
