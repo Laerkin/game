@@ -26,6 +26,10 @@ Route::get('/landing', function () {
     return view('landing.index');
 });
 
+// mentions légales
+Route::get('/mentions_legales', function () {
+    return view('mentions_legales.index');
+});
 
 
 // Template
