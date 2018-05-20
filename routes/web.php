@@ -21,6 +21,11 @@ Route::get('/personnage', function () {
     return view('personnage.index');
 });
 
+// landing page
+Route::get('/landing', function () {
+    return view('landing.index');
+});
+
 
 
 // Template
