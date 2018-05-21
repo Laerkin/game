@@ -19,10 +19,10 @@ class PersonnageController extends Controller
 
         // Stock avec un autre nom
         $ext = strtolower($file->getClientOriginalExtension());
-        $file->storeAs('public/img_personnage', 'mon_nom.'. $ext);
+        $file->storeAs('public/img_personnage', 'perso.'. $ext);
 
         //Déplacement dans le bon dossier
-        $file->move(public_path('/compagnies/'), 'toto.' . $ext);
+        $file->move(public_path('/img_personnage/'), 'perso.' . $ext);
         return Redirect::back();
 
     }
