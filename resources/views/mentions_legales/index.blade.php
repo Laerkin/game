@@ -1,7 +1,10 @@
-<p style="text-align:center"><span style="color:rgb(255, 0, 0)"><span style="background-color:rgb(211, 211, 211)">Si vous utilisez nos Mentions Légales, vous vous engagez à laisser les liens </span><strong><span style="background-color:rgb(211, 211, 211)">Crédit sans en modifier ni les liens ni les ancres.</span></strong><span style="background-color:rgb(211, 211, 211)"> </span></span><br />
-    <span style="color:rgb(255, 0, 0)"><span style="background-color:rgb(211, 211, 211)">Par avance merci pour votre compréhension et le respect du travail effectué par toute l'équipe</span></span></p>
+@extends('layouts.master')
+
+@section('content')
 
 <h1>MENTIONS LEGALES :</h1>
+
+<img src="{{ URL::to('images/PEGI_7.png') }}" style="width: 100px;">
 
 <p style="text-align:justify"><strong>1. Présentation du site :<br />
          </strong><br />
@@ -71,3 +74,5 @@
     Le site <a href="http://www.url.com" target="_blank">www.url.com</a> est déclaré à la CNIL sous le numéro XXXXXXXXXX.</p>
 
 <p style="text-align:justify">Les bases de données sont protégées par les dispositions de la loi du 1er juillet 1998 transposant la directive 96/9 du 11 mars 1996 relative à la protection juridique des bases de données.</p>
+
+    @endsection
