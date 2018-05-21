@@ -56,11 +56,12 @@
                 else{
                     $newImage = imagecreatefromgif($_FILES['img']['tmp_name']);
                 }
-//                $imageWidth = imagesx($newImage);
+                $imageWidth = imagesx($newImage);
                 $imageHeight = imagesy($newImage);
                 $miniature = imagecreatetruecolor($newWidth, $newHeight);
                 imagecopyresampled($miniature, $newImage, 0, 0, 0, 0, $newWidth, $newHeight, $imageWidth, $imageHeight);
                 // On enregistre miniature dans un nouveau dossier dans upload
+                $thumbnailsFolder = '../img_personnage/thumbnails/';
                 if($extension == 'jpg' || $extension == 'jpeg'){
                     imagejpeg($miniature, $thumbnailsFolder . $newName . '.' . $extension);
                 }
