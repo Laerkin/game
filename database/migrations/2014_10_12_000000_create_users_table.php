@@ -6,6 +6,12 @@ use Illuminate\Database\Migrations\Migration;
 
 class CreateUsersTable extends Migration
 {
+        /**
+         * Schema table name to migrate
+         * @var string
+         */
+        public $set_schema_table = 'users';
+
     /**
      * Run the migrations.
      *
@@ -13,16 +19,19 @@ class CreateUsersTable extends Migration
      */
     public function up()
     {
-        Schema::create('users', function (Blueprint $table) {
-            $table->increments('id');
-
-            $table->string('name');
-            $table->string('email')->unique();
-            $table->string('password');
-            $table->rememberToken();
-            $table->timestamps();
-
-        });
+                if (Schema::hasTable($this->set_schema_table)) return;
+        Schema::create($this->set_schema_table, function (Blueprint $table) {
+                $table->increments('id');
+                $table->string('login');
+                $table->string('email')->unique();
+                $table->string('password');
+                $table->string('ip', 15);
+                $table->integer('role');
+                $table->string('localisation', 200);
+                $table->dateTime('date');
+                $table->rememberToken();
+                $table->timestamps();
+            });
     }
 
     /**
@@ -32,6 +41,6 @@ class CreateUsersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('users');
-    }
+                Schema::dropIfExists($this->set_schema_table);
+            }
 }
