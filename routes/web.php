@@ -27,13 +27,3 @@ Route::get('/editeur', function () {
 Route::get('/homepage', function () {
     return view('ui-homepage-(main).index');
 });
-
-/*Fiche détaillée des histoire*/
-
-Route::get('/fiche-{id}', 'StorySampleController@index');
-
-/*Formulaire gestion personnage*/
-
-Route::get('/character-manager', 'CharacterManagerController@index');
-
-Route::post('/add-character', 'CharacterManagerController@storeCharacter');
