@@ -2,11 +2,13 @@
 
 namespace App\Http\Controllers\Auth;
 
+use Illuminate\Http\Request;
 use App\User;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
+
 
 class RegisterController extends Controller
 {
@@ -63,13 +65,17 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+
+        $ip = \Request::ip();
+
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
-            'ip' => Request::ip(),
+            'ip' => "000",
             'role' => '0',
             'localisation' => 'insérez localistation',
+
 
         ]);
     }
