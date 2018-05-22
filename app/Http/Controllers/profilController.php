@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\DB;
+use App\Model\Users;
+use App\Http\Controllers\Auth;
 
 class profilController extends Controller
 {
@@ -10,18 +12,18 @@ class profilController extends Controller
     public function index()
     {
 
-        $users = DB::table('users')->get();
-
-        return view('profil.index', ['users' => $users]);
-
+        $userinfo= Users::where(Auth()->user())
+            ->first();
+        return view('profil.index')
+            ->with('userinfo', $userinfo);
     }
 
     public function update()
     {
 
         DB::table('users')
-            ->where('id', 1)
-            ->update(['votes' => 1]);
+            ->where(Auth()->user())
+            ->update(['name' => '', 'localisation' => '', 'avatar' => '']);
     }
 
     public function __construct()

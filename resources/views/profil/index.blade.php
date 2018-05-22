@@ -15,18 +15,12 @@
                                 {{--@endforeach--}}
                             </div>
                             <div class="col-md-4">
-                                @foreach ($users as $user) {
-                                {{$user->name}}
-                                {{$user->email}}
-                                }
-                                @endforeach
+                                <li>{{$userinfo->name}}</li>
+                                <li>{{$userinfo->email}}</li>
 
                             </div>
-                            <div class="col-md-4">
-                                @foreach ($users as $user) {
-                                {{$user->localisation}}
-                                }
-                                @endforeach
+                            <div class="col-md-">
+                                <li>{{$userinfo->localisation}}</li>
                             </div>
                         </div>
                     </div>
