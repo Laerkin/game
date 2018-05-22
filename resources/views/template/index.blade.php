@@ -1,8 +1,6 @@
 @extends('layouts.master')
 
-@section('toto')
-    blabla
-    @endsection
+
     @section('scripts')
 
         <meta charset="utf-8">

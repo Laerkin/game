@@ -12,9 +12,9 @@
 
     <div id="editContent">
         <div class=".editContentItem" id="basic">@include('editeur.basic.index')</div>
-        <div class=".editContentItem" id="slides">slides</div>
-        <div class=".editContentItem" id="personnages">personnages</div>
-        <div class=".editContentItem" id="loc">loc</div>
+        <div class=".editContentItem" id="slides">@include('editeur.slides.index')</div>
+        <div class=".editContentItem" id="personnages">@include('editeur.personnages.index')</div>
+        <div class=".editContentItem" id="loc">@include('editeur.loc.index')</div>
     </div>
 </div>
 
