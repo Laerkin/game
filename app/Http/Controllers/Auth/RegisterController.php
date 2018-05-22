@@ -54,7 +54,9 @@ class RegisterController extends Controller
             'name' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users',
             'password' => 'required|string|min:6|confirmed',
+
         ]);
+
     }
 
     /**
@@ -66,7 +68,7 @@ class RegisterController extends Controller
     protected function create(array $data)
     {
 
-        $ip = \Request::ip();
+
 
         return User::create([
             'name' => $data['name'],
@@ -74,7 +76,7 @@ class RegisterController extends Controller
             'password' => Hash::make($data['password']),
             'ip' => \Request::ip(),
             'role' => '0',
-            'localisation' => 'insérez localistation',
+            'localisation' => $data['loc'],
 
 
         ]);
