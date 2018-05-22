@@ -1,26 +1,26 @@
 
-
 @extends('layouts.master')
 
 @section('content')
 
     <form method="post" enctype="multipart/form-data" style="text-align: center;">
-    @csrf
+        @csrf
 
         <div class="input-group mb-3">
             <label for="name">Nom du personnage :<br></label>
             <input type="text" class="form-control" id="name" placeholder="Nom du perso">
         </div>
-    <br>
+        <br>
         <label for="img">Choisir un fichier pour le personnage (taille carré)<br></label>
-            <input type="file" id="img" name="img" accept="image/*" onchange="loadFile(event)">
-    <br>
-    <br>
+        <input type="file" id="img" name="img" accept="image/*" onchange="loadFile(event)">
+        <br>
+        <br>
         <img id="output" style="width:150px;height: 150px;"/>
-    <br>
+        <br>
         <span style="font-size: small;">(visualisation de l'image)</span>
-    <br>
+        <br>
         <div>
+
             <br>
             <button type="submit" value="submit">Envoyer</button>
         </div>
@@ -31,16 +31,71 @@
             var output = document.getElementById('output');
             output.src = URL.createObjectURL(event.target.files[0]);
         };
-
     </script>
 
+    <?php
+    var_dump($_FILES);
+    if(!empty($_FILES)){
+        if($_FILES['img']['error'] == 0){
+            // Vérif' de l'extension du fichier
+            $fileInfo = pathinfo($_FILES['img']['name']);
+            $extensions_autorisees = ['jpg', 'png', 'gif'];
+            $extension = $fileInfo['extension'];
+            if(in_array($fileInfo['extension'], $extensions_autorisees)){
+                $newName = md5(uniqid(rand(), true));
+                $newWidth = 200;
+                $newHeight = 200;
+                // on crée une copie de l'image
+                if($extension == 'jpg' || $extension == 'jpeg'){
+                    $newImage = imagecreatefromjpeg($_FILES['img']['tmp_name']);
+                }
+                elseif ($extension == 'png'){
+                    $newImage = imagecreatefrompng($_FILES['img']['tmp_name']);
+                }
+                else{
+                    $newImage = imagecreatefromgif($_FILES['img']['tmp_name']);
+                }
+                $imageWidth = imagesx($newImage);
+                $imageHeight = imagesy($newImage);
+                $miniature = imagecreatetruecolor($newWidth, $newHeight);
+                imagecopyresampled($miniature, $newImage, 0, 0, 0, 0, $newWidth, $newHeight, $imageWidth, $imageHeight);
+                // On enregistre miniature dans un nouveau dossier dans upload
+                $thumbnailsFolder = '../img_personnage/thumbnails/';
+                if($extension == 'jpg' || $extension == 'jpeg'){
+                    imagejpeg($miniature, $thumbnailsFolder . $newName . '.' . $extension);
+                }
+                elseif($extension == 'png'){
+                    imagepng($miniature, $thumbnailsFolder . $newName . '.' . $extension);
+                }
+                else{
+                    imagegif($miniature, $thumbnailsFolder . $newName . '.' . $extension);
+                }
+                $imageWidth = imagesx($newImage); // largeur
+                $imageHeight = imagesy($newImage); // longueur
+                // On calcul la hauteur de la miniature pour garder les proportions
+                $newHeight = ($imageHeight * $newWidth) / $imageWidth;
+                // On crée la miniature (zone sans l'image)
+                $miniature = imagecreatetruecolor($newWidth, $newHeight);
+                // On remplit avec l'image envoyée
+                imagecopyresampled($miniature, $newImage, 0, 0, 0, 0, $newWidth, $newHeight, $imageWidth, $imageHeight);
+                // On enregistre miniature dans un nouveau dossier dans upload
+                $thumbnailsFolder = '../img_persoonnage/thumbnails/';
+                if($extension == 'jpg' || $extension == 'jpeg'){
+                    imagejpeg($miniature, $thumbnailsFolder . $newName . '.' . $extension);
+                }
+                elseif($extension == 'png'){
+                    imagepng($miniature, $thumbnailsFolder . $newName . '.' . $extension);
+                }
+                else{ // si gif
+                    imagegif($miniature, $thumbnailsFolder . $newName . '.' . $extension);
+                }
+            }
+        }
+    }
+    ?>
 
 
-<!--
-Arrêtez de mme laisser dans la merde les gars !!!!
-Je suis performant dans certains domaines mais on les laisse à d'autres ("tu feras la landinding page de chez toi pour la proposée, moi je la fais en journée de boulot (si je suis là la journée ou si je sui à l'heure...), je te laisse dans la merde et je prends ton boulot où tu es compétent et feras gagner du temps au projet !"
-C'est comme les lois et le côté juridique: "tout le monde s'en fout à part toi" c'est "inutile, on s'en fout" ! BAH NON !!! C'est la base pour pas se faire convoqué devant le barreau et protéger aussi les utilisateurs...
-<!---->
+
 
 
 @endsection
