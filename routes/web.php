@@ -29,3 +29,7 @@ Route::get('/homepage', function () {
 });
 
 Route::get('/fiche-{id}', 'StorySampleController@index');
+
+Route::get('/character-manager', 'CharacterManagerController@index');
+
+Route::post('/character-manager', 'CharacterManagerController@index');
