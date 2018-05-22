@@ -22,6 +22,10 @@ Route::post('/home', 'homeController@index');
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/logout', function() {
+    Auth::logout();
+    return view('welcome');
+});
 
 
 // Routes editeur
@@ -43,6 +47,8 @@ Route::get('/template', function () {
 Route::get('/landing', function () {
     return view('landing.index');
 });
+
+
 
 
 

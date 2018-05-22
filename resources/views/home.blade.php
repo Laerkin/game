@@ -15,6 +15,7 @@
                     @endif
 
                     Vous êtes connecté!
+                    <a href="logout">Déconnecter</a>
                 </div>
             </div>
         </div>
