@@ -62,21 +62,22 @@ Route::post('/audio', 'audioController@store');
 Route::get('/video', 'videoController@index');
 Route::post('/video', 'videoController@store');
 
-
+/** EDITEUR FORMULAIRE BASIQUE */
+Route::get('/edit', function () {
+    return view('editeur.index');
+});
 
 /** EDITEUR FORMULAIRE BASIQUE */
-Route::get('/editor', function () {
-    return view('editeur.index');
+Route::get('/editor2', function () {
+    return view('editeur.2index');
 });
 
-Route::get('/homepage', function () {
-    return view('editeur.index');
-});
+
 
 
 // Create Story
-Route::get('/edit', 'CreateStoryController@index');
-Route::post('/edit', 'CreateStoryController@store');
+Route::get('/editor', 'CreateStoryController@index');
+Route::post('/editor', 'CreateStoryController@store');
 
 
 // rich text routes

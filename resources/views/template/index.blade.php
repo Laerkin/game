@@ -1,7 +1,9 @@
 @extends('layouts.master')
 
-
-    @section('head')
+@section('toto')
+    blabla
+    @endsection
+    @section('scripts')
 
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -76,15 +78,11 @@
         <div class="footer">
             <p>Footer</p>
         </div>
-
-    @endsection
-
-
-    @section('foot')
-
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-
     @endsection
+
+
+
 
 
 
