@@ -23,6 +23,10 @@ Route::get('/', function () {
 
 
 
+Route::get('/profil/{username}', array(
+    'as' => 'profil-user',
+    'uses' => 'ProfilController@user',
+));
 
 
 
