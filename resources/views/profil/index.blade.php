@@ -2,6 +2,7 @@
 
 @section ('content')
 
+    @php(session_start())
 
     <div class="container-fluid">
         <div class="row">
