@@ -16,24 +16,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/template', function () {
-    return view('template.index');
-});
-
-Route::get('/editeur', function () {
-    return view('editeur.index');
-});
-
-Route::get('/homepage', function () {
-    return view('ui-homepage-(main).index');
-});
-
 /*Fiche détaillée des histoire*/
 
 Route::get('/fiche-{id}', 'StorySampleController@index');
-
-/*Formulaire gestion personnage*/
-
-Route::get('/character-manager', 'CharacterManagerController@index');
-
-Route::post('/add-character', 'CharacterManagerController@storeCharacter');
