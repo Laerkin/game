@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Model\personnage;
 use Request;
+use Response;
 
 class CharacterManagerController extends Controller
 {
@@ -29,5 +30,13 @@ class CharacterManagerController extends Controller
 		$character->path = 'user/characters/'.$image_name;
 		$character->bio = values['bio'];
 		$character->save();
+
+		$character_json = [
+			'name' => $values['name'],
+			'path' => 'animals/'.$image_name,
+			'bio' => $values['bio'],
+		];
+
+		return response()->json($character_json);
 	}
 }

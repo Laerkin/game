@@ -10,7 +10,7 @@
 
               <div class="row my-1 h-25" id="characterCreatorForm">
 
-                <form action="character-manager" id="personnage" method="POST" enctype="multipart/form-data">
+                <form action="/add-character" id="personnage" method="POST" enctype="multipart/form-data">
                 @csrf
                 <div class="form-group">
                   <label for="name"> Nom/prenom </label>
@@ -24,7 +24,7 @@
                   <label for="bio"> biographie/présentation </label>
                   <input type="text" id="bio" class="form-control">
                 </div>
-                <button class="btn btn-primary"></button>
+                <button class="btn btn-primary">Envoyer</button>
               </form>
 
               </div>
