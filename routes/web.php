@@ -11,6 +11,12 @@
 |
 */
 
+
+Route::auth();
+
+Route::get('/home', 'homeController@index');
+Route::post('/home', 'homeController@index');
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -73,3 +79,7 @@ Route::post('/richtext','richtextController@store')->name('richtextPersist');
 //summernote display route
 Route::get('/richtext_display','richtextController@show')->name('richtextDispay');
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
