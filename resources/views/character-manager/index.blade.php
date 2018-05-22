@@ -6,12 +6,11 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-6">
-
             <div class="create"> <h1> Creer un personnage </h1> </div>
 
               <div class="row my-1 h-25" id="characterCreatorForm">
 
-                <form action="/add-character" id="personnage" method="POST" enctype="multipart/form-data">
+                <form action="character-manager" id="personnage" method="POST" enctype="multipart/form-data">
                 @csrf
                 <div class="form-group">
                   <label for="name"> Nom/prenom </label>

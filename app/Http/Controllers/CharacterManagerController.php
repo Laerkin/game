@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use Model\personnage;
-use Illuminate\Http\Request;
+use App\Model\personnage;
+use Request;
 
 class CharacterManagerController extends Controller
 {
