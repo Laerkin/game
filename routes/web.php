@@ -41,3 +41,13 @@ Route::get('/template', function () {
 
 Route::get('/personnage', 'PersonnageController@index');
 Route::post('/personnage', 'PersonnageController@store');
+
+
+
+// Create Story
+Route::get('/edit', 'CreateStoryController@index');
+Route::post('/edit', 'CreateStoryController@store');
+// Create Map
+Route::get('/map', function() {
+    return view('create_map.index');
+});
