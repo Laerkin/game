@@ -7,6 +7,7 @@
         <div class="row">
           <div class="col-md-6">
             <div class="titre"> <h1> {{ $story->titre }} </h1> </div>
+            <!-- Affichera une erreur "Trying to get property 'titre' of non-object" si il ne trouve pas d'id correspondant au numero dans l'url "fiche-<numero>" dans la BDD  -->
           </div>
           <div class="col-md-6">
             <a class="btn btn-block btn-success border border-primary" href="#">Start !</a>
