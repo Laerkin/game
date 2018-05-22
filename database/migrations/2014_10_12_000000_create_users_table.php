@@ -28,7 +28,7 @@ class CreateUsersTable extends Migration
                 $table->string('password');
                 $table->string('ip', 15);
                 $table->integer('role');
-                $table->string('localisation', 200);
+                $table->string('localisation', 200)->nullable();
                 $table->rememberToken();
                 $table->timestamps();
             });
