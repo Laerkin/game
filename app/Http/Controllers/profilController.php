@@ -2,17 +2,31 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\DB;
+
 class profilController extends Controller
 {
 
-    public function show($id)
+    public function index()
     {
-        return view('profil.index', ['user' => users::findOrFail($id)]);
+
+        $users = DB::table('users')->get();
+
+        return view('profil.index', ['users' => $users]);
+
+    }
+
+    public function update()
+    {
+
+        DB::table('users')
+            ->where('id', 1)
+            ->update(['votes' => 1]);
     }
 
     public function __construct()
     {
-        $this->middleware('guest');
+        $this->middleware('auth');
     }
 
 }
