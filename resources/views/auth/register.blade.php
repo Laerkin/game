@@ -60,6 +60,19 @@
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
                             </div>
                         </div>
+                        <div class="form-group row">
+                            <label for="loc" class="col-md-4 col-form-label text-md-right">{{ trans('auth.loc') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="loc" type="text" class="form-control{{ $errors->has('loc') ? ' is-invalid' : '' }}" name="loc" value="{{ old('loc') }}" required autofocus>
+
+                                @if ($errors->has('loc'))
+                                    <span class="invalid-feedback">
+                                        <strong>{{ $errors->first('loc') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
 
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
