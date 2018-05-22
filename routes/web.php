@@ -22,14 +22,9 @@ Route::get('/', function () {
 });
 
 
-
-Route::get('/profil/{username}', array(
-    'as' => 'profil-user',
-    'uses' => 'ProfilController@user',
-));
-
-
-
+Route::get('/profil', function () {
+    return view('profil.index');
+});
 
 
 Route::get('/template', function () {

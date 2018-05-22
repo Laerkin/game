@@ -9,6 +9,6 @@ class profilController extends Controller
 
         public function show($id)
         {
-            return view('prifil.index', ['user' => User::findOrFail($id)]);
+            return view('profil.index', ['user' => users::findOrFail($id)]);
         }
     }
