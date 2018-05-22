@@ -72,7 +72,7 @@ class RegisterController extends Controller
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
-            'ip' => "000",
+            'ip' => \Request::ip(),
             'role' => '0',
             'localisation' => 'insérez localistation',
 

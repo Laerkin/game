@@ -12,6 +12,8 @@
 */
 use Illuminate\Http\Request;
 
+
+// Routes login
 Route::auth();
 
 Route::get('/home', 'homeController@index');
@@ -21,6 +23,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
+// Routes editeur
+
+Route::get('edit', 'editeurController@index');
+Route::post('edit', 'editeurController@index');
 
 
 
