@@ -22,6 +22,13 @@
             border-radius: 7px;
             padding: 10px;
         }
+        .btn{
+            color: #856D4D;
+            font-weight: bold;
+            background-color: #FFFFFF;
+            border: 2px solid #CED4DA;
+        }
+
 
         /** Responsive */
         @media all and (max-width: 900px)

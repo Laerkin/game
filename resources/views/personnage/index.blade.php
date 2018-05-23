@@ -7,6 +7,7 @@
     <style>
 
         body{
+            margin-top:150px;
             background-color:#8ACBF7;
             color: #856D4D;
             font-family: 'Indie Flower', cursive;
