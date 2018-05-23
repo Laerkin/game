@@ -108,8 +108,8 @@ jQuery(document).ready(function($) {
 
     }));
 
-    $('div').on('click','div.slideItem', function($e){
-
+    $('document').on('click','.slideItem', function(){
+        alert("e");
 
     });
 
