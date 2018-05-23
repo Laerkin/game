@@ -3,8 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\DB;
+use Auth;
 use App\Model\Users;
-use App\Http\Controllers\Auth;
+use App\User;
 
 class profilController extends Controller
 {
@@ -12,23 +13,25 @@ class profilController extends Controller
     public function index()
     {
 
-        $userinfo= Users::where(Auth()->user())
-            ->first();
+        $user = Auth::user();
+
+
         return view('profil.index')
-            ->with('userinfo', $userinfo);
+            ->with('user', $user);
     }
 
     public function update()
     {
+        $user = User::where('email', 'test@test.com')->first();
+        $user->email = 'toto@toto.com';
+        $user->save();
 
-        DB::table('users')
-            ->where(Auth()->user())
-            ->update(['name' => '', 'localisation' => '', 'avatar' => '']);
     }
 
     public function __construct()
     {
         $this->middleware('auth');
+
     }
 
 }
