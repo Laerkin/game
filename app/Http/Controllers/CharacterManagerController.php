@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use app\Model\personnage;
+use app\Model\Personnage;
 use Request;
 use Response;
 use Image;
@@ -29,7 +29,7 @@ class CharacterManagerController extends Controller
 
 		$img->save(public_path('/user/characters/' . $image_name.'.'.$ext));
 
-		$character = new personnage();
+		$character = new Personnage();
 
 		$character->name = values['name'];
 		$character->path = 'user/characters/'.$image_name.'.'.$ext;
