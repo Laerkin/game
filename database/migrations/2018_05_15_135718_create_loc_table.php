@@ -25,7 +25,7 @@ class CreateLocTable extends Migration
             $table->string('intitule', 200);
             $table->decimal('lat');
             $table->decimal('lng');
-            $table->string('icon', 45);
+            $table->string('style', 90);
             $table->timestamps();
             $table->integer('users_id');
 
