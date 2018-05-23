@@ -1,0 +1,23 @@
+#map{
+    height: 73vh;
+    width: 100%;
+    margin-top: 1%;
+    border-style: solid white 4px;
+    border-radius: 3px;
+}
+
+/* Map Control Selector */
+/* .map-control {
+    font-family: 'Roboto','sans-serif';
+    margin: 10px;
+
+  } */
+  /* Display the control once it is inside the map. */
+  /* #map .map-control { display: block; } */
+
+  /* .selector-control {
+    font-size: 14px;
+    line-height: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+  } */
