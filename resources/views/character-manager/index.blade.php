@@ -1,6 +1,9 @@
 @extends('template.index')
  
   @section('content')
+  @if(!empty($successMessage) )
+  <p>{{ $successMessage }}</p>
+@endif
 
     <div class="">
       <div class="container-fluid">
@@ -27,6 +30,14 @@
                 <button class="btn btn-primary">Envoyer</button>
               </form>
 
+              </div>
+          </div>
+          <div class="col-md-6">
+            <div class="create"> <h1> Votre personnage </h1> </div>
+              <div class="row my-1 h-25" id="preview">
+                @if(!empty($character_json) )
+                   {{ $character_json }}
+                @endif
               </div>
           </div>
         </div>
