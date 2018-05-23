@@ -4,37 +4,44 @@
     <!--
     Feuille de style
     -->
-    <style>
+    {{--<style>--}}
 
-        body{
-            margin-top:150px;
-            background-color:#8ACBF7;
-            color: #856D4D;
-            font-family: 'Indie Flower', cursive;
-            font-weight: bold;
-        }
-        label{
-            font-size: 20px;
-        }
-        em{
-            font-size: 18px;
-        }
-        p{
-            text-align: center;
-        }
+        {{--body{--}}
+            {{--margin-top:150px;--}}
+            {{--background-color:#8ACBF7;--}}
+            {{--color: #856D4D;--}}
+            {{--font-family: 'Indie Flower', cursive;--}}
+            {{--font-weight: bold;--}}
+            {{--margin-left: 20%;--}}
+            {{--margin-right: 20%;--}}
+        {{--}--}}
+        {{--label{--}}
+            {{--font-size: 20px;--}}
+        {{--}--}}
+        {{--form{--}}
+            {{--border: 1px solid #856D4D;--}}
+            {{--border-radius: 7px;--}}
+            {{--padding: 10px;--}}
+        {{--}--}}
+        {{--em{--}}
+            {{--font-size: 18px;--}}
+        {{--}--}}
+        {{--p{--}}
+            {{--text-align: center;--}}
+        {{--}--}}
 
-        /** Responsive */
-        @media all and (max-width: 900px)
-        {
-            label{
-                font-size: 18px;
-            }
-            em{
-                font-size: 16px;
-            }
-        }
+        {{--/** Responsive */--}}
+        {{--@media all and (max-width: 900px)--}}
+        {{--{--}}
+            {{--label{--}}
+                {{--font-size: 18px;--}}
+            {{--}--}}
+            {{--em{--}}
+                {{--font-size: 16px;--}}
+            {{--}--}}
+        {{--}--}}
 
-    </style>
+    {{--</style>--}}
 
 
 
@@ -58,7 +65,7 @@
                 <img id="output" style="width:150px;height: 150px;"/>
             </div>
 
-            <span style="font-size: small;" ><em>(visualisation de l'image)</em></span>
+            <span><em>(visualisation de l'image)</em></span>
 
             <div>
                 <br>

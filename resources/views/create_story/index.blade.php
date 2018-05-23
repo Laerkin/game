@@ -8,20 +8,20 @@
     -->
     <style>
 
-        body{
-            background-color:#8ACBF7;
-            color: #856D4D;
-            font-family: 'Indie Flower', cursive;
-            font-weight: bold;
-        }
-        label{
-            font-size: 20px;
-        }
-        form{
-            border: 1px solid #856D4D;
-            border-radius: 7px;
-            padding: 10px;
-        }
+        {{--body{--}}
+            {{--background-color:#8ACBF7;--}}
+            {{--color: #856D4D;--}}
+            {{--font-family: 'Indie Flower', cursive;--}}
+            {{--font-weight: bold;--}}
+        {{--}--}}
+        {{--label{--}}
+            {{--font-size: 20px;--}}
+        {{--}--}}
+        {{--form{--}}
+            {{--border: 1px solid #856D4D;--}}
+            {{--border-radius: 7px;--}}
+            {{--padding: 20px;--}}
+        {{--}--}}
         .btn{
             color: #856D4D;
             font-weight: bold;
@@ -30,16 +30,16 @@
         }
 
 
-        /** Responsive */
-        @media all and (max-width: 900px)
-        {
-            label{
-                font-size: 18px;
-            }
-            em{
-                font-size: 16px;
-            }
-        }
+        {{--/** Responsive */--}}
+        {{--@media all and (max-width: 900px)--}}
+        {{--{--}}
+            {{--label{--}}
+                {{--font-size: 18px;--}}
+            {{--}--}}
+            {{--em{--}}
+                {{--font-size: 16px;--}}
+            {{--}--}}
+        {{--}--}}
 
     </style>
 

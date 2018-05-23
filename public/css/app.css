@@ -50,6 +50,41 @@ html {
   -webkit-tap-highlight-color: transparent;
 }
 
+                      /* AJOUT */
+                      body{
+                        font-family: 'Indie Flower', cursive;
+                        font-weight: bold;
+                        color: #856D4D;
+                        background-color:#8ACBF7;
+                      }
+                      label{
+                        font-size: 20px;
+                      }
+                      form{
+                        border: 1px solid #856D4D;
+                        border-radius: 7px;
+                        padding: 20px;
+                      }
+                      .btn{
+                        color: #856D4D;
+                        font-weight: bold;
+                        background-color: #FFFFFF;
+                        border: 2px solid #CED4DA;
+                      }
+
+                                    /** Responsive */
+                                    @media all and (max-width: 900px)
+                                    {
+                                      label{
+                                        font-size: 18px;
+                                      }
+                                      em{
+                                        font-size: 16px;
+                                      }
+                                    }
+
+                      /* FIN AJOUT */
+
 @-ms-viewport {
   width: device-width;
 }
@@ -60,13 +95,14 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 1rem;
-  font-weight: 400;
   line-height: 1.5;
-  color: #212529;
   text-align: left;
-  background-color: #fff;
+  /* AJOUT */
+  /*font-family: 'Indie Flower', cursive;*/
+  /*font-weight: bold;*/
+  /*color: #856D4D;*/
+  /*background-color:#8ACBF7;*/
 }
 
 [tabindex="-1"]:focus {
@@ -234,6 +270,7 @@ label {
   display: inline-block;
   margin-bottom: .5rem;
 }
+
 
 button {
   border-radius: 0;
