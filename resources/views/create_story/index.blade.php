@@ -22,12 +22,12 @@
             {{--border-radius: 7px;--}}
             {{--padding: 20px;--}}
         {{--}--}}
-        .btn{
-            color: #856D4D;
-            font-weight: bold;
-            background-color: #FFFFFF;
-            border: 2px solid #CED4DA;
-        }
+        /*.btn{*/
+            /*color: #856D4D;*/
+            /*font-weight: bold;*/
+            /*background-color: #FFFFFF;*/
+            /*border: 2px solid #CED4DA;*/
+        /*}*/
 
 
         {{--/** Responsive */--}}

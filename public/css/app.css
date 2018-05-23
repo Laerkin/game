@@ -50,6 +50,8 @@ html {
   -webkit-tap-highlight-color: transparent;
 }
 
+
+
                       /* AJOUT */
                       body{
                         font-family: 'Indie Flower', cursive;
@@ -84,6 +86,10 @@ html {
                                     }
 
                       /* FIN AJOUT */
+
+
+
+
 
 @-ms-viewport {
   width: device-width;
