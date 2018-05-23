@@ -9,7 +9,7 @@
     <style>
 
         body{
-            background-color:#DFF2FF;
+            background-color:#8ACBF7;
             color: #856D4D;
             font-family: 'Indie Flower', cursive;
             font-weight: bold;
@@ -17,12 +17,15 @@
         label{
             font-size: 20px;
         }
-        
+
         /** Responsive */
         @media all and (max-width: 900px)
         {
             label{
                 font-size: 18px;
+            }
+            em{
+                font-size: 16px;
             }
         }
 
