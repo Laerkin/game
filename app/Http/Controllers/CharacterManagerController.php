@@ -18,14 +18,20 @@ class CharacterManagerController extends Controller
 
 		$image = $values['character-image'];
 		
-		$image_name = 'photo-'.strtolower($image->getClientOriginalName).'.'.strtolower($image->extension());
+		$ext = strtolower($image->getClientOriginalExtension());
 
-		$resize_image = Image::make($image)->resize(150, 150)->save(public_path('user/characters/'.$image_name));
+		$image_name = date('d-m-Y-H:s').'-'.rand();
+
+		$image->storeAs('public', $image_name.'.'.$ext); 
+
+		$resize_image = Image::make($image)->resize(150, 150)->save(public_path('user/characters/'));
+
+		$image->move(public_path('user/characters/'));
 
 		$character = new personnage();
 
 		$character->name = values['name'];
-		$character->path = 'user/characters/'.$image_name;
+		$character->path = 'user/characters/'.$image_name.'.'.$ext;
 		$character->bio = values['bio'];
 		$character->save();
 
@@ -39,4 +45,4 @@ class CharacterManagerController extends Controller
 	}
 
 	public function editCharacter(){}
-}
+} 
