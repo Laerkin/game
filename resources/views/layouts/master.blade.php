@@ -4,7 +4,8 @@
 
 <head>
 
-    @yield('head')
+    @yield('scripts')
+
 
 </head>
 
@@ -17,7 +18,10 @@
 
 @yield('footer')
 
-@yield('foot')
+
+
+
+
 
 </body>
 

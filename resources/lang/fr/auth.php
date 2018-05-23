@@ -15,6 +15,17 @@ return [
 
     'failed' => 'These credentials do not match our records.',
     'throttle' => 'Too many login attempts. Please try again in :seconds seconds.',
-    'username' => 'username',
-
+    'username' => 'Nom d\'utilisateur',
+    'email' => 'Adresse email',
+    'password' => 'Mot de passe',
+    'confirmPassword' => 'Confirmez le mot de passe',
+    'register' => 'Inscription',
+    'submitRegister' => 'S\'enregistrer',
+    'submitLogin' => 'Se connecter',
+    'forgotPassword' => 'Mot de passe oublié?',
+    'rememberMe' => 'se souvenir de moi',
+    'login' => 'Connexion',
+    'resetPassword' => 'Mot de passe oublié',
+    'resetMail' => 'Envoyer le courrier de récupération',
+    'loc' => 'Localisation'
 ];

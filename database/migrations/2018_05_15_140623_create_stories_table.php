@@ -19,13 +19,12 @@ class CreateStoriesTable extends Migration
         if (Schema::hasTable($this->set_schema_table)) return;
         Schema::create($this->set_schema_table, function (Blueprint $table) {
             $table->increments('id');
-            $table->timestamps();
             $table->string('titre', 200);
             $table->string('synopsis', 200);
             $table->integer('difficulte');
             $table->string('genre', 45);
-            $table->tinyInteger('public');
-            $table->dateTime('date');
+            $table->tinyInteger('publish');
+            $table->timestamps();
             $table->integer('users_id');
 
             $table->index(["users_id"], 'fk_stories_users1_idx');

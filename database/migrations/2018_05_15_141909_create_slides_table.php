@@ -18,9 +18,9 @@ class CreateSlidesTable extends Migration
         if (Schema::hasTable($this->set_schema_table)) return;
         Schema::create($this->set_schema_table, function (Blueprint $table) {
             $table->increments('id');
-            $table->timestamps();
             $table->integer('type');
             $table->integer('order');
+            $table->timestamps();
             $table->integer('stories_id');
 
             $table->index(["stories_id"], 'fk_slides_stories1_idx');
