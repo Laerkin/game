@@ -1,48 +1,6 @@
 @extends('layouts.master')
 
 @section('content')
-    <!--
-    Feuille de style
-    -->
-    {{--<style>--}}
-
-        {{--body{--}}
-            {{--margin-top:150px;--}}
-            {{--background-color:#8ACBF7;--}}
-            {{--color: #856D4D;--}}
-            {{--font-family: 'Indie Flower', cursive;--}}
-            {{--font-weight: bold;--}}
-            {{--margin-left: 20%;--}}
-            {{--margin-right: 20%;--}}
-        {{--}--}}
-        {{--label{--}}
-            {{--font-size: 20px;--}}
-        {{--}--}}
-        {{--form{--}}
-            {{--border: 1px solid #856D4D;--}}
-            {{--border-radius: 7px;--}}
-            {{--padding: 10px;--}}
-        {{--}--}}
-        {{--em{--}}
-            {{--font-size: 18px;--}}
-        {{--}--}}
-        {{--p{--}}
-            {{--text-align: center;--}}
-        {{--}--}}
-
-        {{--/** Responsive */--}}
-        {{--@media all and (max-width: 900px)--}}
-        {{--{--}}
-            {{--label{--}}
-                {{--font-size: 18px;--}}
-            {{--}--}}
-            {{--em{--}}
-                {{--font-size: 16px;--}}
-            {{--}--}}
-        {{--}--}}
-
-    {{--</style>--}}
-
 
 
     <div class="container-fluid">

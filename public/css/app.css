@@ -52,25 +52,48 @@ html {
 
 
 
-                      /* AJOUT */
+/* //////////////////// AJOUTS ET CHANGEMENTS //////////////////// */
+
                       body{
                         font-family: 'Indie Flower', cursive;
                         font-weight: bold;
                         color: #856D4D;
-                        background-color:#8ACBF7;
+                        background-image:linear-gradient(#8ACBF7, white);
                       }
+
                       label{
                         font-size: 20px;
                       }
+
                       form{
-                        border: 1px solid #856D4D;
+                        border: 2px solid #856D4D;
                         border-radius: 7px;
                         padding: 20px;
                       }
-                      .btn{
+
+                      .form-control:focus {
                         color: #856D4D;
-                        font-weight: bold;
+                        background-color: #fff;
+                        border-color: #CED4DA;
+                        outline: 0;
+                        box-shadow: 0 0 0 0.1rem #856D4D;
+                      }
+
+                      .custom-select:focus {
+                        border-color: #CED4DA;
+                        outline: 0;
+                        box-shadow: 0 0 0 0.1rem #856D4D;
+                      }
+
+                      .btn-outline-success {
+                        color: #856D4D;
                         background-color: #FFFFFF;
+                        background-image: none;
+                        border: 2px solid #CED4DA;
+                      }
+                      .btn-outline-success:hover {
+                        color: #fff;
+                        background-color: #856D4D;
                         border: 2px solid #CED4DA;
                       }
 
@@ -85,7 +108,7 @@ html {
                                       }
                                     }
 
-                      /* FIN AJOUT */
+/* //////////////////// AJOUTS ET CHANGEMENTS //////////////////// */
 
 
 
@@ -2016,13 +2039,13 @@ pre code {
   border: 0;
 }
 
-.form-control:focus {
-  color: #495057;
-  background-color: #fff;
-  border-color: #80bdff;
-  outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-}
+/*.form-control:focus {*/
+  /*color: #495057;*/
+  /*background-color: #fff;*/
+  /*border-color: red;*/
+  /*outline: 0;*/
+  /*box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);*/
+/*}*/
 
 .form-control::-webkit-input-placeholder {
   color: #6c757d;
@@ -2884,18 +2907,18 @@ fieldset:disabled a.btn {
   box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
 }
 
-.btn-outline-success {
-  color: #28a745;
-  background-color: transparent;
-  background-image: none;
-  border-color: #28a745;
-}
+/*.btn-outline-success {*/
+  /*color: #28a745;*/
+  /*background-color: transparent;*/
+  /*background-image: none;*/
+  /*border-color: #28a745;*/
+/*}*/
 
-.btn-outline-success:hover {
-  color: #fff;
-  background-color: #28a745;
-  border-color: #28a745;
-}
+/*.btn-outline-success:hover {*/
+  /*color: #fff;*/
+  /*background-color: #28a745;*/
+  /*border-color: #28a745;*/
+/*}*/
 
 .btn-outline-success:focus, .btn-outline-success.focus {
   box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
@@ -3779,11 +3802,11 @@ tbody.collapse.show {
   appearance: none;
 }
 
-.custom-select:focus {
-  border-color: #80bdff;
-  outline: 0;
-  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075), 0 0 5px rgba(128, 189, 255, 0.5);
-}
+/*.custom-select:focus {*/
+  /*border-color: #80bdff;*/
+  /*outline: 0;*/
+  /*box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075), 0 0 5px rgba(128, 189, 255, 0.5);*/
+/*}*/
 
 .custom-select:focus::-ms-value {
   color: #495057;

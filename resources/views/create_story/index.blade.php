@@ -3,47 +3,6 @@
 
 @section('content')
 
-    <!--
-    Feuille de style
-    -->
-    <style>
-
-        {{--body{--}}
-            {{--background-color:#8ACBF7;--}}
-            {{--color: #856D4D;--}}
-            {{--font-family: 'Indie Flower', cursive;--}}
-            {{--font-weight: bold;--}}
-        {{--}--}}
-        {{--label{--}}
-            {{--font-size: 20px;--}}
-        {{--}--}}
-        {{--form{--}}
-            {{--border: 1px solid #856D4D;--}}
-            {{--border-radius: 7px;--}}
-            {{--padding: 20px;--}}
-        {{--}--}}
-        /*.btn{*/
-            /*color: #856D4D;*/
-            /*font-weight: bold;*/
-            /*background-color: #FFFFFF;*/
-            /*border: 2px solid #CED4DA;*/
-        /*}*/
-
-
-        {{--/** Responsive */--}}
-        {{--@media all and (max-width: 900px)--}}
-        {{--{--}}
-            {{--label{--}}
-                {{--font-size: 18px;--}}
-            {{--}--}}
-            {{--em{--}}
-                {{--font-size: 16px;--}}
-            {{--}--}}
-        {{--}--}}
-
-    </style>
-
-
 
     <div class="container">
         <section>
@@ -148,7 +107,7 @@
 
 
                 <input id="publish" name="publish" type="hidden" value="0">
-                <button type="submit" class="btn btn-outline-success btn-block">{{ trans('create_story.form.save')}}</button>
+                <button type="submit" class="btn btn-outline-success btn-block" style="font-weight: bold;">{{ trans('create_story.form.save')}}</button>
             </form>
             <div class="row">
                 <div class="col-md-12">
