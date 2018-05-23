@@ -36,9 +36,6 @@ Route::post('edit', 'editeurController@index');
 
 
 
-
-
-
 Route::get('/template', function () {
     return view('template.index');
 });
