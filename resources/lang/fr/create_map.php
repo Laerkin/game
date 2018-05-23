@@ -2,9 +2,9 @@
 return [
     'form' => [
         'title'      => 'Titre de la carte',
-        'slides'     => 'Chapitres',
+        'slides'     => 'Slides',
         'adress'     => 'Adresse',
-        'choice'     => 'Choix du chapitre',
+        'choice'     => 'Choix du slide',
         'style'      => 'Style de carte',
         'longitude'  => 'Longitude',
         'latitude'   => 'Latitude',
