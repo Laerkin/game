@@ -1,17 +1,102 @@
+
 #editContent{
-    height:100%;
+    margin-top:20px;
 
 }
 
-#editContent div{
-    width: 100%;
-    height: 100%;
+.slideLst{
+display:flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+justify-content: flex-start;
 
-    top: 0;
-    left: 0;
+
+    border:1px solid lightgrey;
+    overflow-x: scroll;
+
+    height:500px;
+
+
+
 }
-
 .slideItem{
+    margin-left:20px;
     width:80px;
     height:80px;
+    border:1px solid black;
+    margin-top:4px;
 }
+
+.slideItem:hover{
+    background-color:lightyellow;
+}
+
+.elementItem{
+    background-color:lightgrey;
+
+}
+
+.elementItem:hover{
+    background-color:lightgreen;
+    cursor:pointer;
+
+}
+
+.elementLst{
+
+    margin-bottom:10px;
+}
+
+.toolItem{
+    background-color:lightblue;
+    font-size:22px;
+
+    margin:0;
+    margin-right:3px;
+    margin-bottom:3px;
+    padding:0;
+    height:32px;
+    width:32px;
+    text-align:center;
+}
+
+
+
+
+
+.toolItem:hover{
+    background-color:lightgreen;
+    cursor:pointer;
+
+}
+
+.b{
+    border:1px solid red;
+}
+
+.title1{
+    font-size:16px;
+    font-weight:bold;
+    background:lightcoral;
+
+}
+
+.elementOptions{
+    background-color:lightgoldenrodyellow;
+    height:150px;
+}
+
+
+.preview{
+    background-color: grey;
+    height:500px;
+}
+
+.locItem{
+    margin-top:4px;
+}
+
+.btn-addLoc{
+    margin-top:10px;
+}
+
