@@ -12,99 +12,12 @@
 */
 use Illuminate\Http\Request;
 
-
-// Routes login
-Route::auth();
-
-Route::get('/home', 'homeController@index');
-Route::post('/home', 'homeController@index');
-
-Route::get('/', function () {
-	
-    return view('welcome');
-});
-Route::get('/logout', function() {
-    Auth::logout();
-    return view('welcome');
-});
-
-
-// Routes editeur
-
-Route::get('edit', 'editeurController@index');
-Route::post('edit', 'editeurController@index');
-
-
-
-
-
-
-
-Route::get('/template', function () {
-    return view('template.index');
-});
-
-<<<<<<< HEAD
 /*Formulaire gestion personnage*/
 
 Route::get('/character-manager', 'CharacterManagerController@index');
 
-Route::post('/character-manager', 'CharacterManagerController@storeCharacter');
-
 Route::post('/add-character', 'CharacterManagerController@storeCharacter');
-=======
 
 Route::get('/landing', function () {
     return view('landing.index');
 });
-
-
-
-
-
-
-/** ROUTES AUDIO/VIDEO  **/
-
-Route::get('/audio', 'audioController@index');
-Route::post('/audio', 'audioController@store');
-
-
-Route::get('/video', 'videoController@index');
-Route::post('/video', 'videoController@store');
-
-/** EDITEUR FORMULAIRE BASIQUE */
-Route::get('/edit', function () {
-    return view('editeur.index');
-});
-
-/** EDITEUR FORMULAIRE BASIQUE */
-Route::get('/editor2', function () {
-    return view('editeur.2index');
-});
-
-
-
-
-// Create Story
-Route::get('/editor', 'CreateStoryController@index');
-Route::post('/editor', 'CreateStoryController@store');
-
-
-// rich text routes
-//summernote form
-Route::get('/richtext', function () {
-    return view('richtext.index');
-});
-
-
-//summernote store route
-Route::post('/richtext','richtextController@store')->name('richtextPersist');
-
-//summernote display route
-Route::get('/richtext_display','richtextController@show')->name('richtextDispay');
-
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
->>>>>>> master
