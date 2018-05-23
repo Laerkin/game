@@ -10,19 +10,19 @@
 
               <div class="row my-1 h-25" id="characterCreatorForm">
 
-                <form action="/add-character" id="personnage" method="POST" enctype="multipart/form-data">
+                <form action="" id="personnage" method="POST" enctype="multipart/form-data">
                 @csrf
                 <div class="form-group">
                   <label for="name"> Nom/prenom </label>
-                  <input type="text" id="name" class="form-control">
+                  <input type="text" id="name" name="name" class="form-control">
                 </div>
                 <div class="form-group">
                   <label for="character-image"> image </label>
-                  <input type="file" id="character-image" class="form-control">
+                  <input type="file" id="character-image" name="character-image" class="form-control">
                 </div>
                 <div class="form-group">
                   <label for="bio"> biographie/présentation </label>
-                  <input type="text" id="bio" class="form-control">
+                  <input type="text" id="bio" name="bio" class="form-control">
                 </div>
                 <button class="btn btn-primary">Envoyer</button>
               </form>
@@ -35,7 +35,22 @@
 
               <div class="row my-1 h-25" id="characterEditorForm">
 
-                <!-- formulaire d'edition -->
+                <form action="" id="personnage" method="POST" enctype="multipart/form-data">
+                @csrf
+                <div class="form-group">
+                  <label for="name"> Nom/prenom </label>
+                  <input type="text" id="name" name="name" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="character-image"> image </label>
+                  <input type="file" id="character-image" name="character-image" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="bio"> biographie/présentation </label>
+                  <input type="text" id="bio" name="bio" class="form-control">
+                </div>
+                <button class="btn btn-primary">Envoyer</button>
+              </form>
 
               </div>
           </div>

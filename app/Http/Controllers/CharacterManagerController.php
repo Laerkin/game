@@ -13,16 +13,14 @@ class CharacterManagerController extends Controller
 	}
 
     public function storeCharacter(){
+		
 		$values = Request::all();
 
 		$image = $values['character-image'];
-
+		
 		$image_name = 'photo-'.strtolower($image->getClientOriginalName).'.'.strtolower($image->extension());
 
-		$resize_image = Image::make($image);
-
-		$resize_image->resize(150, 150)
-					 ->save(public_path('user/characters/'.$image_name));
+		$resize_image = Image::make($image)->resize(150, 150)->save(public_path('user/characters/'.$image_name));
 
 		$character = new personnage();
 
@@ -39,4 +37,6 @@ class CharacterManagerController extends Controller
 
 		return response()->json($character_json);
 	}
+
+	public function editCharacter(){}
 }

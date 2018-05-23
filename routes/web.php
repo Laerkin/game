@@ -24,4 +24,6 @@ Route::get('/template', function () {
 
 Route::get('/character-manager', 'CharacterManagerController@index');
 
+Route::post('/character-manager', 'CharacterManagerController@storeCharacter');
+
 Route::post('/add-character', 'CharacterManagerController@storeCharacter');
