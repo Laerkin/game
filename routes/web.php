@@ -37,10 +37,7 @@ Route::post('/edit', 'editeurController@index');
 
 
 Route::get('/profil', 'profilController@index');
-
-
-
-
+Route::post('/profil}', 'profilController@update');
 
 
 Route::get('/template', function () {
@@ -51,9 +48,6 @@ Route::get('/template', function () {
 Route::get('/landing', function () {
     return view('landing.index');
 });
-
-
-
 
 
 

@@ -7,6 +7,7 @@ use Auth;
 use App\Model\Users;
 use App\User;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Http\Request;
 
 class profilController extends Controller
 {
@@ -21,22 +22,22 @@ class profilController extends Controller
             ->with('user', $user);
     }
 
-    protected function validator(array $data)
+
+    public function update(Request $request)
     {
-        return Validator::make($data, [
-            'email' => 'required|string|email|max:255|unique:users',
 
-        ]);
+            exit;
+                    //Find the user object from model if it exists
+            $user = User::findOrFail($id);
+
+            DB::table('user')
+                ->where('email', $id)
+                ->update(['email' => $request['email'],
+                    'loc' => $request['loc'],
+                ]);
+            $user->save();
 
     }
-
-    public function update(){
-        $formulaire = User::where('email', 'loc');
-        $formulaire->loc = $data;
-        $formulaire->save();
-    }
-
-
 
     public function __construct()
     {
