@@ -17,6 +17,11 @@
         label{
             font-size: 20px;
         }
+        form{
+            border: 1px solid #856D4D;
+            border-radius: 7px;
+            padding: 10px;
+        }
 
         /** Responsive */
         @media all and (max-width: 900px)

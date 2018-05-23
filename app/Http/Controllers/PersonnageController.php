@@ -16,7 +16,7 @@ class PersonnageController extends Controller
 
     public function store(Request $request)
     {
-        if($request->hasFile('img_personnage')) {
+        if($request->hasFile('img_personnage') && !empty($request->get('name_personnage'))) {
             // get filename with extension
             $filenamewithextension = $request->file('img_personnage')->getClientOriginalName();
 
@@ -37,7 +37,10 @@ class PersonnageController extends Controller
             $thumbnailpath = public_path('storage/img_personnage/thumbnail/'.$filenametostore);
             $img = Image::make($thumbnailpath)->resize(150, 150)->save($thumbnailpath);
 
-            return Redirect::back()->with('success', "L'image a été envoyée avec succès");
+            return Redirect::back()->with('success', "Personnage créé avec succès");
+        }
+        else{
+            return Redirect::back()->with('error', "Nom et image du personnage obligatoire");
         }
     }
 
