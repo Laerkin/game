@@ -23,12 +23,12 @@ class profilController extends Controller
     }
 
 
-    public function update()
-    {
-
-    // faire le ttt de l'update
-
-    }
+//    public function update()
+//    {
+//
+//    // faire le ttt de l'update
+//
+//    }
 
     public function __construct()
     {

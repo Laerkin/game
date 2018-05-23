@@ -27,5 +27,6 @@ return [
     'login' => 'Connexion',
     'resetPassword' => 'Mot de passe oublié',
     'resetMail' => 'Envoyer le courrier de récupération',
-    'loc' => 'Localisation'
+    'loc' => 'Localisation',
+    'update' => 'mettre à jour'
 ];

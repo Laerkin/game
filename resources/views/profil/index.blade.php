@@ -2,29 +2,37 @@
 
 @section ('content')
 
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="row">
-                    <div class="col-md-8">
-                        <div class="row">
-                            <div class="col-md-4">
 
+                    <div class="col-8">
+                        <div class="row">
+                            <div class="avatar col-md-4">
+
+                                <img src="http://www.zoom.fr/phpBB2/download/file.php?avatar=16604_1519314350.png" alt="Smiley face">
                                {{$user->avatar}}
 
                             </div>
-                            <div class="col-md-4">
+                            <br/>
+                            <div class="infos offset-2 col-md-2">
                                 <li>{{$user->name}}</li>
                                 <li>{{$user->email}}</li>
 
                             </div>
-                            <div class="col-md-">
+                            <br/>
+
+                            <div class="loc offset-2 col-md-2">
                                 <li>{{$user->localisation}}</li>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-<div class="hidden" id="ttt">
+                    <br/>
+
+                    <div class="container-fuild">
+                        <div class="row">
+<div class="form hidden" id="ttt">
+
                     <form method="POST" action="">
                         @csrf
 
@@ -58,14 +66,15 @@
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
-                                    {{ trans('auth.submitRegister') }}
+                                    {{ trans('auth.update') }}
                                 </button>
                             </div>
                         </div>
                     </form>
 </div>
                     </div>
-                </div>
+                    </div>
+
             </div>
         </div>
     </div>

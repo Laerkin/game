@@ -1,0 +1,17 @@
+body{
+    background-color: #388bb2;
+}
+.avatar img{
+    -webkit-box-shadow: 1px 3px 5px 2px #3224FF;
+    box-shadow: 1px 3px 5px 2px #3224FF;
+
+}
+
+.form{
+    -webkit-box-shadow: 1px 1px 0 5px #3224FF;
+    box-shadow: 1px 1px 0 5px #3224FF;
+
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
