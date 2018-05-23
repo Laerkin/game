@@ -24,7 +24,7 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-
+<div class="hidden" id="ttt">
                     <form method="POST" action="">
                         @csrf
 
@@ -63,6 +63,7 @@
                             </div>
                         </div>
                     </form>
+</div>
                     </div>
                 </div>
             </div>

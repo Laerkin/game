@@ -37,7 +37,7 @@ Route::post('/edit', 'editeurController@index');
 
 
 Route::get('/profil', 'profilController@index');
-Route::post('/profil}', 'profilController@update');
+// Route::post('/profil', 'profilController@update');
 
 
 Route::get('/template', function () {

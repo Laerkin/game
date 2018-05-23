@@ -23,19 +23,10 @@ class profilController extends Controller
     }
 
 
-    public function update(Request $request)
+    public function update()
     {
 
-            exit;
-                    //Find the user object from model if it exists
-            $user = User::findOrFail($id);
-
-            DB::table('user')
-                ->where('email', $id)
-                ->update(['email' => $request['email'],
-                    'loc' => $request['loc'],
-                ]);
-            $user->save();
+    // faire le ttt de l'update
 
     }
 
