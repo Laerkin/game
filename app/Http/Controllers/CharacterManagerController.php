@@ -68,17 +68,10 @@ class CharacterManagerController extends Controller
 
 		$character->save();
 
-		$character_json = [
-			'name' => $values['name'],
-			'image' => $path,
-			'bio' => $values['bio']
-		];
-
-	
-
 		return view('character-manager.index')
 		->with('successMessage', 'Votre personnage à bien était enregistré.')
-		->with($image_name);
+		->with('path', $path);
+
 	}
 
 	public function editCharacter(){}
