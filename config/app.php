@@ -121,6 +121,7 @@ return [
 
     'providers' => [
 
+        Gstt\Achievements\AchievementsServiceProvider::class,
         /*
          * Laravel Framework Service Providers...
          */
@@ -154,6 +155,8 @@ return [
         /*
          * Application Service Providers...
          */
+        \App\Providers\EventServiceProvider::class,
+
         App\Providers\AppServiceProvider::class,
         App\Providers\AuthServiceProvider::class,
         // App\Providers\BroadcastServiceProvider::class,
@@ -187,7 +190,7 @@ return [
         'Crypt' => Illuminate\Support\Facades\Crypt::class,
         'DB' => Illuminate\Support\Facades\DB::class,
         'Eloquent' => Illuminate\Database\Eloquent\Model::class,
-        'Event' => Illuminate\Support\Facades\Event::class,
+        'Events' => Illuminate\Support\Facades\Event::class,
         'File' => Illuminate\Support\Facades\File::class,
         'Gate' => Illuminate\Support\Facades\Gate::class,
         'Hash' => Illuminate\Support\Facades\Hash::class,

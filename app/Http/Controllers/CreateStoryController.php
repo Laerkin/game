@@ -17,6 +17,7 @@ class CreateStoryController extends Controller
     }
 
     public function store() {
+
         $values = Request::all();
         // la regarde le contenu de values pour vérifier que tout est ok
         $rules = [
