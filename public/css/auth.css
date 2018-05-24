@@ -20,3 +20,9 @@ body, .form-control{
     font-family: 'Montserrat', sans-serif;
 }
 
+/* Fond */
+
+#particles-js{
+    background: firebrick;
+    height: 800px;
+}
