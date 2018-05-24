@@ -630,7 +630,7 @@ function geocodeLatLng(geocoder, map, latitude, longitude) {
             if (results[0]) { //results[0] permet d'indiquer la précision de l'adresse 0 = Très précis
 
                 var pt = $("input[name=adresse]").val(results[0].formatted_address);
-                map.setZoom(map.getZoom(latlng) + 2);
+                // map.panTo(map.getZoom(marker) + 2);
             }
             else {
                 window.alert('No results found');

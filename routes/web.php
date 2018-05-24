@@ -28,6 +28,7 @@ Route::get('/map', 'MapController@index');
 Route::post('/map', 'MapController@store');
 
 
+
 Route::get('/mapper', function() {
     return view('map.index');
 });

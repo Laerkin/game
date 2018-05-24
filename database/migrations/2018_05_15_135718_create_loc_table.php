@@ -28,7 +28,7 @@ class CreateLocTable extends Migration
             $table->decimal('lng');
             $table->string('adresse', 200);
             $table->string('style', 90);
-            $table->integer('users_id');
+            $table->integer('users_id')->nullable();
 
             $table->index(["users_id"], 'fk_loc_users1_idx');
 
