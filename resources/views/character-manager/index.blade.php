@@ -35,8 +35,8 @@
           <div class="col-md-6">
             <div class="create"> <h1> Votre personnage </h1> </div>
               <div class="row my-1 h-25" id="preview">
-                @if(!empty($character_json) )
-                   {{ $character_json }}
+                @if(!empty($image_name))
+                   {{return Image::make($image_name)->response($ext) }}
                 @endif
               </div>
           </div>

@@ -78,7 +78,7 @@ class CharacterManagerController extends Controller
 
 		return view('character-manager.index')
 		->with('successMessage', 'Votre personnage à bien était enregistré.')
-		->with(json($character_json));
+		->with($image_name);
 	}
 
 	public function editCharacter(){}
