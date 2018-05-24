@@ -2,6 +2,7 @@
 
 namespace App\Listeners;
 
+use Gstt\Achievements\Event\Unlocked;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
@@ -23,8 +24,8 @@ class achiev
      * @param  object  $event
      * @return void
      */
-    public function handle($event)
+    public function handle(Unlocked $event)
     {
-        //
+        Session::flash('achievement', $event->progress->details->name);
     }
 }
