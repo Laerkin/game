@@ -61,8 +61,6 @@ class CharacterManagerController extends Controller
 		$character->path = $path;
 		$character->bio = $values['bio'];
 
-		/*Probleme : on doit pouvoir creer un personnage meme sans slide*/
-		$character->slides_elements_id = 1;
 		/*A adapter pour plus tard */
 		$character->users_id = 1;
 
