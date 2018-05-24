@@ -1,0 +1,22 @@
+body, .form-control{
+    background-color: #F5F5F5;
+}
+
+.card{
+    box-shadow: 2px 5px 5px darkgrey;
+}
+
+.card-header {
+    color: #F5F5F5;
+    background-color: #008ba3;
+    font-family: 'Neuton', serif;
+    font-size: 1.4em;
+    font-weight: bold;
+    border-bottom: 3px solid rgba(160,160,160, 0.4);
+}
+
+.card-body {
+    background-image:linear-gradient(#00bcd4, #62efff);
+    font-family: 'Montserrat', sans-serif;
+}
+
