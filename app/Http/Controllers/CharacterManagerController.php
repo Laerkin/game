@@ -35,7 +35,9 @@ class CharacterManagerController extends Controller
 
 		if($validator->fails()){
 
-    		return Redirect('/character-manager')->withErrors($validator)->withInput();
+    		return Redirect('/character-manager')
+    			->withErrors($validator)
+    			->withInput();
     	}
 
 
