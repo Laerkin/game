@@ -72,6 +72,11 @@ Route::get('/editor2', function () {
     return view('editeur.2index');
 });
 
+// routes classement
+
+
+Route::get('/classement', 'classementController@index');
+
 
 
 
@@ -94,6 +99,6 @@ Route::post('/richtext','richtextController@store')->name('richtextPersist');
 Route::get('/richtext_display','richtextController@show')->name('richtextDispay');
 
 
-Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
