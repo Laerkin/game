@@ -1,9 +1,40 @@
 #map{
-    height:457px;
-    width: 100%;
+    height: 59vh;
+    width: 10%;
     margin-top: 1%;
     border-style: solid white 4px;
     border-radius: 3px;
 }
 
+a{
+    font-family: 'Neuton', serif;
+}
+
+p{
+    font-family: 'Montserrat', serif;
+}
+
+
+
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 8vh;
+    background-color: #005d6e;
+    color: #bfd6db;
+    text-align: center;
+}
+.align-items-center{
+    margin-top: 2vh;
+}
+.design a{
+    color: #bfd6db;
+}
+.design a:hover {
+    text-decoration: none;
+    color: white;
+}
 

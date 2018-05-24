@@ -1,9 +1,9 @@
 @extends('layouts.master')
 
 @section('content')
-    <div class="container">
+    <div class="container-fluid">
         <section>
-            <div class="row">
+            <div class="row justify-content-between">
                 <form method="POST" action="" class="col-md-4">
                     @csrf
                     <div class="form-group">
@@ -81,7 +81,7 @@
                     </div>
                     <button type="submit" class="btn btn-outline-success btn-block shadow mb-3">{{ trans('create_story.form.save')}}</button>
                 </form>
-                <div id="map" class="col-md-8">
+                <div id="map" class="col-md-7 mr-3">
                     {{-- Implantation de la carte --}}
                 </div>
             </div>

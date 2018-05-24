@@ -13,16 +13,52 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
         <!-- Map JS -->
         <script src="{{asset('js/map.js')}}"></script>
+        <!-- Typography -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Neuton:700" rel="stylesheet">
     </head>
     <body>
-        @yield('header')
+        {{-- @yield('header') --}}
+        <nav class="nav justify-content-center navbar navbar-expand-lg navbar-dark navbar-default shadow" style="background-color:#005d6e;">
+            <a class="navbar-brand" href="#">MAKONTO</a>
+            <button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Classements</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Récompenses</a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link" href="#">Réglages</a>
+                        </li>
+                </ul>
+            </div>
+          </nav>
 
         @yield('content')
 
-        @yield('footer')
-
-
-
+        {{-- @yield('footer') --}}
+        <footer>
+            <div class="row align-items-center">
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="copyright">
+                        © 2015, MAKONTO, All rights reserved
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="design">
+                        <a href="#">Conditions d'utilisation </a> |
+                        <a href="#">Politique de confidentialité</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
