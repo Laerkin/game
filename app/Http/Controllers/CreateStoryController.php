@@ -4,9 +4,14 @@ use Redirect;
 use Request;
 use App\Http\Requests;
 use App\Model\Story;
+use Illuminate\Support\Facades\Auth;
 use Validator;
 class CreateStoryController extends Controller
 {
+    public function __construct(){
+            $this->middleware('guest');
+        }
+
     public function index() {
         return view('create_story.index');
     }
@@ -45,6 +50,7 @@ class CreateStoryController extends Controller
         $story->difficulte = $values['difficulte'];
         $story->genre = $values['genre'];
         $story->publish = $values['publish'];
+        $story->users_id = Auth::id();
         // $story->date = $values['date'];
         $story->save();
         return view('create_story.index')
