@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Model\Personnage;
 use Request;
-use Response;
 use Image;
 use Redirect;
 use Validator;
@@ -21,7 +20,7 @@ class CharacterManagerController extends Controller
     	$rules = [
     		'name' => 'string|required',
     		'character-image' => 'image|required',
-    		'bio' => 'string|max:255|nullable',
+    		'bio' => 'string|max:255|required',
     	];
 
     	$validator = Validator::make($values, $rules, [
@@ -31,13 +30,12 @@ class CharacterManagerController extends Controller
     		'character-image.image' => 'Image invalide',
     		'bio.string' => 'Texte invalide.',
     		'bio.max:255' => 'Votre texte est trop long.',
+    		'bio.required' => 'Vous devez remplir ce champ.',
     	]);
 
 		if($validator->fails()){
 
-    		return Redirect::back()
-    							->withErrors($validator)
-    							->withInput();
+    		return Redirect('/character-manager')->withErrors($validator)->withInput();
     	}
 
 
