@@ -14,13 +14,13 @@
         </thead>
 
         <tbody>
-            @foreach($users as $user)
+            @foreach($stats as $stat)
             <tr>
-                <td>{{$user->user_id}}</td>
+                <td>{{$stat->users_id}}</td>
 
-                <td>{{$user->score}}</td>
+                <td>{{$stat->score}}</td>
 
-                <td>{{$user->type}}</td>
+                <td>{{$stat->type}}</td>
 
 
             </tr>

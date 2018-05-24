@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Stats;
+use App\Model\Stats;
 
 class classementController extends Controller
 {
