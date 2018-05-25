@@ -671,3 +671,5 @@ function placeMarker(location, map) {
     var geocoder = new google.maps.Geocoder;
     geocodeLatLng(geocoder, map, location.lat(), location.lng());
 }
+
+

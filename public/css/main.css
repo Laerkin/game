@@ -1,40 +1,58 @@
-#map{
-    height: 59vh;
-    width: 10%;
-    margin-top: 1%;
-    border-style: solid white 4px;
-    border-radius: 3px;
-}
-
-a{
+/* Fonts */
+a, label{
     font-family: 'Neuton', serif;
-}
 
+}
 p{
     font-family: 'Montserrat', serif;
 }
 
+/* Formulaire */
+form{
+    background-color: #00bcd4;
+    border-radius: 4px;
+}
+button{
+    background-color:#d8c15e;
+}
+.form-group{
+    position: relative;
+}
+
+
+/* Carte */
+#map{
+    height: 65vh;
+    width: 10%;
+    border-radius: 4px;
+}
 
 
 
+
+
+
+
+/* Footer */
 footer{
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 8vh;
+    height: 6vh;
     background-color: #005d6e;
-    color: #bfd6db;
+    color: #9fc0c6;
     text-align: center;
+    box-shadow: 0 -.5rem 1rem rgba(0,0,0,.15);
 }
 .align-items-center{
-    margin-top: 2vh;
+    margin-top: 1vh;
 }
 .design a{
-    color: #bfd6db;
+    color: #9fc0c6;
 }
 .design a:hover {
     text-decoration: none;
-    color: white;
+    color: #bfd6db;
 }
 
