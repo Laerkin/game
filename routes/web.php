@@ -31,7 +31,7 @@ Route::get('/logout', function() {
 // Routes editeur
 
 Route::get('edit', 'editeurController@index');
-Route::post('edit', 'editeurController@index');
+Route::post('edit', 'editeurController@store');
 
 
 
@@ -62,10 +62,7 @@ Route::post('/audio', 'audioController@store');
 Route::get('/video', 'videoController@index');
 Route::post('/video', 'videoController@store');
 
-/** EDITEUR FORMULAIRE BASIQUE */
-Route::get('/edit', function () {
-    return view('editeur.index');
-});
+
 
 /** EDITEUR FORMULAIRE BASIQUE */
 Route::get('/editor2', function () {
@@ -75,9 +72,7 @@ Route::get('/editor2', function () {
 
 
 
-// Create Story
-Route::get('/editor', 'CreateStoryController@index');
-Route::post('/editor', 'CreateStoryController@store');
+
 
 
 // rich text routes

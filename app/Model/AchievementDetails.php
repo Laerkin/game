@@ -53,7 +53,8 @@ class AchievementDetails extends Model
      */
     public static function getUnsyncedByAchiever($achiever)
     {
-        $achievements = AchievementProgress::where('achiever_type', get_class($achiever))
+        $className = (new static)->getAchieverClassName($achiever);
+        $achievements = AchievementProgress::where('achiever_type',$className)
                                            ->where('achiever_id', $achiever->id)->get();
         $synced_ids = $achievements->map(function ($el) {
             return $el->achievement_id;

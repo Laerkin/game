@@ -8,31 +8,24 @@ use App\Http\Requests;
 use App\Model\Story;
 use Validator;
 use App\Achievements\UserMadeAStory;
-use Auth;
 
 
 
 
-class editeurController extends Controller
+class egfzbf extends Controller
 {
     public function index()
     {
-
-        $user = Auth::user();
-echo "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee";
-        echo $user->unlock(new UserMadeAStory());
-        echo "ppppppppppppppppppppppppppppppp";
-        exit;
         return view('editeur.index');
-
     }
 
     public function store()
     {
+        $user = Auth::user();
 
+        $user->unlock(new UserMadeAStory());
 
-
-
+        exit;
 
         $values = Request::all();
         // la regarde le contenu de values pour vérifier que tout est ok
@@ -87,4 +80,21 @@ echo "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee";
             ->with('successMessage', 'Création réussie !');
     }
 }
+//}
+//
+//function dd($toto)
+//{
+//    echo '<pre>';
+//    var_dump($toto);
+//    echo '</pre>';
+//    die();
+//}
 
+//
+//function dd($toto)
+//{
+//    echo '<pre>';
+//    var_dump($toto);
+//    echo '</pre>';
+//    die();
+//}
