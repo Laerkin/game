@@ -86,6 +86,15 @@
             </div>
         </div>
     </div>
+
+    <div class="foreground"></div>
+
+    <div class="midground">
+        <div class="tuna"></div>
+    </div>
+
+    <div class="background">
+    </div>
 </div>
 
 
