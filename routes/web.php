@@ -80,6 +80,7 @@ Route::get('/editor', 'CreateStoryController@index');
 Route::post('/editor', 'CreateStoryController@store');
 
 
+
 // rich text routes
 //summernote form
 Route::get('/richtext', function () {
@@ -97,3 +98,11 @@ Route::get('/richtext_display','richtextController@show')->name('richtextDispay'
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+// Create Map
+Route::get('/map', 'MapController@index');
+Route::post('/map', 'MapController@store');
+
+
+
+
