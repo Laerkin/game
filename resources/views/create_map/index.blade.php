@@ -43,7 +43,7 @@
                             <label for="latitude">{{ trans('create_map.form.latitude')}}</label>
                             <input type="text" class="form-control @if($errors->has('latitude')) is-invalid @endif" id="latitude" name="latitude" value="">
                         @if($errors->has('latitude'))
-                            <div class="invalid-tooltip w-50 h-50 mt-1">
+                            <div class="invalid-tooltip w-100 h-100 mt-1">
                                 <ul>
                                     @foreach( $errors->get('latitude') as $error)
                                         <li>{{ $error}}</li>
@@ -57,10 +57,10 @@
                             <input type="text" class="form-control @if($errors->has('longitude')) is-invalid @endif" id="longitude" name="longitude" value="">
 
                         @if($errors->has('longitude'))
-                            <div class="invalid-tooltip w-50 h-50 mt-1">
+                            <div class="invalid-tooltip w-100 h-100 mt-1">
                                 <ul>
                                     @foreach( $errors->get('longitude') as $error)
-                                        <li>{{ $error}}</li>
+                                        <li class="error-message">{{ $error}}</li>
                                     @endforeach
                                 </ul>
                             </div>

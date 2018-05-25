@@ -18,6 +18,14 @@ form{
     position: relative;
 }
 
+        @media all and (max-width: 900px)
+        {
+            .error-message
+            {
+                font-size: 0.8em;
+            }
+        }
+
 /* Bouton */
 button{
     background-color:#d8c15e;
