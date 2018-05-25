@@ -14,8 +14,6 @@ class classementController extends Controller
         return view('classement.index', compact('stats'));
     }
 
-
-
     public function __construct()
     {
         $this->middleware('guest');
