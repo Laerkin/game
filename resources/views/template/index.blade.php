@@ -34,7 +34,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 
         <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Neuton:700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Ubuntu:400,500,700" rel="stylesheet">
         <link rel="dns-prefetch" href="https://fonts.gstatic.com">
 
         <!-- Styles -->

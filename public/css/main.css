@@ -1,6 +1,7 @@
 /* Fonts */
 a, label{
-    font-family: 'Neuton', serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 700;
 
 }
 p{
@@ -12,12 +13,22 @@ form{
     background-color: #00bcd4;
     border-radius: 4px;
 }
-button{
-    background-color:#d8c15e;
-}
+/* Messages d'erreur */
 .form-group{
     position: relative;
 }
+
+/* Bouton */
+button{
+    background-color:#d8c15e;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 700;
+    color: white;
+}
+button:hover{
+    background-color:#fff38e;
+}
+
 
 
 /* Carte */
