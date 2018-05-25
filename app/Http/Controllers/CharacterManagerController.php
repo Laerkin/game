@@ -59,12 +59,13 @@ class CharacterManagerController extends Controller
 		$img->save(public_path('/user/characters/' . $image_name.'.'.$ext));
 
 		$path = 'user/characters/'.$image_name.'.'.$ext;
+		$bio = $values['bio'];
 
 		$character = new Personnage();
 
 		$character->name = $values['name'];
 		$character->path = $path;
-		$character->bio = $values['bio'];
+		$character->bio = $bio;
 
 		/*A adapter pour plus tard */
 		$character->users_id = 1;
@@ -73,7 +74,8 @@ class CharacterManagerController extends Controller
 
 		return view('character-manager.index')
 		->with('successMessage', 'Votre personnage à bien était enregistré.')
-		->with('path', $path);
+		->with('path', $path)
+		->with('bio', $bio);
 
 	}
 

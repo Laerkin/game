@@ -1,74 +1,91 @@
 @extends('template.index')
  
   @section('content')
-  @if(!empty($successMessage) )
-  <p>{{ $successMessage }}</p>
-@endif
-
-    <div class="">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="create"> <h1> Creer un personnage </h1> </div>
-
-              <div class="row my-1 h-25" id="characterCreatorForm">
-
-                <form action="/add-character" id="personnage" method="POST" enctype="multipart/form-data">
-                @csrf
-                <div class="form-group">
-                  <label for="name"> Nom/prenom </label>
-                  <input type="text" id="name" name="name" class="form-control">
-                  @if($errors->has('name'))
-                    <span class="help-block" style="color: red;">
-                      <ul>  
-                        @foreach ( $errors->get('name') as $error)
-                          <li>{{$error}}</li>
-                        @endforeach
-                      </ul>
-                    </span>
-                  @endif
-                </div>
-                <div class="form-group">
-                  <label for="character-image"> image </label>
-                  <input type="file" id="character-image" name="character-image" class="form-control">
-                  @if($errors->has('character-image'))
-                    <span class="help-block" style="color: red;">
-                      <ul>  
-                        @foreach ( $errors->get('character-image') as $error)
-                          <li>{{$error}}</li>
-                        @endforeach
-                      </ul>
-                    </span>
-                  @endif
-                </div>
-                <div class="form-group">
-                  <label for="bio"> biographie/présentation </label>
-                  <input type="text" id="bio" name="bio" class="form-control">
-                  @if($errors->has('bio'))
-                    <span class="help-block" style="color: red;">
-                      <ul>  
-                        @foreach ( $errors->get('bio') as $error)
-                          <li>{{$error}}</li>
-                        @endforeach
-                      </ul>
-                    </span>
-                  @endif
-                </div>
-                <button class="btn btn-primary">Envoyer</button>
-              </form>
-
-              </div>
-          </div>
-          <div class="col-md-6">
-            <div class="create"> <h1> Votre personnage </h1> </div>
-              <div class="row my-1 h-25" id="preview">
-                @if(!empty($path))
-                   <img src="{{url($path)}}" alt="Image"/>
+      <div class="container">
+        <section>
+          <div class="row justify-content-between mt-5">
+            <form action="/add-character" class=" needs-validation col-md-4 " id="personnage" method="POST" enctype="multipart/form-data" no-validate>
+              @csrf
+              <label>Creer un personnage</label>
+              <div class="form-group">
+                <label for="name"> Nom/prenom </label>
+                <input type="text" id="name" name="name" class="form-control @if($errors->has('name')) is-invalid @endif" >
+                @if($errors->has('name'))
+                  <div class="invalid-tooltip mt-2">
+                    <ul>  
+                      @foreach ( $errors->get('name') as $error)
+                        <li>{{$error}}</li>
+                      @endforeach
+                    </ul>
+                  </div>
                 @endif
               </div>
+              <div class="form-group">
+                <label for="character-image"> image </label>
+                <input type="file" id="character-image" name="character-image" class="form-control  @if($errors->has('character-image')) is-invalid @endif">
+                @if($errors->has('character-image'))
+                  <div class="invalid-tooltip mt-2">
+                    <ul>  
+                        @foreach ( $errors->get('character-image') as $error)
+                        <li>{{$error}}</li>
+                      @endforeach
+                    </ul>
+                  </div>
+                @endif
+              </div>
+              <div class="form-group">
+                <label for="bio"> biographie/présentation </label>
+                <input type="text" id="bio" name="bio" class="form-control @if($errors->has('bio')) is-invalid @endif">
+                @if($errors->has('bio'))
+                  <div class="invalid-tooltip mt-2">
+                    <ul>  
+                      @foreach ( $errors->get('bio') as $error)
+                        <li>{{$error}}</li>
+                      @endforeach
+                    </ul>
+                  </div>
+                @endif
+              </div>
+              <button class="btn btn-primary btn-block shadow mb-3">Envoyer</button>
+            </form>
+            <div class="col-md-8">
+              <div class="row" id="preview">
+                <div class="mx-auto m-5" id="display-character"> 
+                  <h5> Votre personnage </h5> 
+                  @if(!empty($path))
+                    <img src="{{url($path)}}" class="rounded-circle" alt="Avatar envoyé"/>
+                  <div class="alert alert-info mt-3 w-25" role="alert">
+                    <p>{{ $successMessage }}</p>
+                  </div>
+                  <div class="alert alert-secondary mt-3 w-25"  role="alert">
+                  <p>{{$bio}}</p>
+                  </div>
+                  @endif
+                </div>
+              </div>  
+            </div>
           </div>
-        </div>
+        </section>
       </div>
-    </div>
+<!-- <script>
+    $(function(){
+      $('#personnage').click(function(e){
+        e.preventDefault();
+        console.log('click sur le bouton envoi');
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+          }
+      });
+        $.ajax({ 
+            method: "POST",
+            url: "/add-character",
+            data:$(this).serialize(),
+            datatype: "json",
+        })
 
+      });
+    }
+
+  </script> -->
   @endsection
