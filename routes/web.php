@@ -31,7 +31,7 @@ Route::get('/logout', function() {
 // Routes editeur
 
 Route::get('edit', 'editeurController@index');
-Route::post('edit', 'editeurController@index');
+Route::post('edit', 'editeurController@store');
 
 
 
