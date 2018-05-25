@@ -62,22 +62,13 @@ Route::post('/audio', 'audioController@store');
 Route::get('/video', 'videoController@index');
 Route::post('/video', 'videoController@store');
 
-/** EDITEUR FORMULAIRE BASIQUE */
+/** EDITEUR */
 Route::get('/edit', function () {
     return view('editeur.index');
 });
 
-/** EDITEUR FORMULAIRE BASIQUE */
-Route::get('/editor2', function () {
-    return view('editeur.2index');
-});
 
 
-
-
-// Create Story
-Route::get('/editor', 'CreateStoryController@index');
-Route::post('/editor', 'CreateStoryController@store');
 
 
 
@@ -99,9 +90,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-// Create Map
-Route::get('/map', 'MapController@index');
-Route::post('/map', 'MapController@store');
+
 
 
 
