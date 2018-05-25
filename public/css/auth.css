@@ -17,9 +17,17 @@ body, .form-control{
 }
 
 .card-body {
-    background-image:linear-gradient(#00bcd4, #62efff);
+    background-image:linear-gradient(#00BCD4, #62EFFF);
     font-family: 'Montserrat', sans-serif;
 }
+
+
+.btn{
+    background-color: #E1ED61;
+    color: black;
+}
+
+
 
 
 /* Chat */
@@ -71,18 +79,18 @@ body, .form-control{
 }
 
 .background {
-    /*background-image:*/
-            /*url(http://stash.rachelnabors.com/24ways2012/background_mountain5.png),*/
-            /*url(http://stash.rachelnabors.com/24ways2012/background_mountain4.png),*/
-            /*url(http://stash.rachelnabors.com/24ways2012/background_mountain3.png),*/
-            /*url(http://stash.rachelnabors.com/24ways2012/background_mountain2.png),*/
-            /*url(http://stash.rachelnabors.com/24ways2012/background_mountain1.png);*/
     background-image:
-            url(https://image.noelshack.com/fichiers/2018/21/5/1527233299-background-mountain511.png),
-            url(https://image.noelshack.com/fichiers/2018/21/5/1527233299-background-mountain411.png),
-            url(https://image.noelshack.com/fichiers/2018/21/5/1527233299-background-mountain311.png),
-            url(https://image.noelshack.com/fichiers/2018/21/5/1527233299-background-mountain211.png),
-            url(https://image.noelshack.com/fichiers/2018/21/5/1527233299-background-mountain111.png);
+            url(http://stash.rachelnabors.com/24ways2012/background_mountain5.png),
+            url(http://stash.rachelnabors.com/24ways2012/background_mountain4.png),
+            url(http://stash.rachelnabors.com/24ways2012/background_mountain3.png),
+            url(http://stash.rachelnabors.com/24ways2012/background_mountain2.png),
+            url(http://stash.rachelnabors.com/24ways2012/background_mountain1.png);
+    /*background-image:*/
+            /*url(https://image.noelshack.com/fichiers/2018/21/5/1527233299-background-mountain511.png),*/
+            /*url(https://image.noelshack.com/fichiers/2018/21/5/1527233299-background-mountain411.png),*/
+            /*url(https://image.noelshack.com/fichiers/2018/21/5/1527233299-background-mountain311.png),*/
+            /*url(https://image.noelshack.com/fichiers/2018/21/5/1527233299-background-mountain211.png),*/
+            /*url(https://image.noelshack.com/fichiers/2018/21/5/1527233299-background-mountain111.png);*/
     background-repeat: repeat-x;
     background-position: 0 100%;
     z-index: 1;

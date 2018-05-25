@@ -24,7 +24,7 @@ Route::get('/', function () {
 });
 Route::get('/logout', function() {
     Auth::logout();
-    return view('welcome');
+    return view('landing');
 });
 
 
@@ -32,7 +32,6 @@ Route::get('/logout', function() {
 
 Route::get('edit', 'editeurController@index');
 Route::post('edit', 'editeurController@index');
-
 
 
 
