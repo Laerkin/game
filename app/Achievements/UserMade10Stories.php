@@ -24,14 +24,16 @@ class UserMade10Stories extends Achievement
 
     public function whenProgress($progress)
     {
-
+        echo " <script> alert(
+                'Super ! Vous avezfait une histoire ! encore quelques une pour le trophé'
+            );</script>";
     }
 
     public function whenUnlocked($progress)
     {
         echo " <script> swal({
                 title: 'Awesome !',
-                text: 'You Unlocked {!! Session::get('achievement') !!}  Achievment',
+                text: 'Vous avez débloquer le trophé {!! Session::get('achievement') !!}',
                 type: 'success'
             });</script>";
     }
