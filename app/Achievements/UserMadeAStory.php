@@ -14,7 +14,7 @@ class UserMadeAStory extends Achievement
 
     public $description = 'WoW !1 aventures créée ! GG !';
 
-    //montant de pts requis pour l'achiev
+    //montant de pts requis pour l'achievementUnlocked
 
     public $points = 1;
 

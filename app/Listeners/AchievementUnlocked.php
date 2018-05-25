@@ -6,7 +6,7 @@ use Gstt\Achievements\Event\Unlocked;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
-class achiev
+class achievementUnlocked
 {
     /**
      * Create the event listener.

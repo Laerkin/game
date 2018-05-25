@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Achievements\UserMade10Stories;
 use Redirect;
 use Request;
 use App\Http\Requests;
 use App\Model\Story;
 use Validator;
 use App\Achievements\UserMadeAStory;
+use App\Achievements\UserMade10Posts;
 use Auth;
 
 
@@ -17,14 +19,7 @@ class editeurController extends Controller
 {
     public function index()
     {
-
-        $user = Auth::user();
-echo "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee";
-        echo $user->unlock(new UserMadeAStory());
-        echo "ppppppppppppppppppppppppppppppp";
-        exit;
         return view('editeur.index');
-
     }
 
     public function store()
@@ -81,6 +76,7 @@ echo "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee";
         $user = Auth::user();
 
         $user->unlock(new UserMadeAStory());
+        $user->addProgress(new UserMade10Stories(), 1); // Adds 1 point of progress to the UserMade10Posts achievement
 
 
         return view('editeur.index')
