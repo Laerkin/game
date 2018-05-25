@@ -1,7 +1,7 @@
 /* Fonts */
 a, label{
     font-family: 'Ubuntu', sans-serif;
-    font-size: 700;
+    font-weight:bold;
 
 }
 p{
@@ -22,7 +22,7 @@ form{
 button{
     background-color:#d8c15e;
     font-family: 'Ubuntu', sans-serif;
-    font-size: 700;
+    font-weight:bold;
     color: white;
 }
 button:hover{
@@ -47,15 +47,18 @@ button:hover{
 /* Footer */
 footer{
     position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 6vh;
+    margin:0;
+    padding:0;
+    bottom:0;
+    width:100%;
+
     background-color: #005d6e;
     color: #9fc0c6;
     text-align: center;
     box-shadow: 0 -.5rem 1rem rgba(0,0,0,.15);
+    min-height:22px;
 }
+
 .align-items-center{
     margin-top: 1vh;
 }
