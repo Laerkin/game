@@ -1,10 +1,10 @@
 <div class="container">
     <section>
-        <div class="row justify-content-between mt-5">
-            <form method="POST" action="" class="needs-validation col-md-4" novalidate>
+        <div class="row justify-content-between ">
+            <form id="frmAddLoc" class="needs-validation col-md-4" novalidate method="POST">
                 @csrf
                 <div class="form-group">
-                    <label class="mt-2" for="intitule">{{ trans('create_map.form.title')}}</label>
+                    <label class="mt-2" for="intitule">{{ trans('create_map.form.intitule')}}</label>
                     <input type="text" class="form-control @if($errors->has('intitule')) is-invalid @endif" id="intitule" name="intitule">
                     @if($errors->has('intitule'))
                         <div class="invalid-tooltip mt-2">
@@ -23,7 +23,7 @@
                         <option value="silver">Silver</option>
                         <option value="night">Night</option>
                         <option value="retro">Retro</option>
-                        <option value="zombie">Zombie Attack</option>
+                        <option value="apocalypse">Apocalypse</option>
                     </select>
                     @if($errors->has('style'))
                         <div class="invalid-tooltip mt-2">
@@ -76,16 +76,16 @@
                         </div>
                     @endif
                 </div>
-                <button type="submit" class="btn btn-default btn-block shadow mb-3">{{ trans('create_story.form.save')}}</button>
+                <button type="submit" class="reload-form btn btn-default btn-block shadow mb-3">{{ trans('create_story.form.save')}}</button>
             </form>
-            <div id="map" class="col-md-7">
+            <div id="map" class="col-12 col-md-7">
                 {{-- Implantation de la carte --}}
             </div>
         </div>
         <div class="row">
             <div class="col-md-12">
                 @if ( !empty($successMessage) )
-                    <div class="alert alert-success text-center shadow mt-3" role="alert">
+                    <div class="hidden alert alert-info text-center shadow mt-3" role="alert">
                         {{ $successMessage }}
                         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
@@ -99,6 +99,50 @@
 
 
 <script>
+    $(document).ready(function(){
+
+        $('#frmAddLoc').submit(function(element){
+
+            // On bloque l'envoi "standard" du formulaire
+            element.preventDefault();
+
+            //serialize permet de créer la chaîne de paramètres
+            // console.log($('form').serialize());
+            $.ajaxSetup({
+                headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+            });
+            $.ajax({
+                url: '/saveloc',
+                type: 'POST',
+                data: $(this).serialize(),
+                dataType: 'json',
+
+                success: function(data) {
+                    console.log('ok');
+                    // On fait apparaitre le message succes provenant du controleur
+                    $('.alert-info').removeClass('hidden');
+                },
+                error: function(data) {
+                    console.log('no');
+                    // On fait apparaitre le message error provenant du controleur
+                    $('.invalid-tooltip').removeClass('hidden');
+                }
+            });
+        });
+    });
+
+
+
+
+
+
+
+
+
+
+
     // Example starter JavaScript for disabling form submissions if there are invalid fields
     (function() {
         'use strict';

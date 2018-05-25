@@ -51,7 +51,7 @@ jQuery(document).ready(function($) {
 
 
 
-    console.log($story);
+    //console.log($story);
 
 
 
@@ -68,7 +68,7 @@ jQuery(document).ready(function($) {
         });
 
         $('#editContent > div').each(function ($id, $content) {
-            console.log($this);
+           // console.log($this);
 
             if ($id == $this) {
 
@@ -84,7 +84,7 @@ jQuery(document).ready(function($) {
     });
 
     $('#editContent > div').each(function ($id, $content) {
-        if ($content.id !== 'slides') {
+        if ($content.id !== 'loc') {
             $(this).css('visibility', 'hidden');
             $(this).css('position', 'absolute');
         }

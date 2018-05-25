@@ -30,8 +30,9 @@ Route::get('/logout', function() {
 
 // Routes editeur
 
-Route::get('edit', 'editeurController@index');
-Route::post('edit', 'editeurController@store');
+Route::get('/edit', 'editeurController@index');
+Route::post('/saveloc', 'editeurController@store');
+
 
 
 
@@ -62,10 +63,7 @@ Route::post('/audio', 'audioController@store');
 Route::get('/video', 'videoController@index');
 Route::post('/video', 'videoController@store');
 
-/** EDITEUR */
-Route::get('/edit', function () {
-    return view('editeur.index');
-});
+
 
 
 

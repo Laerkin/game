@@ -15,6 +15,7 @@ class editeurController extends Controller
     }
 
     public function store() {
+
         $values = Request::all();
         // je regarde le contenu de values pour vérifier que tout est ok
         $rules = [
@@ -40,10 +41,8 @@ class editeurController extends Controller
 
         if($validator->fails())
         {
+            return response()->json($validator->customMessages);
 
-            return Redirect::back()
-                ->withErrors($validator)
-                ->withInput();
         }
 
         $story = new Story();
@@ -60,8 +59,7 @@ class editeurController extends Controller
 
         $story->save();
 
-        return view('editeur.index')
-            ->with('successMessage', 'Création réussie !');
+        return response()->json('toto');
     }
 }
 

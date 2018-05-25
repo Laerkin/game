@@ -12,7 +12,7 @@ use Validator;
 class MapController extends Controller
 {
     public function index() {
-        return view('create_map.index');
+        return view('loc.index');
 
     }
 
@@ -45,13 +45,13 @@ class MapController extends Controller
 
         if($validator->fails())
         {
-
-            return redirect()->back()
-                ->withErrors($validator)
-                ->withInput();
-
-
+            return response()
+                    ->json($validator->customMessages);
+            // return response()
+            //         ->json(['errors'=>$validator->errors()]);
         }
+
+
 
 
         $map = new Map();
@@ -64,8 +64,18 @@ class MapController extends Controller
 
         $map->save();
 
-        return view('create_map.index')
-                    ->with('successMessage', 'Création réussie !');
+        $map_json = [
+            'intitule' => $values['intitule'],
+            'style' => $values['style'],
+            'longitude' => $values['longitude'],
+            'latitude' => $values['latitude'],
+            'adresse' => $values['adresse'],
+        ];
+
+
+        return response()
+                ->json($map_json)
+                ->with('successMessage', 'Création réussie !');
     }
 }
 
