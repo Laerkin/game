@@ -1,3 +1,37 @@
+/* Fonts */
+a, label{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 700;
+}
+p{
+    font-family: 'Montserrat', serif;
+}
+
+/* Formulaire */
+form{
+    border-radius: 4px;
+}
+
+/* Messages d'erreur */
+.form-group{
+    position: relative;
+}
+
+/* Bouton */
+button{
+    background-color:#d8c15e;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 700;
+    color: white;
+}
+button:hover{
+    background-color:#fff38e;
+}
+
+
+
+
+
 body, .form-control{
     background-color: #F5F5F5;
 }
@@ -10,26 +44,24 @@ body, .form-control{
 .card-header {
     color: #F5F5F5;
     background-color: #008ba3;
-    font-family: 'Neuton', serif;
+    font-family: 'Ubuntu', sans-serif;
     font-size: 1.4em;
     font-weight: bold;
     border-bottom: 3px solid rgba(160,160,160, 0.4);
 }
 
-.card-body {
+.form-user {
     background-image:linear-gradient(#00BCD4, #62EFFF);
     font-family: 'Montserrat', sans-serif;
 }
 
 
 .btn{
-    background-color: #E1ED61;
+    background-color: #d8c15e;
     color: black;
 }
 
-input:focus {
-    background-color: yellow;
-}
+
 
 
 

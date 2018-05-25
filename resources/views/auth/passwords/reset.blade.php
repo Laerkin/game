@@ -7,7 +7,7 @@
             <div class="card">
                 <div class="card-header">{{ trans('auth.resetPassword') }}</div>
 
-                <div class="card-body">
+                <div class="card-body form-user">
                     <form method="POST" action="{{ route('password.request') }}">
                         @csrf
 

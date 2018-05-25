@@ -7,7 +7,7 @@
             <div class="card">
                 <div class="card-header">{{ trans('auth.resetPassword') }}</div>
 
-                <div class="card-body">
+                <div class="card-body form-user">
                     @if (session('status'))
                         <div class="alert alert-success">
                             {{ session('status') }}
@@ -33,7 +33,7 @@
 
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-light">
+                                <button type="submit" class="btn">
                                     {{ trans('auth.resetMail') }}
                                 </button>
                             </div>
