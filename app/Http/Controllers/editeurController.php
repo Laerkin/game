@@ -2,14 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use App\Achievements\UserMade10Stories;
 use Redirect;
 use Request;
 use App\Http\Requests;
 use App\Model\Story;
 use Validator;
 use App\Achievements\UserMadeAStory;
-use App\Achievements\UserMade10Posts;
+use App\Achievements\UserMade10Stories;
 use Auth;
 
 
@@ -24,10 +23,6 @@ class editeurController extends Controller
 
     public function store()
     {
-
-
-
-
 
         $values = Request::all();
         // la regarde le contenu de values pour vérifier que tout est ok
