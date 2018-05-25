@@ -2,11 +2,11 @@
 
 namespace App\Listeners;
 
+use Session;
+use Gstt\Achievements\Model\AchievementProgress;
 use Gstt\Achievements\Event\Unlocked;
-use Illuminate\Queue\InteractsWithQueue;
-use Illuminate\Contracts\Queue\ShouldQueue;
 
-class achievementUnlocked
+class AchievementUnlocked
 {
     /**
      * Create the event listener.
@@ -21,11 +21,12 @@ class achievementUnlocked
     /**
      * Handle the event.
      *
-     * @param  object  $event
+     * @param  Object  $event
      * @return void
      */
     public function handle(Unlocked $event)
     {
+        // There's an AchievementProgress instance located on $event->progress
         Session::flash('achievement', $event->progress->details->name);
     }
 }

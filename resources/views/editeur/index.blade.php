@@ -20,4 +20,5 @@
 
 <script src="{{ asset('js/edit.js') }}" defer></script>
 <link href="{{ asset('css/edit.css') }}" rel="stylesheet">
+
 @endsection

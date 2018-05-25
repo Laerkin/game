@@ -20,4 +20,19 @@ class UserMade10Stories extends Achievement
      * The amount of "points" this user need to obtain in order to complete this achievement
      */
     public $points = 10;
+
+
+    public function whenProgress($progress)
+    {
+
+    }
+
+    public function whenUnlocked($progress)
+    {
+        echo " <script> swal({
+                title: 'Awesome !',
+                text: 'You Unlocked {!! Session::get('achievement') !!}  Achievment',
+                type: 'success'
+            });</script>";
+    }
 }

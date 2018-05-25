@@ -83,11 +83,13 @@
                     </div>
                 </div>
                 <input id="publish" name="publish" type="hidden" value="0">
-                <button type="submit" class="btn btn-outline-success btn-block">{{ trans('create_story.form.save')}}</button>
+                <button type="submit" class="yolo btn btn-outline-success btn-block">{{ trans('create_story.form.save')}}</button>
             </form>
             <div class="row">
                 <div class="col-md-12">
+
                     @if ( !empty($successMessage) )
+
                         <div class="alert alert-success text-center shadow" role="alert">
                             {{ $successMessage }}
                             <button type="button" class="close" data-dismiss="alert" aria-label="Close">

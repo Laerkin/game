@@ -84,7 +84,7 @@ jQuery(document).ready(function($) {
     });
 
     $('#editContent > div').each(function ($id, $content) {
-        if ($content.id !== 'slides') {
+        if ($content.id !== 'basic') {
             $(this).css('visibility', 'hidden');
             $(this).css('position', 'absolute');
         }
@@ -112,6 +112,17 @@ jQuery(document).ready(function($) {
         alert("e");
 
     });
+
+
+
+        $('.yolo').click(function($e) {
+
+            $e.preventDefault();
+
+
+        });
+
+
 
 
 });

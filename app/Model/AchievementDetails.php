@@ -62,5 +62,19 @@ class AchievementDetails extends Model
 
         return self::whereNotIn('id', $synced_ids);
     }
+    /**
+   * Gets model morph name
+    *
+     * @param \Illuminate\Database\Eloquent\Model $achiever
+     * @return string
+     */
+    protected function getAchieverClassName($achiever)
+    {
+        if ($achiever instanceof \Illuminate\Database\Eloquent\Model) {
+            return $achiever->getMorphClass();
+        }
+
+        return get_class($achiever);
+    }
 
 }

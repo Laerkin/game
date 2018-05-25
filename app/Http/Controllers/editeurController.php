@@ -76,11 +76,16 @@ class editeurController extends Controller
         $user = Auth::user();
 
         $user->unlock(new UserMadeAStory());
+
         $user->addProgress(new UserMade10Stories(), 1); // Adds 1 point of progress to the UserMade10Posts achievement
 
 
         return view('editeur.index')
             ->with('successMessage', 'Création réussie !');
+    }
+
+    protected function normalizeGuessedAbilityName($ability)
+    {
     }
 }
 

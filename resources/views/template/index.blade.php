@@ -72,7 +72,7 @@
 
 
     @section('footer')
-
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
         <div class="footer">
             <p>Footer</p>
         </div>
