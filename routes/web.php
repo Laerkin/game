@@ -96,3 +96,13 @@ Route::get('/richtext_display','richtextController@show')->name('richtextDispay'
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+
+
+
+// Mentions légales
+Route::get('/mentions', function () {
+    return view('mentions.index');
+});
+
