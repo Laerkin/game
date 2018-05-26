@@ -100,9 +100,7 @@
 
 <script>
     $(document).ready(function(){
-
         $('#frmAddLoc').submit(function(element){
-
             // On bloque l'envoi "standard" du formulaire
             element.preventDefault();
 
@@ -120,13 +118,13 @@
                 dataType: 'json',
 
                 success: function(data) {
-                    console.log('ok');
+                   alert('OK');
                     // On fait apparaitre le message succes provenant du controleur
                     $('.alert-info').removeClass('hidden');
                 },
                 error: function(data) {
-                    console.log('no');
-                    // On fait apparaitre le message error provenant du controleur
+                   alert('ERROR');
+                    // On fait apparaitre le(s) message(s) error provenant du controleur
                     $('.invalid-tooltip').removeClass('hidden');
                 }
             });

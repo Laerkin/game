@@ -27,7 +27,7 @@ class MapController extends Controller
             'adresse'    => 'string|required',
         ];
 
-
+        dd($values);
         $validator = Validator::make($values, $rules, [
             'intitule.string'     => 'Titre invalide.',
             'intitule.required'   => 'Titre requis.',

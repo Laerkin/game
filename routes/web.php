@@ -40,6 +40,8 @@ Route::post('/saveloc', 'editeurController@store');
 
 
 
+
+
 Route::get('/template', function () {
     return view('template.index');
 });
