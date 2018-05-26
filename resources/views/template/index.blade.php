@@ -65,7 +65,7 @@
                         <a class="nav-link" href="#">Récompenses</a>
                     </li>
                     <li class="nav-item">
-                            <a class="nav-link" href="#">Réglages</a>
+                            <a class="nav-link" href="#">Profil</a>
                         </li>
                 </ul>
             </div>
