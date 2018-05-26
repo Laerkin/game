@@ -33,6 +33,10 @@ Route::get('/logout', function() {
 Route::get('/edit', 'editeurController@index');
 Route::post('/saveloc', 'editeurController@store');
 
+// Route Effet Particles
+Route::get('/particles', function() {
+    return view('particles.index');
+});
 
 
 

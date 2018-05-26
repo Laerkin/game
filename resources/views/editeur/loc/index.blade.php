@@ -1,7 +1,7 @@
 <div class="container">
     <section>
         <div class="row justify-content-between ">
-            <form id="frmAddLoc" class="needs-validation col-md-4" novalidate method="POST">
+            <form id="frmAddLoc" class="needs-validation col-md-4" novalidate method="POST" action="">
                 @csrf
                 <div class="form-group">
                     <label class="mt-2" for="intitule">{{ trans('create_map.form.intitule')}}</label>
@@ -76,12 +76,13 @@
                         </div>
                     @endif
                 </div>
-                <button type="submit" class="reload-form btn btn-default btn-block shadow mb-3">{{ trans('create_story.form.save')}}</button>
+                <button type="submit" class="reload-form btn-form btn btn-default btn-block shadow mb-3">{{ trans('create_story.form.save')}}</button>
             </form>
             <div id="map" class="col-12 col-md-7">
-                {{-- Implantation de la carte --}}
+                {{-- Vue de la carte --}}
             </div>
         </div>
+
         <div class="row">
             <div class="col-md-12">
                 @if ( !empty($successMessage) )

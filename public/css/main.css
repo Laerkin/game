@@ -1,7 +1,7 @@
 /* Fonts */
 a, label{
     font-family: 'Ubuntu', sans-serif;
-    font-size: 700;
+    font-weight: 700;
 
 }
 p{
@@ -18,15 +18,25 @@ form{
     position: relative;
 }
 
-/* Bouton */
-button{
+/* Bouton Input "range" */
+.custom-range {
+    background-color: #d8c15e;
+
+}
+
+
+/* Bouton "submit" Formulaire */
+.btn-form{
     background-color:#d8c15e;
+    border-color:#d8c15e;
     font-family: 'Ubuntu', sans-serif;
-    font-size: 700;
+    font-weight: 700;
     color: white;
 }
-button:hover{
+.btn-form:hover{
     background-color:#fff38e;
+    border-color:#fff38e;
+    color: #00bcd4;
 }
 
 
