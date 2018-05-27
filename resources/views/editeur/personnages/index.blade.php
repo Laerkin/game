@@ -6,7 +6,7 @@
 
                 <div class="row my-1 h-25" id="characterCreatorForm">
 
-                    <form action="/add-character" id="personnage" method="POST" enctype="multipart/form-data">
+                    <form action="/character-manager" id="personnage" method="POST" enctype="multipart/form-data">
                         @csrf
                         <div class="form-group">
                             <label for="name"> Nom/prenom </label>

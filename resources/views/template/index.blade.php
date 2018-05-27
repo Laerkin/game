@@ -85,6 +85,10 @@
 
     @section('footer')
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<<<<<<< HEAD
+=======
+
+>>>>>>> ed7ecfe575d328fc39200a7d42513ce27581af3c
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <footer>
             <div class="container-fluid b">

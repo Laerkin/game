@@ -85,7 +85,7 @@ jQuery(document).ready(function($) {
 
     $('#editContent > div').each(function ($id, $content) {
 
-        
+
 
         if ($content.id !== 'loc') {
 
