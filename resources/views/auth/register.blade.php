@@ -118,4 +118,6 @@
 <script src="{{ asset('js/edit.js') }}" defer></script>
 
 
+
+
 @endsection
