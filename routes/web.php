@@ -90,8 +90,6 @@ Route::post('/richtext','richtextController@store')->name('richtextPersist');
 Route::get('/richtext_display','richtextController@show')->name('richtextDispay');
 
 
-Auth::routes();
-
 Route::get('/home', 'HomeController@index')->name('home');
 
 
