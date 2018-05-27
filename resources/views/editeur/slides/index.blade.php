@@ -15,10 +15,10 @@
                                 <i class="fas fa-plus"></i>
                             </button>
                         </div>
-                        <div class="row justify-content-md-center">
-                        <div class="slideLst ">
-                            {{-- Ajout des nouvelles slides --}}
-                        </div>
+                        <div class="row justify-content-center ">
+                            <div class="slideLst ">
+                                {{-- Ajout des nouvelles slides --}}
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -28,20 +28,20 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="row">
-                        <div class="col-md-12 d-flex justify-content-between p-0">
-                            <div class="toolItem col-2 m-1 p-2">
+                        <div class="col-md-12 d-flex justify-content-between mb-2 p-0">
+                            <div class="toolItem text-center col-2 p-2">
                                 <i class="fas fa-font"></i>
                             </div>
-                            <div class="toolItem col-2 p-2">
+                            <div class="toolItem text-center col-2 p-2">
                                 <i class="fas fa-image"></i>
                             </div>
-                            <div class="toolItem col-2 p-2">
+                            <div class="toolItem text-center col-2 p-2">
                                 <i class="fas fa-file-audio"></i>
                             </div>
-                            <div class="toolItem col-2 p-2">
+                            <div class="toolItem text-center col-2 p-2">
                                 <i class="fas fa-video"></i>
                             </div>
-                            <div class="toolItem col-2 p-2">
+                            <div class="toolItem text-center col-2 p-2">
                                 <i class="fas fa-user"></i>
                             </div>
                         </div>
@@ -53,7 +53,7 @@
                         </div>
                     </div>
                     <div class="row ">
-                        <div class="col-md-12 elementLst">
+                        <div class="col-md-12 mb-2 elementLst">
                             <div class="row elementItem">
                                 <div class="col-md-12">
                                     #Element ###
@@ -101,25 +101,45 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12 mt-2">
                     <div class="row">
-                        <div class="col-md-6">
-                            Localisation du slide :
-                            <div class="locItem">Bordeaux
-                                <button type="button" class="btn btn-warning">Modifier</button>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            Localisations suivantes :
-                            <div class="locItem">
-                                <div class="row">
-                                    <div class="col-md-6">Loc1</div>
-                                    <div class="col-md-6 d-flex justify-content-end">
-                                        <button type="button" class="btn btn-warning">Modifier</button>
-                                        <button type="button" class="btn btn-danger">Supprimer</button>
-                                    </div>
+                        <div class="col-md-4">
+                            <div class="row title1">
+                                <div class="col-md-12">
+                                    Localisation du slide :
                                 </div>
                             </div>
+                            <div class="row locItem">
+                                Bordeaux
+                                <button type="button" class="btn btn-warning">
+                                    Modifier
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-7 offset-md-1">
+                            <div class="row title1">
+                                <div class="col-md-12">
+                                    Localisations suivantes :
+                                </div>
+                            </div>
+                            <div class=" row locItem">
+                                <div class="col-md-6">
+                                    Loc1
+                                </div>
+                                <div class="col-md-6 d-flex justify-content-end">
+                                    <button type="button" class="btn btn-warning">
+                                        Modifier
+                                    </button>
+                                    <button type="button" class="btn btn-danger">
+                                        Supprimer
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+
+
                             <div class="locItem">
                                 <div class="row">
                                     <div class="col-md-6">Loc2</div>
