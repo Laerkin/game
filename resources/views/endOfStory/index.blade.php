@@ -2,34 +2,44 @@
 
 @section('content')
 
-    <div style="padding: 2%;" class="container-fluid">
-        <div class="row">
-        <div class="img col-md-6">
 
-        </div>
-        <div class="gg col-md-6">
 
-            <h1>BRAVO !</h1>
+    <div class="container">
+        <div class="row mt-3">
+            <div class="img-responsive img col-md-6">
+                {{-- Image --}}
+            </div>
+            <div class="gg col-md-6">
+                <h1>BRAVO !</h1>
+                <strong>Vous avez terminé cette aventure !</strong>
+                <br/>
+                <h2>Vous obtenez un trophée</h2>
 
-                 <h2> Vous avez terminé cette aventure !</h2>
-                 <br/>
-                 <h2>Vous obtenez un trophée "Votre première Aventure " !</h2>
-                 <br/>
-                 <h2>Vous gagnez aussi 1 point ! encore 4 pour la prochaine récompense !</h2>
-                 <br/>
+                <strong>Votre première aventure !</strong><br>
+                <button class="pulse-button"> <i class="fas fa-paper-plane"></i></button>
+                <br/>
+                <h2>Vous gagnez aussi 1 point ! encore 4 pour la prochaine récompense !</h2>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%;">
+                        1/5
+                    </div>
+                </div>
+                <br/>
 
                  <h3> Donnez une note à cette histoire ! </h3>
-                <label class="radio-inline"><input type="radio" name="optradio"> 1 </label>
+                <label class="radio-inline">
+                    <input type="radio" name="optradio"> 1 </label>
                 <label class="radio-inline"><input type="radio" name="optradio"> 2 </label>
                 <label class="radio-inline"><input type="radio" name="optradio"> 3 </label>
                 <label class="radio-inline"><input type="radio" name="optradio"> 4 </label>
                 <label class="radio-inline"><input type="radio" name="optradio"> 5 </label>
-                <button type="button" id="fake" class="btn btn-primary active"> Envoyez la note !</button>
+                <button type="button" id="fake" class="btn btn-default btn-note"> Envoyez la note !</button>
             <div class="success" style="display:none;"> Note envoyée ! merci pour votre soutien !</div>
 
 
         </div>
         </div>
+
     </div>
 
 
