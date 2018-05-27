@@ -109,11 +109,15 @@
                                     Localisation du slide :
                                 </div>
                             </div>
-                            <div class="row locItem">
-                                Bordeaux
-                                <button type="button" class="btn btn-warning">
-                                    Modifier
-                                </button>
+                            <div class="row justify-content-between locItem">
+                                <div class="col-md-6">
+                                    Bordeaux
+                                </div>
+                                <div class="col-md-3">
+                                    <button type="button" class="btn btn-warning">
+                                        Modifier
+                                    </button>
+                                </div>
                             </div>
                         </div>
 
@@ -123,48 +127,37 @@
                                     Localisations suivantes :
                                 </div>
                             </div>
-                            <div class=" row locItem">
-                                <div class="col-md-6">
-                                    Loc1
+                            <div class="locItem">
+                                    <div class="row">
+                                        <div class="col-md-6">Loc2</div>
+                                        <div class="col-md-6 d-flex justify-content-end">
+                                            <button type="button" class="btn btn-warning">Modifier</button>
+                                            <button type="button" class="btn btn-danger">Supprimer</button>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="col-md-6 d-flex justify-content-end">
-                                    <button type="button" class="btn btn-warning">
-                                        Modifier
-                                    </button>
-                                    <button type="button" class="btn btn-danger">
-                                        Supprimer
-                                    </button>
+                                <div class="locItem">
+                                    <div class="row">
+                                        <div class="col-md-6">Loc3</div>
+                                        <div class="col-md-6 d-flex justify-content-end">
+                                            <button type="button" class="btn btn-warning">Modifier</button>
+                                            <button type="button" class="btn btn-danger">Supprimer</button>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
+                                <div class="row">
+                                    <div class="col-md-12 d-flex flex-column">
+                                        <button type="button" class="btn btn-default btn-addLoc" aria-label="Left Align">
+                                            <i class="fas fa-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
                         </div>
 
 
 
-                            <div class="locItem">
-                                <div class="row">
-                                    <div class="col-md-6">Loc2</div>
-                                    <div class="col-md-6 d-flex justify-content-end">
-                                        <button type="button" class="btn btn-warning">Modifier</button>
-                                        <button type="button" class="btn btn-danger">Supprimer</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="locItem">
-                                <div class="row">
-                                    <div class="col-md-6">Loc3</div>
-                                    <div class="col-md-6 d-flex justify-content-end">
-                                        <button type="button" class="btn btn-warning">Modifier</button>
-                                        <button type="button" class="btn btn-danger">Supprimer</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12 d-flex flex-column">
-                                    <button type="button" class="btn btn-default btn-addLoc" aria-label="Left Align">
-                                        <i class="fas fa-plus"></i>
-                                    </button>
-                                </div>
-                            </div>
+
+
                         </div>
                     </div>
                 </div>
