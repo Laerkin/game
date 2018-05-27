@@ -7,6 +7,7 @@ use Request;
 use App\Http\Requests;
 use App\Model\Story;
 use Validator;
+
 use App\Achievements\UserMadeAStory;
 use App\Achievements\UserMade10Stories;
 use Auth;
@@ -14,44 +15,48 @@ use Auth;
 
 
 
+
 class editeurController extends Controller
 {
-    public function index()
-    {
+    public function index() {
         return view('editeur.index');
     }
 
-    public function store()
-    {
+    public function store() {
 
         $values = Request::all();
-        // la regarde le contenu de values pour vérifier que tout est ok
+        // je regarde le contenu de values pour vérifier que tout est ok
         $rules = [
-            'titre' => 'string|required',
-            'synopsis' => 'string|required',
-            'genre' => 'integer|required',
+            'titre'      => 'string|required',
+            'synopsis'   => 'string|required',
+            'genre'      => 'integer|required' ,
             'difficulte' => 'integer|required',
-            'publish' => 'integer|boolean',
+            'publish'    => 'integer|boolean',
+
             // 'date'       => 'dateTime',
         ];
 
         $validator = Validator::make($values, $rules, [
-            'titre.string' => 'Titre invalide.',
-            'titre.required' => 'Titre requis.',
-            'synopsis.string' => 'Le synopsis est invalide.',
-            'synopsis.required' => 'Le synopsis est requis.',
-            'genre.integer' => 'Le genre est invalide.',
-            'genre.required' => 'Le genre est requis.',
-            'difficulte.integer' => 'La difficulté est invalide.',
+
+
+            'titre.string'        => 'Titre invalide.',
+            'titre.required'      => 'Titre requis.',
+            'synopsis.string'     => 'Le synopsis est invalide.',
+            'synopsis.required'   => 'Le synopsis est requis.',
+            'genre.integer'       => 'Le genre est invalide.',
+            'genre.required'      => 'Le genre est requis.',
+            'difficulte.integer'  => 'La difficulté est invalide.',
             'difficulte.required' => 'La difficulté est requise.',
         ]);
 
 
-        if ($validator->fails()) {
 
-            return Redirect::back()
-                ->withErrors($validator)
-                ->withInput();
+
+        if($validator->fails())
+        {
+            return response()->json($validator->customMessages);
+
+
         }
 
         $story = new Story();
@@ -68,6 +73,7 @@ class editeurController extends Controller
 
         $story->save();
 
+
         $user = Auth::user();
 
         $user->unlock(new UserMadeAStory());
@@ -81,6 +87,9 @@ class editeurController extends Controller
 
     protected function normalizeGuessedAbilityName($ability)
     {
+
+        return response()->json('toto');
+
     }
 }
 

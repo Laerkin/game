@@ -30,8 +30,20 @@ Route::get('/logout', function() {
 
 // Routes editeur
 
+
 Route::get('edit', 'editeurController@index');
 Route::post('edit', 'editeurController@store');
+
+Route::get('/edit', 'editeurController@index');
+Route::post('/saveloc', 'editeurController@store');
+
+// Route Effet Particles
+Route::get('/particles', function() {
+    return view('particles.index');
+});
+
+
+
 
 
 
@@ -64,10 +76,13 @@ Route::post('/video', 'videoController@store');
 
 
 
+
 /** EDITEUR */
 Route::get('/edit', function () {
     return view('editeur.index');
 });
+
+
 
 
 
@@ -84,6 +99,13 @@ Route::post('/richtext','richtextController@store')->name('richtextPersist');
 
 //summernote display route
 Route::get('/richtext_display','richtextController@show')->name('richtextDispay');
+
+/*Formulaire gestion personnage*/
+
+Route::get('/character-manager', 'CharacterManagerController@index');
+
+Route::post('/character-manager', 'CharacterManagerController@storeCharacter');
+
 
 
 

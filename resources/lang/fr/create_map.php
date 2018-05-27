@@ -1,7 +1,7 @@
 <?php
 return [
     'form' => [
-        'title'      => 'Titre de la carte',
+        'intitule'      => 'Nom du lieu',
         'slides'     => 'Slides',
         'adress'     => 'Adresse',
         'choice'     => 'Choix du slide',

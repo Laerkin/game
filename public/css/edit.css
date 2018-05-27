@@ -1,102 +1,164 @@
 
-#editContent{
-    margin-top:20px;
-
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 300px)  {
+    .container{
+        max-width: 95%;
+    }
 }
 
+#editContent{
+    margin-top:20px;
+}
+
+/* Gouttières entre blocs */
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+
+/* EDIT BASIC */
+
+/* Aside */
 .slideLst{
-display:flex;
-    flex-wrap: wrap;
-    align-content: flex-start;
-justify-content: flex-start;
-
-
-    border:1px solid lightgrey;
-    overflow-x: scroll;
-
-    height:500px;
-
-
-
+    display:flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        justify-content: center;
+        padding-right: 20px;
+    overflow-y: auto;
+    max-height: 296px;
+    border-radius: 4px;
+}
+.btnAddSlide{
+    background-color: #6076a4;
+    border-color: #6076a4;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    color: white;
+}
+.btnAddSlide:hover{
+    background-color: #6076a4;
+    border-color: #6076a4;
+    color: #00bcd4;
 }
 .slideItem{
     margin-left:20px;
     width:80px;
     height:80px;
-    border:1px solid black;
-    margin-top:4px;
+    /* border:4px solid #00bcd4; */
+    background-color:#00bcd4;
+    border-radius: 4px;
+    margin-top:10px;
 }
-
 .slideItem:hover{
     background-color:lightyellow;
 }
 
-.elementItem{
-    background-color:lightgrey;
-
-}
-
-.elementItem:hover{
-    background-color:lightgreen;
-    cursor:pointer;
-
-}
-
-.elementLst{
-
-    margin-bottom:10px;
-}
-
+/* Icones outils */
 .toolItem{
-    background-color:lightblue;
-    font-size:22px;
-
-    margin:0;
-    margin-right:3px;
-    margin-bottom:3px;
-    padding:0;
-    height:32px;
-    width:32px;
-    text-align:center;
+    background-color:#00bcd4;
+    border-radius: 4px;
+    font-size:16px;
 }
-
-
-
-
-
 .toolItem:hover{
-    background-color:lightgreen;
+    background-color:#62efff;
     cursor:pointer;
 
 }
 
-.b{
-    border:1px solid red;
-}
-
+/* Liste des éléments */
 .title1{
     font-size:16px;
     font-weight:bold;
-    background:lightcoral;
-
+    color: white;
+    background:#005d6e;
+    border-radius: 4px 4px 0px 0px;
+}
+.elementLst{
+    background-color:#00bcd4;
+    border-radius: 0px 0px 4px 4px;
 }
 
+.elementItem:hover{
+    background-color:#62efff;
+    cursor:pointer;
+}
+.elementItem:last-child:hover{
+    background-color:#62efff;
+    cursor:pointer;
+    border-radius: 0px 0px 4px 4px;
+}
+
+/* Option des éléments */
 .elementOptions{
-    background-color:lightgoldenrodyellow;
-    height:150px;
+    background-color:#00bcd4;
+    border-radius: 0px 0px 4px 4px;
+    height:100px;
+    overflow-y: auto;
 }
 
-
+/* Prévisualisation */
 .preview{
-    background-color: grey;
-    height:500px;
+    background-color: #6bd2d8;
+    border-radius: 4px;
+    height:321px;
 }
 
+/* Localisation */
 .locItem{
-    margin-top:4px;
+    background-color:#00bcd4;
+    border-radius: 0px 0px 4px 4px;
+    height: 116px;
+    overflow-y: auto;
 }
-
+.locItemSlide{
+    background-color:#00bcd4;
+    border-radius: 0px 0px 4px 4px;
+    height: 64px;
+    overflow-y: auto;
+}
 .btn-addLoc{
-    margin-top:10px;
+    background-color: #6076a4;
+    border-color: #6076a4;
+    color: white;
+}
+.btn-addLoc:hover{
+    background-color: #6076a4;
+    border-color: #6076a4;
+    color: #00bcd4;
 }
 
+/* Bouton Mofification location */
+.btn-editLoc{
+    background-color: #6076a4;
+    border-color: #6076a4;
+    color: #00bcd4;
+}
+.btn-editLoc:hover{
+    background-color: #6076a4;
+    border-color: #6076a4;
+    color: white;
+}
+
+/* Bouton suppression location */
+.btn-deleteLoc{
+    background-color:#e53935;
+    border-color:#e53935;
+    color: #00bcd4;
+}
+.btn-deleteLoc:hover{
+    background-color:#ba000d;
+    border-color:#ba000d;
+    color: white;
+}
+
+
+
+
+
+
+
+ .b{
+    border:1px solid red;
+}

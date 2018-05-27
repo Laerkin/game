@@ -31,6 +31,7 @@
         <!-- Map JS -->
         <script src="{{asset('js/map.js')}}"></script>
 
+
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 
@@ -64,7 +65,7 @@
                         <a class="nav-link" href="#">Récompenses</a>
                     </li>
                     <li class="nav-item">
-                            <a class="nav-link" href="#">Réglages</a>
+                            <a class="nav-link" href="#">Profil</a>
                         </li>
                 </ul>
             </div>
