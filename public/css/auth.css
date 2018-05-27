@@ -7,6 +7,68 @@ p{
     font-family: 'Montserrat', serif;
 }
 
+/* Formulaire */
+form{
+    border-radius: 4px;
+}
+
+/* Messages d'erreur */
+.form-group{
+    position: relative;
+}
+
+/* Bouton */
+button{
+    background-color:#d8c15e;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: bold;
+    color: white;
+}
+button:hover{
+    background-color:#fff38e;
+}
+
+
+
+/* Carte */
+#map{
+    height: 65vh;
+    width: 10%;
+    border-radius: 4px;
+}
+
+
+/* Footer */
+footer{
+    position: fixed;
+    margin:0;
+    padding:0;
+    bottom:0;
+    width:100%;
+    background-color: #005d6e;
+    color: #9fc0c6;
+    text-align: center;
+    box-shadow: 0 -.5rem 1rem rgba(0,0,0,.15);
+    min-height:22px;
+}
+
+.align-items-center{
+    margin-top: 1vh;
+}
+.design a{
+    color: #9fc0c6;
+}
+.design a:hover {
+    text-decoration: none;
+    color: #bfd6db;
+}
+
+
+
+
+
+
+>>>>>>> 585dc23e9da2c5a920c4849eece6335176d6096c
 body, .form-control{
     background-color: #F5F5F5;
 }
@@ -35,14 +97,14 @@ form{
 .card-header {
     color: #F5F5F5;
     background-color: #008ba3;
-    font-family: 'Neuton', serif;
+    font-family: 'Ubuntu', sans-serif;
     font-size: 1.4em;
     font-weight: bold;
     border-bottom: 3px solid rgba(160,160,160, 0.4);
 }
 
-.card-body {
-    background-image:linear-gradient(#00bcd4, #62efff);
+.form-user {
+    background-image:linear-gradient(#00BCD4, #62EFFF);
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -66,6 +128,19 @@ button{
 
 
 
+<<<<<<< HEAD
+=======
+.btn{
+    background-color: #d8c15e;
+    color: black;
+}
+
+
+
+
+
+
+>>>>>>> 585dc23e9da2c5a920c4849eece6335176d6096c
 /* CHAT MARCHE */
 /*
 .tuna {
@@ -77,19 +152,31 @@ button{
     bottom: 1px;
     left: 50%;
     margin-left: -200px;
+<<<<<<< HEAD
     transform: translateZ(0); /
 }
 */
 
+=======
+    transform: translateZ(0);
+}
+>>>>>>> 585dc23e9da2c5a920c4849eece6335176d6096c
 @keyframes walk-cycle {
     0% {background-position: 0 0; }
     100% {background-position: 0 -2391px; }
 }
+*/
 
+<<<<<<< HEAD
 
 /* CHAT COURSE */
 .tuna {
     animation: walk-cycle 1s steps(12) 2, walk-to-run .75s steps(12) 2s 1, run-cycle .75s steps(13) 2.75s infinite;
+=======
+/* CHAT COURSE */
+.tuna {
+    animation: walk-cycle 1s steps(12) 2,    walk-to-run .75s steps(12) 2s 1,     run-cycle .75s steps(13) 2.75s infinite;
+>>>>>>> 585dc23e9da2c5a920c4849eece6335176d6096c
     background: url(http://stash.rachelnabors.com/24ways2012/cat_sprite.png) 0 0 no-repeat;
     height: 200px;
     width: 400px;
@@ -99,7 +186,10 @@ button{
     margin-left: -200px;
     translate3d(0,0,0);
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 585dc23e9da2c5a920c4849eece6335176d6096c
 @keyframes walk-cycle {
     0% {
         background-position: 0 0;
@@ -107,6 +197,7 @@ button{
     100% {
         background-position: 0 -2391px;
     }
+<<<<<<< HEAD
 }@keyframes walk-to-run
  {
      0% {
@@ -128,6 +219,27 @@ button{
 
 
 
+=======
+}
+@keyframes walk-to-run {
+    0% {
+        background-position: -400px 0;
+    }
+    100% {
+        background-position: -400px -2391px;
+    }
+}@keyframes run-cycle {
+     0% {
+         background-position: -800px 0;
+     }
+     100% {
+         background-position: -800px -2591px;
+     }
+ }
+
+
+/* FOND MONTAGNES */
+>>>>>>> 585dc23e9da2c5a920c4849eece6335176d6096c
 .foreground, .midground, .background {
     width: 100%;
     height: 100%;
@@ -165,6 +277,12 @@ button{
             url(http://stash.rachelnabors.com/24ways2012/background_mountain3.png),
             url(http://stash.rachelnabors.com/24ways2012/background_mountain2.png),
             url(http://stash.rachelnabors.com/24ways2012/background_mountain1.png);
+    /*background-image:*/
+            /*url(https://image.noelshack.com/fichiers/2018/21/5/1527233299-background-mountain511.png),*/
+            /*url(https://image.noelshack.com/fichiers/2018/21/5/1527233299-background-mountain411.png),*/
+            /*url(https://image.noelshack.com/fichiers/2018/21/5/1527233299-background-mountain311.png),*/
+            /*url(https://image.noelshack.com/fichiers/2018/21/5/1527233299-background-mountain211.png),*/
+            /*url(https://image.noelshack.com/fichiers/2018/21/5/1527233299-background-mountain111.png);*/
     background-repeat: repeat-x;
     background-position: 0 100%;
     z-index: 1;

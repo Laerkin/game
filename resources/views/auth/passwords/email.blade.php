@@ -7,7 +7,7 @@
             <div class="card">
                 <div class="card-header">{{ trans('auth.resetPassword') }}</div>
 
-                <div class="card-body">
+                <div class="card-body form-user">
                     @if (session('status'))
                         <div class="alert alert-success">
                             {{ session('status') }}
@@ -33,7 +33,7 @@
 
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn">
                                     {{ trans('auth.resetMail') }}
                                 </button>
                             </div>
@@ -43,15 +43,26 @@
             </div>
         </div>
     </div>
+
+    <div class="foreground"></div>
+
+    <div class="midground">
+        <div class="tuna"></div>
+    </div>
+
+    <div class="background">
+    </div>
 </div>
 
 
 <!-- Polices -->
-<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Neuton:400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 <!-- CSS -->
 <link rel="stylesheet" href="{{ asset('css/auth.css') }}">
 <!-- JS -->
 <script src="{{ asset('js/edit.js') }}" defer></script>
+
 
 
 @endsection

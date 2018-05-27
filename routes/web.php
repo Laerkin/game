@@ -30,6 +30,7 @@ Route::get('/landing', function() {
 Route::get('/mentions_legales', function() {
     return view('mentions_legales.index');
 });
+
 Route::get('/cgu', function() {
     return view('cgu.index');
 });
@@ -39,7 +40,6 @@ Route::get('/cgu', function() {
 
 Route::get('edit', 'editeurController@index');
 Route::post('edit', 'editeurController@index');
-
 
 
 
@@ -104,3 +104,13 @@ Route::get('/richtext_display','richtextController@show')->name('richtextDispay'
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+
+
+
+// Mentions légales
+Route::get('/mentions', function () {
+    return view('mentions.index');
+});
+
