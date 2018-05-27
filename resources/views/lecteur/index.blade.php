@@ -3,34 +3,76 @@
 @section('content')
 
 
-    <div class="container-fluid">
+    <div class="all container-fluid">
         <div class="row">
             <div class="title col-md-12">
                 <h3>
-                     Vous êtes dans l'aventure ! <-- nom de l'histoire  -->
+                     Vous êtes dans l'aventure : <-- nom de l'histoire  -->
                 </h3>
 
                 <br/><br/>
 
-                <div class="row container">
+                <div class="row">
                     <div class="lecteur col-md-12">
-                        METTRE LE ECTEUR ICI
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
 
-                        <br/><br/>
+
+
+                        <--      METTRE LE ECTEUR ICI    -->
+
+
+
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+
 
                         <div class="row">
-                            <div class="objects col-md-8">
-                                liste des objets / inventaire
+                            <div class="objects col-md-6">
+                               <--    liste des objets / inventaire     -->
                             </div>
 
                             <br/><br/>
 
-                            <div class="notes col-md-4">
-                                notes
+                            <div class="pages offset-2 col-md-4">
+                                <nav>
+                                    <ul class="pagination">
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">Revenir</a>
+                                        </li>
+
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">Etape suivante</a>
+                                        </li>
+                                    </ul>
+                                </nav>
                             </div>
                         </div>
+
+                        <br/>
+
                         <div class="progress">
-                            Progression dans l'histoire !
+                            Progression dans l'histoire -->
                             <div class="progress-bar w-75">
                             </div>
                         </div>
