@@ -71,3 +71,7 @@ footer{
     color: #bfd6db;
 }
 
+.wrapper {
+    display: flex;
+    align-items: stretch;
+}
