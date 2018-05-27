@@ -56,7 +56,7 @@
         <div class=" offset-4 col-md-4 offset-4">
             <div class="box1 jumbotron card card-block">
                 <h2>
-                    game-travel
+                    Discover
                 </h2>
                 <p>
                     Ne laissez pas une aventure s'envoler sans vous !

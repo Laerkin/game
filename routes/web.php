@@ -88,3 +88,10 @@ Route::get('/richtext_display','richtextController@show')->name('richtextDispay'
 
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+/**  LECTEUR **/
+
+Route::get('/lecteur', function () {
+    return view('lecteur.index');
+});

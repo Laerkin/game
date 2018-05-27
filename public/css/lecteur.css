@@ -1,0 +1,22 @@
+.lecteur {
+
+    -webkit-border-radius: 30px 30px 30px 30px;
+    border-radius: 30px 30px 30px 30px;
+
+    -webkit-box-shadow: 0 0 10px 10px #8db5d1;
+    box-shadow: 0 0 10px 10px #8db5d1;
+}
+
+.title{
+    padding-top: 10px;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.lecteur {
+
+}
+
+.progress {
+    margin-bottom: 15px;
+}
