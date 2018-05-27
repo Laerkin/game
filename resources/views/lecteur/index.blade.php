@@ -71,11 +71,7 @@
 
                         <br/>
 
-                        <div class="progress">
-                            Progression dans l'histoire -->
-                            <div class="progress-bar w-75">
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
