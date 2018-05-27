@@ -85,10 +85,6 @@
 
     @section('footer')
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-<<<<<<< HEAD
-=======
-
->>>>>>> parent of a5de1e0... Merge branch 'master' of https://github.com/Synh/game
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <footer>
             <div class="container-fluid b">
