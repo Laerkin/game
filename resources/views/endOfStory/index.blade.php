@@ -18,13 +18,16 @@
                  <h2>Vous gagnez aussi 1 point ! encore 4 pour la prochaine récompense !</h2>
                  <br/>
 
-                 <h3> Donnez une note à cette histoire ! </h3>
-                <label class="radio-inline"><input type="radio" name="optradio"> 1 </label>
+               <div class="hide">
+                   <h3> Donnez une note à cette histoire ! </h3>
+
+                   <label class="radio-inline"><input type="radio" name="optradio"> 1 </label>
                 <label class="radio-inline"><input type="radio" name="optradio"> 2 </label>
                 <label class="radio-inline"><input type="radio" name="optradio"> 3 </label>
                 <label class="radio-inline"><input type="radio" name="optradio"> 4 </label>
                 <label class="radio-inline"><input type="radio" name="optradio"> 5 </label>
                 <button type="button" id="fake" class="btn btn-primary active"> Envoyez la note !</button>
+               </div>
             <div class="success" style="display:none;"> Note envoyée ! merci pour votre soutien !</div>
 
 
