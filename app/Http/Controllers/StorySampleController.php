@@ -16,4 +16,8 @@ class StorySampleController extends Controller
     	
     	return view('story-sample.index')->with('story', $story);
     }
+
+    public function store(){
+
+    }
 }

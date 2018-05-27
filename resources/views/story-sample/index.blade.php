@@ -17,24 +17,38 @@
           <p> {{ $story->synopsis }} </p>
         </div>
         <div class="row my-1">
-          <div class="col-md-6"> <p> {{ $story->difficulte }} </p> </div>
-          <div class="col-md-6"> <p> {{ $story->genre }} </p> </div>
+          <div class="col-md-6"> <p>difficultée =  {{ $story->difficulte }} </p> </div>
+          <div class="col-md-6"> <p>Genre : {{ $story->genre }} </p> </div>
         </div>
 
-        <div class="row my-1" id="commentaires">
-         
-
+        <div class="row" id="commentaires">
 
           @if(! empty( $story->commentaires() ) )
-          <div class="col-12">
+          <div class="col-md-12">
              @foreach( $story->commentaires() as $commentaire )
-            <h4>UTILISATEUR :  {{ $commentaire->user()->email }} </h4>
+            <h4>commentaire  de l'utilisateur :  {{ $commentaire->user()->name }} </h4>
               <p>COMMENTAIRE : {{ $commentaire->text }}</p>
               
             @endforeach
           </div>
-           
           @endif
+            <div class="col-md-3">
+            <from>
+
+              <h4>Laissez un commentaire !</h4>
+
+              <div class="form-group">
+                <label class="control-label" for="commentaire">commentaire</label>
+                <div>
+                  <textarea class="form-control" id="commentaire" name="commentaire">laissez votre commentaire ici !</textarea>
+                </div>
+              </div>
+                <div>
+                  <button id="submit" name="submit" class="btn btn-primary">envoyer !</button>
+                </div>
+
+            </from>
+            </div>
         </div>
       </div>
     </div>
