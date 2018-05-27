@@ -5,7 +5,7 @@
     <div class="">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-6">Z
+          <div class="col-md-6">
             <div class="titre"> <h1> {{ $story->titre }} </h1> </div>
             <!-- Affichera une erreur "Trying to get property 'titre' of non-object" si il ne trouve pas d'id correspondant au numero dans l'url "fiche-<numero>" dans la BDD  -->
           </div>
@@ -38,7 +38,7 @@
               <h4>Laissez un commentaire !</h4>
 
               <div class="form-group">
-                <label class="control-label" for="commentaire">commentaire</label>
+                <label class="control-label" for="commentaire"></label>
                 <div>
                   <textarea class="form-control" id="commentaire" name="commentaire">laissez votre commentaire ici !</textarea>
                 </div>
