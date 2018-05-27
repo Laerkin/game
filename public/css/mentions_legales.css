@@ -1,0 +1,22 @@
+body{
+    background-color: #F5F5F5;
+}
+
+/* Fonts */
+a, label{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight:bold;
+    color: #005d6e;
+}
+p{
+    font-family: 'Montserrat', serif;
+}
+
+h1{
+    font-family: 'Ubuntu', serif;
+    text-align: center;
+}
+
+h2{
+    font-family: 'Ubuntu', serif;
+}

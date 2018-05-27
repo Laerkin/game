@@ -22,9 +22,16 @@ Route::post('/home', 'homeController@index');
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/logout', function() {
+Route::get('/landing', function() {
     Auth::logout();
-    return view('welcome');
+    return view('landing');
+});
+
+Route::get('/mentions_legales', function() {
+    return view('mentions_legales.index');
+});
+Route::get('/cgu', function() {
+    return view('cgu.index');
 });
 
 
