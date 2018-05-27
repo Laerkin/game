@@ -23,15 +23,15 @@ form{
 
 /* Bouton Input "range" */
 .custom-range {
-    background-color: #6076a4;
+    background-color: #d8c15e;
 
 }
 
 
 /* Bouton "submit" Formulaire */
 .btn-form{
-    background-color: #6076a4;
-    border-color: #6076a4;
+    background-color:#a4912f;
+    border-color:#a4912f;
     font-family: 'Ubuntu', sans-serif;
 
     font-weight:bold;
@@ -41,8 +41,8 @@ form{
     color: white;
 }
 .btn-form:hover{
-    background-color: #6076a4;
-    border-color: #6076a4;
+    background-color:#fff38e;
+    border-color:#fff38e;
     color: #00bcd4;
 }
 

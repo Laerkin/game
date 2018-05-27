@@ -31,15 +31,15 @@
     border-radius: 4px;
 }
 .btnAddSlide{
-    background-color: #6076a4;
-    border-color: #6076a4;
+    background-color:#a4912f;
+    border-color:#a4912f;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 700;
     color: white;
 }
 .btnAddSlide:hover{
-    background-color: #6076a4;
-    border-color: #6076a4;
+    background-color:#fff38e;
+    border-color:#fff38e;
     color: #00bcd4;
 }
 .slideItem{
@@ -100,7 +100,7 @@
 
 /* Prévisualisation */
 .preview{
-    background-color: #6bd2d8;
+    background-color: #d8c15e;
     border-radius: 4px;
     height:321px;
 }
@@ -119,25 +119,25 @@
     overflow-y: auto;
 }
 .btn-addLoc{
-    background-color: #6076a4;
-    border-color: #6076a4;
+    background-color:#a4912f;
+    border-color:#a4912f;
     color: white;
 }
 .btn-addLoc:hover{
-    background-color: #6076a4;
-    border-color: #6076a4;
+    background-color:#fff38e;
+    border-color:#fff38e;
     color: #00bcd4;
 }
 
 /* Bouton Mofification location */
 .btn-editLoc{
-    background-color: #6076a4;
-    border-color: #6076a4;
+    background-color:#fff38e;
+    border-color:#fff38e;
     color: #00bcd4;
 }
 .btn-editLoc:hover{
-    background-color: #6076a4;
-    border-color: #6076a4;
+    background-color:#a4912f;
+    border-color:#a4912f;
     color: white;
 }
 
