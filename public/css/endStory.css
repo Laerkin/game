@@ -1,3 +1,9 @@
+.all {
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 25px;
+}
+
 .img{
     background: url("https://www.bdgest.com/images/nexus/_Bravo01.jpg") no-repeat;
     border-radius: 8px 8px 8px 8px;
