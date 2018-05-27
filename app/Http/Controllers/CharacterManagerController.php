@@ -16,10 +16,14 @@ class CharacterManagerController extends Controller
     }
 	
 	public function index(){
-		return view('character-manager.index');
+		$personnages = Personnage::all();
+
+		return view('character-manager.index')
+				->with('personnages', $personnages);
 	}
 
     public function storeCharacter(){
+    	$personnages = Personnage::all();
 		$values = Request::all();
 		
     	$rules = [
@@ -60,10 +64,11 @@ class CharacterManagerController extends Controller
 
 		$path = 'user/characters/'.$image_name.'.'.$ext;
 		$bio = $values['bio'];
+		$name = $values['name'];
 
 		$character = new Personnage();
 
-		$character->name = $values['name'];
+		$character->name = $name;
 		$character->path = $path;
 		$character->bio = $bio;
 
@@ -73,11 +78,19 @@ class CharacterManagerController extends Controller
 		$character->save();
 
 		return view('character-manager.index')
-		->with('successMessage', 'Votre personnage à bien était enregistré.')
+		->with('successMessage', 'Votre personnage: '. $name .' à bien était enregistré.')
+		->with('personnages', $personnages)
 		->with('path', $path)
-		->with('bio', $bio);
+		->with('bio', $bio)
+		->with('name', $name);
 
 	}
 
-	public function editCharacter(){}
+	public function delete(){
+    	$peronnage = Peronnage::find([2,1]);
+
+    	foreach ($formulaires as $peronnage){
+    		$peronnage->delete();
+    	}
+    }
 } 

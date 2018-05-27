@@ -16,7 +16,7 @@ use Illuminate\Http\Request;
 
 Route::get('/character-manager', 'CharacterManagerController@index');
 
-Route::post('/add-character', 'CharacterManagerController@storeCharacter');
+Route::post('/character-manager', 'CharacterManagerController@storeCharacter');
 
 Route::get('/landing', function () {
     return view('landing.index');
