@@ -48,7 +48,7 @@
 
     @section('header')
         <nav class="nav justify-content-center navbar navbar-expand-lg navbar-dark navbar-default shadow" style="background-color:#005d6e;">
-            <a class="navbar-brand" href="#">MAKONTO</a>
+            <a class="navbar-brand" href="#">Discover</a>
             <button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -93,7 +93,7 @@
             <div class="row align-items-center">
                 <div class="col-sm-12 col-md-6 col-lg-6">
                     <div class="copyright">
-                        © 2015, MAKONTO, All rights reserved
+                        © 2018, Discover, All rights reserved
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-6">

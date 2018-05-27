@@ -88,3 +88,10 @@ Route::get('/richtext_display','richtextController@show')->name('richtextDispay'
 
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+// fin de l'histoire
+
+Route::get('/endOfStory', function () {
+    return view('endOfStory.index');
+});
