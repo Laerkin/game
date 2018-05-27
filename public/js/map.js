@@ -37,15 +37,18 @@ function geocodeLatLng(geocoder, map, latitude, longitude) {
             if (results[0]) { //results[0] permet d'indiquer la précision de l'adresse 0 = Très précis
 
                 var pt = $("input[name=adresse]").val(results[0].formatted_address);
+                ;
                 // map.panTo(map.getZoom(marker) + 2);
             }
             else {
-                window.alert('No results found');
+                window.alert('Je ne connais pas ce lieu. Essaie encore.');
             }
 
         }
         else {
-            window.alert('Geocoder failed due to: ' + status);
+            // window.alert('Tu te Noyes! ah! non! des requins! aaaaaaah!!! arfhwarwrgh!: ' + status);
+            window.alert('Ne t\'aventure pas dans l\'eau, c\'est rempli de requins!');
+
         }
     });
 }

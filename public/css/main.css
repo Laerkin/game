@@ -1,7 +1,10 @@
 /* Fonts */
 a, label{
     font-family: 'Ubuntu', sans-serif;
+
     font-weight:bold;
+
+
 
 }
 p{
@@ -18,15 +21,29 @@ form{
     position: relative;
 }
 
-/* Bouton */
-button{
-    background-color:#d8c15e;
+/* Bouton Input "range" */
+.custom-range {
+    background-color: #d8c15e;
+
+}
+
+
+/* Bouton "submit" Formulaire */
+.btn-form{
+    background-color:#a4912f;
+    border-color:#a4912f;
     font-family: 'Ubuntu', sans-serif;
+
     font-weight:bold;
+
+
+
     color: white;
 }
-button:hover{
+.btn-form:hover{
     background-color:#fff38e;
+    border-color:#fff38e;
+    color: #00bcd4;
 }
 
 
@@ -37,12 +54,6 @@ button:hover{
     width: 10%;
     border-radius: 4px;
 }
-
-
-
-
-
-
 
 /* Footer */
 footer{
@@ -70,3 +81,7 @@ footer{
     color: #bfd6db;
 }
 
+.wrapper {
+    display: flex;
+    align-items: stretch;
+}
