@@ -11,9 +11,9 @@
 
             <h1>BRAVO !</h1>
 
-                 <h2> Vous avez terminé votre Aventure !</h2>
+                 <h2> Vous avez terminé cette aventure !</h2>
                  <br/>
-                 <h2>Vous obtenez un trophé "Votre première Aventure " !</h2>
+                 <h2>Vous obtenez un trophée "Votre première Aventure " !</h2>
                  <br/>
                  <h2>Vous gagnez aussi 1 point ! encore 4 pour la prochaine récompense !</h2>
                  <br/>
