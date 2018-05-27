@@ -4,11 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-<<<<<<< HEAD
     "content-hash": "d71d31bb05c72dc592b7b1341d531398",
-=======
     "content-hash": "fd5880d2e1128c3cbd13bc043535ea80",
->>>>>>> master
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -371,7 +368,6 @@
             "time": "2018-02-07T20:20:57+00:00"
         },
         {
-<<<<<<< HEAD
             "name": "gstt/laravel-achievements",
             "version": "v1.0.0",
             "source": {
@@ -399,8 +395,7 @@
                 ],
                 "psr-4": {
                     "Gstt\\Achievements\\": "src/",
-                    "Gstt\\Tests\\": "tests/"
-=======
+                    "Gstt\\Tests\\": "tests/",
             "name": "guzzlehttp/psr7",
             "version": "1.4.2",
             "source": {
@@ -510,7 +505,6 @@
             "autoload": {
                 "psr-4": {
                     "Intervention\\Image\\": "src/Intervention/Image"
->>>>>>> master
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -519,14 +513,12 @@
             ],
             "authors": [
                 {
-<<<<<<< HEAD
                     "name": "Gabriel Simonetti",
                     "email": "simonettigo@gmail.com"
                 }
             ],
             "description": "Achievements for Laravel 5.3+",
-            "time": "2017-03-08T03:42:08+00:00"
-=======
+            "time": "2017-03-08T03:42:08+00:00",
                     "name": "Oliver Vogel",
                     "email": "oliver@olivervogel.com",
                     "homepage": "http://olivervogel.com/"
@@ -543,7 +535,6 @@
                 "watermark"
             ],
             "time": "2017-09-21T16:29:17+00:00"
->>>>>>> master
         },
         {
             "name": "jakub-onderka/php-console-color",
