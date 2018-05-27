@@ -32,9 +32,9 @@ Route::get('/logout', function() {
 
 
 Route::get('edit', 'editeurController@index');
-Route::post('edit', 'editeurController@store');
+Route::post('/edit', 'editeurController@store');
 
-Route::get('/edit', 'editeurController@index');
+
 Route::post('/saveloc', 'editeurController@store');
 
 // Route Effet Particles
@@ -77,10 +77,7 @@ Route::post('/video', 'videoController@store');
 
 
 
-/** EDITEUR */
-Route::get('/edit', function () {
-    return view('editeur.index');
-});
+
 
 
 
