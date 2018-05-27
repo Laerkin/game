@@ -4,7 +4,7 @@
 
 
 
-    <div class="all container">
+    <div class="all container-fluid">
         <div class="row ">
             <div class="img col-md-6">
                 {{-- Image --}}
