@@ -5,7 +5,7 @@
     <div class="">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-6">Z
             <div class="titre"> <h1> {{ $story->titre }} </h1> </div>
             <!-- Affichera une erreur "Trying to get property 'titre' of non-object" si il ne trouve pas d'id correspondant au numero dans l'url "fiche-<numero>" dans la BDD  -->
           </div>

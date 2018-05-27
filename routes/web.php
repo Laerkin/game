@@ -12,10 +12,11 @@
 */
 
 Route::get('/', function () {
-	
+
     return view('welcome');
 });
 
 /*Fiche détaillée des histoire*/
 
 Route::get('/fiche-{id}', 'StorySampleController@index');
+Route::post('/fiche-{id}', 'StorySampleController@store');

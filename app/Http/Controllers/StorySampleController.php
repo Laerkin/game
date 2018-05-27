@@ -3,11 +3,12 @@
 namespace App\Http\Controllers;
 
 use App\Model\Story;
-use App\Model\Commentaire;
 use Illuminate\Http\Request;
+use Validator;
 
 class StorySampleController extends Controller
 {
+
 
     public function index($id){
     	
@@ -16,8 +17,5 @@ class StorySampleController extends Controller
     	
     	return view('story-sample.index')->with('story', $story);
     }
-
-    public function store(){
-
-    }
+    
 }
