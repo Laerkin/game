@@ -106,17 +106,21 @@
                         <div class="col-md-4">
                             <div class="row title1">
                                 <div class="col-md-12">
-                                    Localisation du slide :
+                                    Localisation slide :
                                 </div>
                             </div>
-                            <div class="row justify-content-between locItem">
-                                <div class="col-md-6">
-                                    Bordeaux
-                                </div>
-                                <div class="col-md-3">
-                                    <button type="button" class="btn btn-warning">
-                                        Modifier
-                                    </button>
+                            <div class="row locItem">
+                                <div class="col-md-12 mt-2">
+                                    <div class="row pt-1 ">
+                                        <div class="col-8 pt-2">
+                                            Bordeaux
+                                        </div>
+                                        <div class="col-3">
+                                            <button type="button" class="btn btn-default btn-sm btn-editLoc">
+                                            <i class="fas fa-pencil-alt"></i>
+                                            </button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -127,41 +131,46 @@
                                     Localisations suivantes :
                                 </div>
                             </div>
-                            <div class="locItem">
-                                    <div class="row">
-                                        <div class="col-md-6">Loc2</div>
-                                        <div class="col-md-6 d-flex justify-content-end">
-                                            <button type="button" class="btn btn-warning">Modifier</button>
-                                            <button type="button" class="btn btn-danger">Supprimer</button>
+                            <div class="row locItem">
+                                <div class="col-md-12 mt-2">
+                                    <div class="row pt-1">
+                                        <div class="col-7 pt-2">
+                                            New-York City
+                                        </div>
+                                        <div class="col-5">
+                                            <button type="button" class="btn btn-default btn-editLoc">
+                                                <i class="fas fa-pencil-alt"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-default btn-deleteLoc">
+                                                <i class="fas fa-trash-alt"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="row pt-1">
+                                        <div class="col-7 pt-2">
+                                            Melbourne
+                                        </div>
+                                        <div class="col-5">
+                                            <button type="button" class="btn btn-default btn-editLoc">
+                                                <i class="fas fa-pencil-alt"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-default btn-deleteLoc">
+                                                <i class="fas fa-trash-alt"></i>
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="locItem">
-                                    <div class="row">
-                                        <div class="col-md-6">Loc3</div>
-                                        <div class="col-md-6 d-flex justify-content-end">
-                                            <button type="button" class="btn btn-warning">Modifier</button>
-                                            <button type="button" class="btn btn-danger">Supprimer</button>
-                                        </div>
-                                    </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 d-flex flex-column">
+                                    <button type="button" class="btn btn-default btn-addLoc mb-1" aria-label="Left Align">
+                                        <i class="fas fa-plus"></i>
+                                    </button>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-12 d-flex flex-column">
-                                        <button type="button" class="btn btn-default btn-addLoc" aria-label="Left Align">
-                                            <i class="fas fa-plus"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                        </div>
-
-
-
-
-
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
         </section>
     </div>
 </div>
