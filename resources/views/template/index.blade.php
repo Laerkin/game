@@ -31,6 +31,7 @@
         <!-- Map JS -->
         <script src="{{asset('js/map.js')}}"></script>
 
+
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 
@@ -64,7 +65,7 @@
                         <a class="nav-link" href="#">Récompenses</a>
                     </li>
                     <li class="nav-item">
-                            <a class="nav-link" href="#">Réglages</a>
+                            <a class="nav-link" href="#">Profil</a>
                         </li>
                 </ul>
             </div>
@@ -90,7 +91,11 @@
             <div class="row align-items-center">
                 <div class="col-sm-12 col-md-6 col-lg-6">
                     <div class="copyright">
+<<<<<<< HEAD
                         © 2018, Discover, All rights reserved
+=======
+                        © 2015, Discover, All rights reserved
+>>>>>>> master
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-6">
