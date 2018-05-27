@@ -100,11 +100,9 @@ Route::post('/richtext','richtextController@store')->name('richtextPersist');
 //summernote display route
 Route::get('/richtext_display','richtextController@show')->name('richtextDispay');
 
-/*Formulaire gestion personnage*/
+/*controller ajout personnage*/
 
-Route::get('/character-manager', 'CharacterManagerController@index');
-
-Route::post('/character-manager', 'CharacterManagerController@storeCharacter');
+Route::post('/edit', 'CharacterManagerController@storeCharacter');
 
 
 
