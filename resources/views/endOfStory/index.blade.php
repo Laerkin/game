@@ -5,8 +5,8 @@
 
 
     <div class="container">
-        <div class="row mt-3">
-            <div class="img-responsive img col-md-6">
+        <div class="row ">
+            <div class="img col-md-6">
                 {{-- Image --}}
             </div>
             <div class="gg col-md-6">
@@ -26,26 +26,16 @@
                 </div>
                 <br/>
 
-<<<<<<< HEAD
-                 <h3> Donnez une note à cette histoire ! </h3>
-                <label class="radio-inline">
-                    <input type="radio" name="optradio"> 1 </label>
-=======
                <div class="hide">
                    <h3> Donnez une note à cette histoire ! </h3>
 
-                   <label class="radio-inline"><input type="radio" name="optradio"> 1 </label>
->>>>>>> 2c7fdf3aa124f0c9af5f0deb60f884d49448f9f4
+                <label class="radio-inline"><input type="radio" name="optradio"> 1 </label>
                 <label class="radio-inline"><input type="radio" name="optradio"> 2 </label>
                 <label class="radio-inline"><input type="radio" name="optradio"> 3 </label>
                 <label class="radio-inline"><input type="radio" name="optradio"> 4 </label>
                 <label class="radio-inline"><input type="radio" name="optradio"> 5 </label>
-<<<<<<< HEAD
-                <button type="button" id="fake" class="btn btn-default btn-note"> Envoyez la note !</button>
-=======
                 <button type="button" id="fake" class="btn btn-primary active"> Envoyez la note !</button>
                </div>
->>>>>>> 2c7fdf3aa124f0c9af5f0deb60f884d49448f9f4
             <div class="success" style="display:none;"> Note envoyée ! merci pour votre soutien !</div>
 
 
