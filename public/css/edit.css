@@ -1,6 +1,6 @@
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 576px)  {
+@media (min-width: 300px)  {
     .container{
         max-width: 95%;
     }
@@ -27,7 +27,8 @@
         justify-content: center;
         padding-right: 20px;
     overflow-y: auto;
-    max-height: 360px;
+    max-height: 296px;
+    border-radius: 4px;
 }
 .btnAddSlide{
     background-color:#a4912f;
@@ -93,21 +94,28 @@
 .elementOptions{
     background-color:#00bcd4;
     border-radius: 0px 0px 4px 4px;
-    height:140px;
+    height:100px;
+    overflow-y: auto;
 }
 
 /* Prévisualisation */
 .preview{
     background-color: #d8c15e;
     border-radius: 4px;
-    height:361px;
+    height:321px;
 }
 
 /* Localisation */
 .locItem{
     background-color:#00bcd4;
     border-radius: 0px 0px 4px 4px;
-    height: 120px;
+    height: 116px;
+    overflow-y: auto;
+}
+.locItemSlide{
+    background-color:#00bcd4;
+    border-radius: 0px 0px 4px 4px;
+    height: 64px;
     overflow-y: auto;
 }
 .btn-addLoc{

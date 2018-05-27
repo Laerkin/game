@@ -2,14 +2,16 @@
 <div class="container">
     <div class="row justify-content-between no-gutters">
         <aside class="col-md-3 p-0 mb-3">
-            <div class="pos-f-t">
-                <nav class="navbar justify-content-center navbar-dark shadow" style="background-color:#a4912f;">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
+            <div class="pos-f-t p-0">
+                <nav class="navbar justify-content-center navbar-dark shadow" style="background-color:#a4912f; border-radius: 4px;">
+                    <button class="navbar-toggler d-flex " type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        <h4>Slides</h4>
+                        <span class="navbar-toggler-icon"></span>
                     </button>
                 </nav>
-                <div class="collapse" id="navbarToggleExternalContent">
-                    <div class="bg-default p-4" style="background-color:#d8c15e;">
+                <div class="collapse mt-3 shadow" id="navbarToggleExternalContent">
+                    <div class="bg-default p-4" style="background-color:#d8c15e; border-radius: 4px;">
                         <div class="col-md-12">
                             <button type="button" class="btn btn-default btn-block shadow mb-3 btnAddSlide" aria-label="Left Align">
                                 <i class="fas fa-plus"></i>
@@ -109,18 +111,25 @@
                                     Localisation slide :
                                 </div>
                             </div>
-                            <div class="row locItem">
+                            <div class="row locItemSlide">
                                 <div class="col-md-12 mt-2">
                                     <div class="row pt-1 ">
                                         <div class="col-8 pt-2">
                                             Bordeaux
                                         </div>
                                         <div class="col-3">
-                                            <button type="button" class="btn btn-default btn-sm btn-editLoc">
+                                            <button type="button" class="btn btn-default btn-editLoc">
                                             <i class="fas fa-pencil-alt"></i>
                                             </button>
                                         </div>
                                     </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 mt-2 p-0 d-flex flex-column">
+                                    <button type="button" class="btn btn-default btn-lg btn-addLoc" aria-label="Left Align">
+                                        <i class="fas fa-plus"></i>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -161,13 +170,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-md-6 d-flex flex-column">
-                                    <button type="button" class="btn btn-default btn-addLoc mb-1" aria-label="Left Align">
-                                        <i class="fas fa-plus"></i>
-                                    </button>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
                 </div>

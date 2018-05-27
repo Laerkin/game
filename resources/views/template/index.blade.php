@@ -49,7 +49,7 @@
 
     @section('header')
         <nav class="nav justify-content-center navbar navbar-expand-lg navbar-dark navbar-default shadow" style="background-color:#005d6e;">
-            <a class="navbar-brand" href="#">MAKONTO</a>
+            <a class="navbar-brand" href="#">Discover</a>
             <button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
