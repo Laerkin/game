@@ -64,13 +64,10 @@ Route::post('/video', 'videoController@store');
 
 
 
-/** EDITEUR FORMULAIRE BASIQUE */
-Route::get('/editor2', function () {
-    return view('editeur.2index');
+/** EDITEUR */
+Route::get('/edit', function () {
+    return view('editeur.index');
 });
-
-
-
 
 
 
