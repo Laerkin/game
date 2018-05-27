@@ -91,11 +91,7 @@
             <div class="row align-items-center">
                 <div class="col-sm-12 col-md-6 col-lg-6">
                     <div class="copyright">
-<<<<<<< HEAD
                         © 2018, Discover, All rights reserved
-=======
-                        © 2015, Discover, All rights reserved
->>>>>>> master
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-6">
