@@ -16,9 +16,6 @@ use Illuminate\Http\Request;
 // Routes login
 Route::auth();
 
-Route::get('/home', 'homeController@index');
-Route::post('/home', 'homeController@index');
-
 Route::get('/', function () {
     return view('welcome');
 });
@@ -37,19 +34,6 @@ Route::post('/edit', 'editeurController@store');
 
 Route::post('/saveloc', 'editeurController@store');
 
-// Route Effet Particles
-Route::get('/particles', function() {
-    return view('particles.index');
-});
-
-
-
-
-
-
-
-
-
 
 Route::get('/template', function () {
     return view('template.index');
@@ -59,10 +43,6 @@ Route::get('/template', function () {
 Route::get('/landing', function () {
     return view('landing.index');
 });
-
-
-
-
 
 
 /** ROUTES AUDIO/VIDEO  **/
@@ -100,8 +80,6 @@ Route::get('/richtext_display','richtextController@show')->name('richtextDispay'
 /*controller ajout personnage*/
 
 Route::post('/edit-personnage', 'CharacterManagerController@storeCharacter');
-
-
 
 
 Route::get('/home', 'HomeController@index')->name('home');
