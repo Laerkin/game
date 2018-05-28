@@ -23,7 +23,6 @@ class CharacterManagerController extends Controller
 	}
 
     public function storeCharacter(){
-    	$personnages = Personnage::all();
 		$values = Request::all();
 		
     	$rules = [
@@ -62,6 +61,8 @@ class CharacterManagerController extends Controller
 
 		$img->save(public_path('/user/characters/' . $image_name.'.'.$ext));
 
+    	$personnages = Personnage::all();
+    	
 		$path = 'user/characters/'.$image_name.'.'.$ext;
 		$bio = $values['bio'];
 		$name = $values['name'];
@@ -71,6 +72,9 @@ class CharacterManagerController extends Controller
 		$character->name = $name;
 		$character->path = $path;
 		$character->bio = $bio;
+
+		/*Supprimer la table "slides_elements_id" qui ne sert a rien*/
+		$character->slides_elements_id = 1;
 
 		/*A adapter pour plus tard */
 		$character->users_id = 1;
