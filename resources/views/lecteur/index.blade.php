@@ -43,7 +43,7 @@
                             <button type="button" id="fakeun" class="btn btn-default active"> voyage suivant !</button>
                         </div>
 
-                    </div>
+
 
                         <div class="hidedeux" style="display: none;">
                                 <div class="container mt-3">
@@ -165,6 +165,7 @@
                          </div>
 
                         </div>
+                </div>
                     </div>
 
                         <br/>
