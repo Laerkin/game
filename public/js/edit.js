@@ -276,7 +276,7 @@ jQuery(document).ready(function($) {
 
 
 
-        if ($content.id !== 'loc') {
+        if ($content.id !== 'basic') {
 
             $(this).css('visibility', 'hidden');
             $(this).css('position', 'absolute');

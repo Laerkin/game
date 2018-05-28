@@ -70,7 +70,7 @@
         }
 
         @keyframes parallax_fg {
-            0% { background-position: -200px 100%;}
+            0% { background-position: -75px 100%;}
             100% {background-position: 0 100%; }
         }
 

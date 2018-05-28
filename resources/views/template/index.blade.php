@@ -31,7 +31,7 @@
 
 
          <!-- API Google Map -->
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDoeePbpgNTyJTYdXFAyxhDgzi1PoI8k8I&callback=initMap" async defer></script>
+
         <script src="{{ asset('js/app.js') }}" defer></script>
 
         <!-- Map JS -->
@@ -49,7 +49,7 @@
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
         <link href="{{asset('css/main.css')}}" rel="stylesheet">
         <link href="{{asset('css/jouer.css')}}" rel="stylesheet">
-
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDoeePbpgNTyJTYdXFAyxhDgzi1PoI8k8I&callback=initMap" async defer></script>
 
 
     @endsection
