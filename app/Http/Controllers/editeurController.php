@@ -55,8 +55,6 @@ class editeurController extends Controller
         if($validator->fails())
         {
             return response()->json($validator->customMessages);
-
-
         }
 
         $story = new Story();
@@ -72,7 +70,6 @@ class editeurController extends Controller
 
 
         $story->save();
-
 
         $user = Auth::user();
 
