@@ -1,10 +1,24 @@
+
+/* Fonts */
+a, label {
+    font-family: 'Ubuntu', sans-serif;
+
+    font-weight: bold;
+}
+
+
+
+
+
+body{
+    background-color: #F5F5F5;
+}
+
+
 /* Fonts */
 a, label{
     font-family: 'Ubuntu', sans-serif;
-
-    font-weight:bold;
-
-
+    font-weight: bold;
 
 }
 p{
@@ -20,6 +34,7 @@ form{
 .form-group{
     position: relative;
 }
+
 
 /* Bouton Input "range" */
 .custom-range {
@@ -40,10 +55,22 @@ form{
 
     color: white;
 }
-.btn-form:hover{
-    background-color:#fff38e;
-    border-color:#fff38e;
+.btn-form:hover {
+    background-color: #fff38e;
+    border-color: #fff38e;
     color: #00bcd4;
+}
+
+/* Bouton */
+button{
+    background-color :#d8c15e;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    color: white;
+}
+button:hover{
+    background-color: #fff38e;
+
 }
 
 
@@ -55,19 +82,38 @@ form{
     border-radius: 4px;
 }
 
+
+/* Footer */
+footer {
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+
+
 /* Footer */
 footer{
     position: fixed;
-    margin:0;
-    padding:0;
-    bottom:0;
-    width:100%;
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    width: 100%;
+
 
     background-color: #005d6e;
     color: #9fc0c6;
     text-align: center;
     box-shadow: 0 -.5rem 1rem rgba(0,0,0,.15);
-    min-height:22px;
+
+
+
+    min-height: 22px;
+
 }
 
 .align-items-center{
@@ -81,7 +127,9 @@ footer{
     color: #bfd6db;
 }
 
+
 .wrapper {
     display: flex;
     align-items: stretch;
 }
+

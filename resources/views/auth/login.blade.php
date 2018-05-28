@@ -8,7 +8,7 @@
             <div class="card">
                 <div class="card-header">{{ trans('auth.login') }}</div>
 
-                <div class="card-body">
+                <div class="card-body form-user">
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
 
@@ -53,7 +53,7 @@
 
                         <div class="form-group row mb-0">
                             <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn">
                                     {{ trans('auth.submitLogin') }}
                                 </button>
 
@@ -67,5 +67,26 @@
             </div>
         </div>
     </div>
+
+    <div class="foreground"></div>
+
+    <div class="midground">
+        <div class="tuna"></div>
+    </div>
+
+    <div class="background">
+    </div>
 </div>
+
+
+<!-- Polices -->
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Neuton:400,700" rel="stylesheet">
+<!-- CSS -->
+<link rel="stylesheet" href="{{ asset('css/auth.css') }}">
+<!-- JS -->
+<script src="{{ asset('js/edit.js') }}" defer></script>
+
+
+
+
 @endsection
