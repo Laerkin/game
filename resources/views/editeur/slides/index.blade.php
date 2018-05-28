@@ -31,19 +31,19 @@
                 <div class="col-md-4">
                     <div class="row">
                         <div class="col-md-12 d-flex justify-content-between mb-2 p-0">
-                            <div class="toolItem text-center col-2 p-2">
+                            <div class="toolFont toolItem text-center col-2 p-2">
                                 <i class="fas fa-font"></i>
                             </div>
-                            <div class="toolItem text-center col-2 p-2">
+                            <div class="toolImage toolItem text-center col-2 p-2">
                                 <i class="fas fa-image"></i>
                             </div>
-                            <div class="toolItem text-center col-2 p-2">
+                            <div class="toolAudio toolItem text-center col-2 p-2">
                                 <i class="fas fa-file-audio"></i>
                             </div>
-                            <div class="toolItem text-center col-2 p-2">
+                            <div class="toolVideo toolItem text-center col-2 p-2">
                                 <i class="fas fa-video"></i>
                             </div>
-                            <div class="toolItem text-center col-2 p-2">
+                            <div class="toolPersonnage toolItem text-center col-2 p-2">
                                 <i class="fas fa-user"></i>
                             </div>
                         </div>
