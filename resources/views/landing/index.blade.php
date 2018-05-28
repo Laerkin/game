@@ -36,6 +36,9 @@
             margin-left: -100px;
             margin-top: -100px;
         }
+        a{
+            text-decoration:none;
+        }
         .box1 a{
             background-color: #d8c15e;
             font-size: large;
@@ -91,10 +94,10 @@
                     Ne laissez pas une aventure s'envoler sans vous !
                 </p>
                 <br/>
-                    <a class="btn btn-primary btn-large" href="{{ url('login') }}"> Login !</a>
+                    <a class="btn btn-primary btn-large" href="{{ url('login') }}"> Login</a>
                 <br>
                 <br>
-                    <a class="btn btn-primary btn-large" href="{{ url('register') }}"> Register !</a>
+                    <a class="btn btn-primary btn-large" href="{{ url('register') }}"> Register</a>
                 
 
             </div>
