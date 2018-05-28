@@ -67,10 +67,4 @@ class CreateStoryController extends Controller
     }
 }
 
-function dd($toto)
-{
-    echo '<pre>';
-    var_dump($toto);
-    echo '</pre>';
-    die();
-}
+

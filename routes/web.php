@@ -16,9 +16,6 @@ use Illuminate\Http\Request;
 // Routes login
 Route::auth();
 
-Route::get('/home', 'homeController@index');
-Route::post('/home', 'homeController@index');
-
 Route::get('/', function () {
     return view('welcome');
 });
@@ -35,21 +32,12 @@ Route::get('edit', 'editeurController@index');
 Route::post('/edit', 'editeurController@store');
 
 
+// loc
+
 Route::post('/saveloc', 'editeurController@store');
 
-// Route Effet Particles
-Route::get('/particles', function() {
-    return view('particles.index');
-});
 
-
-
-
-
-
-
-
-
+// template basic  / landing
 
 Route::get('/template', function () {
     return view('template.index');
@@ -59,10 +47,6 @@ Route::get('/template', function () {
 Route::get('/landing', function () {
     return view('landing.index');
 });
-
-
-
-
 
 
 /** ROUTES AUDIO/VIDEO  **/
@@ -76,10 +60,10 @@ Route::post('/video', 'videoController@store');
 
 
 
+// routes classement
 
 
-
-
+Route::get('/classement', 'classementController@index');
 
 
 
@@ -99,9 +83,7 @@ Route::get('/richtext_display','richtextController@show')->name('richtextDispay'
 
 /*controller ajout personnage*/
 
-Route::post('/edit', 'CharacterManagerController@storeCharacter');
-
-
+Route::post('/edit-personnage', 'CharacterManagerController@storeCharacter');
 
 
 Route::get('/home', 'HomeController@index')->name('home');
@@ -117,3 +99,22 @@ Route::get('/lecteur', function () {
 Route::get('/endOfStory', function () {
     return view('endOfStory.index');
 });
+
+
+// JOUER
+Route::get('/slide1', function () {
+    return view('jouer.slide1');
+});
+Route::get('/slide2', function () {
+    return view('jouer.slide2');
+});
+Route::get('/slide3', function () {
+    return view('jouer.slide3');
+});
+Route::get('/slide4', function () {
+    return view('jouer.slide4');
+});
+Route::get('/slide5', function () {
+    return view('jouer.slide5');
+});
+

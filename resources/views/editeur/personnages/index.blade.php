@@ -1,65 +1,65 @@
-<div class="">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-6">
-                <div class="create"> <h1> Creer un personnage </h1> </div>
-
-                <div class="row my-1 h-25" id="characterCreatorForm">
-
-                    <form action="/edit" id="personnage" method="POST" enctype="multipart/form-data">
-                        @csrf
-                        <div class="form-group">
-                            <label for="name"> Nom/prenom </label>
-                            <input type="text" id="name" name="name" class="form-control">
-                            @if($errors->has('name'))
-                                <span class="help-block" style="color: red;">
-                      <ul>  
-                        @foreach ( $errors->get('name') as $error)
-                              <li>{{$error}}</li>
-                          @endforeach
-                      </ul>
-                    </span>
-                            @endif
-                        </div>
-                        <div class="form-group">
-                            <label for="character-image"> image </label>
-                            <input type="file" id="character-image" name="character-image" class="form-control">
-                            @if($errors->has('character-image'))
-                                <span class="help-block" style="color: red;">
-                      <ul>  
+<div class="container">
+        <section>
+          <div class="row justify-content-between mt-5">
+            <form action="#" class=" needs-validation col-md-4 " id="personnage" method="POST" enctype="multipart/form-data" no-validate>
+              @csrf
+              <label>Creer un personnage</label>
+              <div class="form-group">
+                <label for="name"> Nom/prenom </label>
+                <input type="text" id="name" name="name" class="form-control @if($errors->has('name')) is-invalid @endif" >
+                @if($errors->has('name'))
+                  <div class="invalid-tooltip mt-2">
+                    <ul>  
+                      @foreach ( $errors->get('name') as $error)
+                        <li>{{$error}}</li>
+                      @endforeach
+                    </ul>
+                  </div>
+                @endif
+              </div>
+              <div class="form-group">
+                <label for="character-image"> image </label>
+                <input type="file" id="character-image" name="character-image" class="form-control  @if($errors->has('character-image')) is-invalid @endif">
+                @if($errors->has('character-image'))
+                  <div class="invalid-tooltip mt-2">
+                    <ul>  
                         @foreach ( $errors->get('character-image') as $error)
-                              <li>{{$error}}</li>
-                          @endforeach
-                      </ul>
-                    </span>
-                            @endif
-                        </div>
-                        <div class="form-group">
-                            <label for="bio"> biographie/présentation </label>
-                            <input type="text" id="bio" name="bio" class="form-control">
-                            @if($errors->has('bio'))
-                                <span class="help-block" style="color: red;">
-                      <ul>  
-                        @foreach ( $errors->get('bio') as $error)
-                              <li>{{$error}}</li>
-                          @endforeach
-                      </ul>
-                    </span>
-                            @endif
-                        </div>
-                        <button  disabled class="btn btn-primary">Envoyer</button>
-                    </form>
+                        <li>{{$error}}</li>
+                      @endforeach
+                    </ul>
+                  </div>
+                @endif
+              </div>
+              <div class="form-group">
+                <label for="bio"> biographie/présentation </label>
+                <input type="text" id="bio" name="bio" class="form-control @if($errors->has('bio')) is-invalid @endif">
+                @if($errors->has('bio'))
+                  <div class="invalid-tooltip mt-2">
+                    <ul>  
+                      @foreach ( $errors->get('bio') as $error)
+                        <li>{{$error}}</li>
+                      @endforeach
+                    </ul>
+                  </div>
+                @endif
+              </div>
+              <button id="fake" class="btn btn-primary btn-block shadow mb-3">Envoyer</button>
+            </form>
+            <div class="hide col-md-5" style="display: none;">
+              <div class="row" id="preview">
+                <div class=" mx-auto m-5" id="display-character">
+                  <h5> Votre personnage </h5> 
 
                 </div>
+              </div>  
             </div>
-            <div class="col-md-6">
-                <div class="create"> <h1> Votre personnage </h1> </div>
-                <div class="row my-1 h-25" id="preview">
-                    @if(!empty($path))
-                        <img src="{{url($path)}}" alt="Image"/>
-                    @endif
-                </div>
+            <div class="hide col-md-3" style="display: none;">
+
+                  <h4>Liste des personnages</h4>
             </div>
-        </div>
-    </div>
-</div>
+          </div>
+        </section>
+      </div>
+
+
+<script src="{{ asset('js/personnage.js') }}" defer></script>
