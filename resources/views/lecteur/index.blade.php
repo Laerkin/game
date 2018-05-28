@@ -15,7 +15,7 @@
                 <div class="row">
 
                     <div class="lecteur container col-md-12">
-                        <div class="container mt-3">
+                        <div class="hideun container mt-3">
                             <div class="row">
                                 <section class="col-md-6">
                                     <div class="row bulle shadow">
@@ -39,9 +39,11 @@
                                     <img class="img-visuel" src="{{ asset('img/photo/statue1.jpg') }}" alt="">
                                 </section>
                             </div>
-                        </div>
+
                             <button type="button" id="fakeun" class="btn btn-default active"> voyage suivant !</button>
                         </div>
+
+                    </div>
 
                         <div class="hidedeux" style="display: none;">
                                 <div class="container mt-3">
