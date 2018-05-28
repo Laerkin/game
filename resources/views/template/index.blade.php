@@ -36,7 +36,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 
         <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Ubuntu:400,500,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Ubuntu:400,500|Audiowide:400" rel="stylesheet">
         <link rel="dns-prefetch" href="https://fonts.gstatic.com">
 
         <!-- Styles -->
@@ -49,7 +49,7 @@
 
     @section('header')
         <nav class="nav justify-content-center navbar navbar-expand-lg navbar-dark navbar-default shadow" style="background-color:#005d6e;">
-            <a class="navbar-brand" href="#">Discover</a>
+            <a class="navbar-brand" href="#" style="font-family: 'Audiowide', cursive;">Discover</a>
             <button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
