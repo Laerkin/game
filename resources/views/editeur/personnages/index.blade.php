@@ -1,7 +1,7 @@
 <div class="container">
         <section>
           <div class="row justify-content-between mt-5">
-            <form action="/edit" class=" needs-validation col-md-4 " id="personnage" method="POST" enctype="multipart/form-data" no-validate>
+            <form action="#" class=" needs-validation col-md-4 " id="personnage" method="POST" enctype="multipart/form-data" no-validate>
               @csrf
               <label>Creer un personnage</label>
               <div class="form-group">
@@ -43,40 +43,23 @@
                   </div>
                 @endif
               </div>
-              <button class="btn btn-primary btn-block shadow mb-3">Envoyer</button>
+              <button id="fake" class="btn btn-primary btn-block shadow mb-3">Envoyer</button>
             </form>
-            <div class="col-md-5">
+            <div class="hide col-md-5" style="display: none;">
               <div class="row" id="preview">
-                <div class="mx-auto m-5" id="display-character"> 
+                <div class=" mx-auto m-5" id="display-character">
                   <h5> Votre personnage </h5> 
-                  @if(!empty($path))
-                    <img src="{{url($path)}}" class="rounded-circle" alt="Avatar envoyé"/>
-                  <div class="alert alert-info mt-3" role="alert">
-                    <p>{{ $successMessage }}</p>
-                  </div>
-                  <div class="alert alert-secondary mt-3"  role="alert">
-                  <p>{{$bio}}</p>
-                  </div>
-                  @endif
+
                 </div>
               </div>  
             </div>
-            <table class="col-md-3">
-              <thead>
-                <tr>
-                  <td>Liste des personnages</td>
-                </tr>
-              </thead>
-              <tbody>
-              @if(! empty ($personnages) )
-                @foreach( $personnages as $personnage )
-                <tr>
-                  <td>{{ $personnage->name }}</td>
-                </tr>
-                @endforeach
-              @endif
-              </tbody>
-            </table>
+            <div class="hide col-md-3" style="display: none;">
+
+                  <h4>Liste des personnages</h4>
+            </div>
           </div>
         </section>
       </div>
+
+
+<script src="{{ asset('js/personnage.js') }}" defer></script>

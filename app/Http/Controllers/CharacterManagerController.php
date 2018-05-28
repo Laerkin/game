@@ -43,7 +43,7 @@ class CharacterManagerController extends Controller
 
 		if($validator->fails()){
 
-    		return Redirect('/edit')
+    		return Redirect('editeur.index')
     			->withErrors($validator)
     			->withInput();
     	}

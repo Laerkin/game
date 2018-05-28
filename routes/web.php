@@ -32,8 +32,12 @@ Route::get('edit', 'editeurController@index');
 Route::post('/edit', 'editeurController@store');
 
 
+// loc
+
 Route::post('/saveloc', 'editeurController@store');
 
+
+// template basic  / landing
 
 Route::get('/template', function () {
     return view('template.index');
@@ -76,10 +80,6 @@ Route::post('/richtext','richtextController@store')->name('richtextPersist');
 
 //summernote display route
 Route::get('/richtext_display','richtextController@show')->name('richtextDispay');
-
-/*controller ajout personnage*/
-
-Route::post('/edit', 'CharacterManagerController@storeCharacter');
 
 
 Route::get('/home', 'HomeController@index')->name('home');

@@ -23,16 +23,16 @@
                         </div>
 
                         <div class="hidedeux" style="display: none;">
-                            <div class="col-md-4"></div>
-                            <div class="col-md-4"></div>
-                            <div class="col-md-4"></div>
+                            <div class="col-md-12">
+
+                            </div>
+
                             <button type="button" id="fakedeux" class="btn btn-primary active"> et c'est parti!</button>
                         </div>
 
                         <div class="hidetrois" style="display: none;">
-                            <div class="col-md-4"></div>
-                            <div class="col-md-4"></div>
-                            <div class="col-md-4"></div>
+                            <div class="col-md-12"></div>
+
                             <button type="button" id="faketrois" class="btn btn-primary active"> magnifique ?</button>
                         </div>
 
