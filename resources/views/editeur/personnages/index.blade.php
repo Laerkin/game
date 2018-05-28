@@ -1,7 +1,7 @@
 <div class="container">
         <section>
           <div class="row justify-content-between mt-5">
-            <form action="CharacterManagerController@storeCharacter" class=" needs-validation col-md-4 " id="personnage" method="POST" enctype="multipart/form-data" no-validate>
+            <form action="/edit" class=" needs-validation col-md-4 " id="personnage" method="POST" enctype="multipart/form-data" no-validate>
               @csrf
               <label>Creer un personnage</label>
               <div class="form-group">
