@@ -1,7 +1,7 @@
 <div class="container">
     <section>
         <div class="row justify-content-between">
-            <form id="frmAddLoc" class="needs-validation col-md-4" novalidate method="POST" action="#">
+            <form id="frmAddLoc" class="needs-validation col-md-4">
                 @csrf
                 <div class="form-group">
                     <label class="mt-2" for="intitule">{{ trans('create_map.form.intitule')}}</label>
