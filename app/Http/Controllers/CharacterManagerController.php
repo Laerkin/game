@@ -16,7 +16,7 @@ class CharacterManagerController extends Controller
     }
 	
 	public function index(){
-		return view('character-manager.index');
+		return view('editeur.index');
 	}
 
     public function storeCharacter(){
@@ -40,7 +40,7 @@ class CharacterManagerController extends Controller
 
 		if($validator->fails()){
 
-    		return Redirect('/character-manager')
+    		return Redirect('/edit')
     			->withErrors($validator)
     			->withInput();
     	}
@@ -71,11 +71,9 @@ class CharacterManagerController extends Controller
 
 		$character->save();
 
-		return view('character-manager.index')
+		return view('editeur.index')
 		->with('successMessage', 'Votre personnage à bien était enregistré.')
 		->with('path', $path);
 
 	}
-
-	public function editCharacter(){}
 } 

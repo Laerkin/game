@@ -1,0 +1,77 @@
+.all {
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 25px;
+}
+
+.img{
+    background: url("https://www.bdgest.com/images/nexus/_Bravo01.jpg") no-repeat;
+    border-radius: 8px 8px 8px 8px;
+    height: 1800px;
+}
+.gg h2 {
+    font-size: 3em ;
+    text-align: center;
+}
+.gg h1{
+    font-size: 4em;
+    text-align: center;
+}
+.gg{
+    text-align: center;
+}
+
+/* Barre de progrès */
+.progress{
+    height: 40px;
+}
+.progress-bar{
+    background-color: #d8c15e;
+}
+
+
+/* Trophée */
+
+.fa-paper-plane{
+    font-size: 70px;
+    color: white;
+    padding-right: 12px;
+}
+
+/* Bouton envoie note */
+.btn-note{
+    background-color: #00bcd4;
+}
+.btn-note:hover{
+    background-color: #fff38e;
+    color: #62efff;
+}
+
+
+/* pulse */
+.pulse-button {
+
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border: none;
+    box-shadow: 0 0 0 0 rgba(232, 76, 61, 0.7);
+    border-radius: 50%;
+    background-color: #e84c3d;
+    background-size:cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    -webkit-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    -moz-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    -ms-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  }
+  .pulse-button:hover
+  {
+    -webkit-animation: none;-moz-animation: none;-ms-animation: none;animation: none;
+  }
+
+  @-webkit-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+  @-moz-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+  @-ms-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+  @keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}

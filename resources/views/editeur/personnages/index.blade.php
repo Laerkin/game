@@ -6,7 +6,7 @@
 
                 <div class="row my-1 h-25" id="characterCreatorForm">
 
-                    <form action="/add-character" id="personnage" method="POST" enctype="multipart/form-data">
+                    <form action="/edit" id="personnage" method="POST" enctype="multipart/form-data">
                         @csrf
                         <div class="form-group">
                             <label for="name"> Nom/prenom </label>
@@ -47,7 +47,7 @@
                     </span>
                             @endif
                         </div>
-                        <button class="btn btn-primary">Envoyer</button>
+                        <button  disabled class="btn btn-primary">Envoyer</button>
                     </form>
 
                 </div>

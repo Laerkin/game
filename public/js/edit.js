@@ -14,6 +14,117 @@ jQuery(document).ready(function($) {
 
     $currentSlide = null;
 
+    $tFont = new Object();
+
+
+    $('body').on('click', 'div.elementItem', function($e){
+        $t = $(this).text().substring(4);
+        switch($t){
+            case "Texte":
+                alert("e");
+                break;
+            case "Image":
+                break;
+            case "Audio":
+                break;
+            case "Video":
+                break;
+            case "Personnage":
+                break;
+        }
+    });
+
+    $('.toolFont').click(function($e){
+
+        $element = new Object();
+        $element.type = "Texte";
+        $element.text = "";
+        $story.lstSlides.forEach(function(x) {
+            if($currentSlide.number == x.number) {
+
+                x.elements.push($element);
+            }
+        });
+        refreshEdit();
+
+    });
+
+    $('.toolImage').click(function($e){
+
+        $element = new Object();
+        $element.type = "Image";
+        $element.image = "";
+        $story.lstSlides.forEach(function(x) {
+            if($currentSlide.number == x.number) {
+
+                x.elements.push($element);
+            }
+        });
+        refreshEdit();
+
+    });
+
+      $('.toolAudio').click(function($e){
+
+        $element = new Object();
+        $element.type = "Audio";
+        $element.image = "";
+        $story.lstSlides.forEach(function(x) {
+            if($currentSlide.number == x.number) {
+
+                x.elements.push($element);
+            }
+        });
+        refreshEdit();
+
+    });
+
+    $('.toolVideo').click(function($e){
+
+        $element = new Object();
+        $element.type = "Video";
+        $element.image = "";
+        $story.lstSlides.forEach(function(x) {
+            if($currentSlide.number == x.number) {
+
+                x.elements.push($element);
+            }
+        });
+        refreshEdit();
+
+    });
+
+    $('.toolPersonnage').click(function($e){
+
+        $element = new Object();
+        $element.type = "Personnage";
+        $element.image = "";
+        $story.lstSlides.forEach(function(x) {
+            if($currentSlide.number == x.number) {
+
+                x.elements.push($element);
+            }
+        });
+        refreshEdit();
+
+    });
+
+    $('body').on('click','div.slideItem', function($e){
+
+        $num = $(this).attr('number');
+        $('div.slideItem').removeClass('slideItemSelect');
+        $(this).addClass('slideItemSelect');
+
+        $story.lstSlides.forEach(function(x) {
+            if($num == x.number) {
+
+                $currentSlide = x;
+            }
+        });
+        refreshEdit();
+
+
+    });
 
     function newSlide() {
         $mySlide = new Object();
@@ -22,6 +133,7 @@ jQuery(document).ready(function($) {
         $mySlide.localisation = "";
         $mySlide.title = "New Slide";
         $mySlide.targets = [];
+        $currentSlide = $mySlide;
         return $mySlide;
     }
 
@@ -34,7 +146,14 @@ jQuery(document).ready(function($) {
             // $c.data = x.number;
             // $c.className = "slideItem";
             // $c.textContent = x.title;
-            $c = $('<div class="slideItem">'+x.title+'</div>');
+            $class= "";
+            if($currentSlide !== null) {
+                if($currentSlide.number == x.number){
+                    $class = " slideItemSelect";
+                }
+            }
+            $c = $('<div class="slideItem'+$class+'" number="'+x.number+'">'+x.title+'</div>');
+            //var $c = jQuery('<div class="slideItem" number="'.x.number.'">'+x.title+'</div>', { 'number': x.number });
 
             $('.slideLst').append($c);
         });
@@ -42,8 +161,11 @@ jQuery(document).ready(function($) {
         $('.elementLst').empty();
 
         if($currentSlide !== null){
+    $num = 1;
         $currentSlide.elements.forEach(function(x){
-            $c = ' <div class="row elementItem"><div class="col-md-12"> #Element ### </div></div>';
+
+            $c = ' <div class="row elementItem"><div class="col-md-12">'+ $num +" - "+ x.type + '</div></div>';
+            $num++;
             $('.elementLst').append($c);
         })
         }
@@ -51,7 +173,7 @@ jQuery(document).ready(function($) {
 
 
 
-    console.log($story);
+    //console.log($story);
 
 
 
@@ -68,7 +190,7 @@ jQuery(document).ready(function($) {
         });
 
         $('#editContent > div').each(function ($id, $content) {
-            console.log($this);
+           // console.log($this);
 
             if ($id == $this) {
 
@@ -84,7 +206,11 @@ jQuery(document).ready(function($) {
     });
 
     $('#editContent > div').each(function ($id, $content) {
-        if ($content.id !== 'basic') {
+
+
+
+        if ($content.id !== 'loc') {
+
             $(this).css('visibility', 'hidden');
             $(this).css('position', 'absolute');
         }
@@ -108,21 +234,16 @@ jQuery(document).ready(function($) {
 
     }));
 
-    $('document').on('click','.slideItem', function(){
-        alert("e");
-
-    });
 
 
 
-        $('.yolo').click(function($e) {
-
-            $e.preventDefault();
 
 
-        });
 
 
 
 
 });
+
+
+
