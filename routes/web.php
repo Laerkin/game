@@ -105,3 +105,15 @@ Route::post('/edit', 'CharacterManagerController@storeCharacter');
 
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+/**  LECTEUR **/
+
+Route::get('/lecteur', function () {
+    return view('lecteur.index');
+});
+// fin de l'histoire
+
+Route::get('/endOfStory', function () {
+    return view('endOfStory.index');
+});
