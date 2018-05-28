@@ -4,11 +4,23 @@
 
 <div id="container">
         <div id="editMenu">
-            <button class="btnEditMenu" value="0">Basic</button>
-            <button class="btnEditMenu" value="1">Slides</button>
-            <button class="btnEditMenu" value="2">Personnages</button>
-            <button class="btnEditMenu" value="3">Localisations</button>
+            <ul class="nav nav-tabs nav-fill shadow" style="background-color:#d8c15e;">
+                <li class="nav-item">
+                    <a class="nav-link  btnEditMenu"  href="#" style="color:white;">Basic</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btnEditMenu"  href="#">Slides</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btnEditMenu"  href="#">Personnages</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btnEditMenu"  href="#">Localisations</a>
+                </li>
+            </ul>
         </div>
+
+
 
     <div id="editContent">
         <div class=".editContentItem" id="basic">@include('editeur.basic.index')</div>
