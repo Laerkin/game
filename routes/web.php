@@ -81,6 +81,10 @@ Route::post('/richtext','richtextController@store')->name('richtextPersist');
 //summernote display route
 Route::get('/richtext_display','richtextController@show')->name('richtextDispay');
 
+/*controller ajout personnage*/
+
+Route::post('/edit-personnage', 'CharacterManagerController@storeCharacter');
+
 
 Route::get('/home', 'HomeController@index')->name('home');
 
