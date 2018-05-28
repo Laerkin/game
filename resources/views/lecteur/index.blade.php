@@ -69,6 +69,10 @@
                                             </section>
                                         </div>
                                     </div>
+                            <div class="col-md-12">
+
+                            </div>
+
                             <button type="button" id="fakedeux" class="btn btn-primary active"> et c'est parti!</button>
                         </div>
 
@@ -101,6 +105,8 @@
                                             </section>
                                         </div>
                                     </div>
+                            <div class="col-md-12"></div>
+
                             <button type="button" id="faketrois" class="btn btn-primary active"> magnifique ?</button>
                         </div>
 

@@ -26,6 +26,8 @@ class CreateLocTable extends Migration
             $table->decimal('lat');
             $table->decimal('lng');
 
+            $table->string('style', 90);
+            $table->string('adresse', 200);
             $table->timestamps();
 
             $table->string('adresse', 200);

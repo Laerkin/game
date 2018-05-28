@@ -2,7 +2,7 @@
     <div class="container">
         <section>
             <div class="row">
-                <form id="createStory" class="needs-validation col-md-4" novalidate method="POST" action="">
+                <form id="createStory" class="needs-validation col-md-4" novalidate method="POST" action="#">
                     @csrf
                     <div class="form-group">
                         <label class="mt-2" for="titre">{{ trans('create_story.form.title')}}</label>

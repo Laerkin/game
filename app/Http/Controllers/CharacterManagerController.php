@@ -16,7 +16,10 @@ class CharacterManagerController extends Controller
     }
 	
 	public function index(){
-		return view('editeur.index');
+		$personnages = Personnage::all();
+
+		return view('editeur.index')
+				->with('personnages', $personnages);
 	}
 
     public function storeCharacter(){
@@ -40,7 +43,7 @@ class CharacterManagerController extends Controller
 
 		if($validator->fails()){
 
-    		return Redirect('/edit')
+    		return Redirect('editeur.index')
     			->withErrors($validator)
     			->withInput();
     	}
@@ -58,13 +61,20 @@ class CharacterManagerController extends Controller
 
 		$img->save(public_path('/user/characters/' . $image_name.'.'.$ext));
 
+    	$personnages = Personnage::all();
+    	
 		$path = 'user/characters/'.$image_name.'.'.$ext;
+		$bio = $values['bio'];
+		$name = $values['name'];
 
 		$character = new Personnage();
 
-		$character->name = $values['name'];
+		$character->name = $name;
 		$character->path = $path;
-		$character->bio = $values['bio'];
+		$character->bio = $bio;
+
+		/*Supprimer la table "slides_elements_id" qui ne sert a rien*/
+		$character->slides_elements_id = 1;
 
 		/*A adapter pour plus tard */
 		$character->users_id = 1;
@@ -72,8 +82,11 @@ class CharacterManagerController extends Controller
 		$character->save();
 
 		return view('editeur.index')
-		->with('successMessage', 'Votre personnage à bien était enregistré.')
-		->with('path', $path);
+		->with('successMessage', 'Votre personnage: '. $name .' à bien était enregistré.')
+		->with('personnages', $personnages)
+		->with('path', $path)
+		->with('bio', $bio)
+		->with('name', $name);
 
 	}
 } 
