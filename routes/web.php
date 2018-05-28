@@ -99,7 +99,7 @@ Route::get('/richtext_display','richtextController@show')->name('richtextDispay'
 
 /*controller ajout personnage*/
 
-Route::post('/edit', 'CharacterManagerController@storeCharacter');
+Route::post('/edit-personnage', 'CharacterManagerController@storeCharacter');
 
 
 
