@@ -75,15 +75,9 @@
                             </div>
                         </div>
 
-<<<<<<< HEAD
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" required>
                             <label class="form-check-label" for="inlineRadio1"> J'accepte les <a href="{{ url('cgu') }}">Conditions Générales d'Utilisation</a></label>
-=======
-                        <div class="checkbox">
-                            <label><input type="radio" name="optradio" required> J'accepte les CGU</label>
->>>>>>> 585dc23e9da2c5a920c4849eece6335176d6096c
-                        </div>
 
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
