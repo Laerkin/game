@@ -14,55 +14,43 @@
 
                 <div class="row">
 
-                    <div class="lecteur col-md-12">
+                    <div class="lecteur container col-md-12">
+                            <div class="row">
                         <div class="hideun">
-                            <h3> <-- diapo 1 --></h3>
-                            <button type="button" id="fakeun" class="btn btn-primary active"> Envoyez la note !</button>
+                            <div class="dame col-md-8"></div>
+                            <div class="hello col-md-4"></div>
+                            <button type="button" id="fakeun" class="btn btn-primary active"> voyage suivant !</button>
                         </div>
 
                         <div class="hidedeux" style="display: none;">
-                            <h3> <-- diapo 2 --> </h3>
-                            <button type="button" id="fakedeux" class="btn btn-primary active"> Envoyez la note !</button>
+                            <div class="col-md-4"></div>
+                            <div class="col-md-4"></div>
+                            <div class="col-md-4"></div>
+                            <button type="button" id="fakedeux" class="btn btn-primary active"> et c'est parti!</button>
                         </div>
 
                         <div class="hidetrois" style="display: none;">
-                            <h3> <-- diapo 3 --> </h3>
-                            <button type="button" id="faketrois" class="btn btn-primary active"> Envoyez la note !</button>
+                            <div class="col-md-4"></div>
+                            <div class="col-md-4"></div>
+                            <div class="col-md-4"></div>
+                            <button type="button" id="faketrois" class="btn btn-primary active"> magnifique ?</button>
                         </div>
 
                         <div class="hidequatre" style="display: none;">
-                            <h3><-- diapo 4 --></h3>
-                            <button type="button" id="fakequatre" class="btn btn-primary active"> Envoyez la note !</button>
+                            <div class="col-md-4"></div>
+                            <div class="col-md-4"></div>
+                            <div class="col-md-4"></div>
+                            <button type="button" id="fakequatre" class="btn btn-primary active"> wow !</button>
                         </div>
 
                         <div class="hidecinq" style="display: none;">
-                            <h3> <-- diapo 5 --> </h3>
-                            <button type="button" id="fakecinq" class="btn btn-primary active"> Envoyez la note !</button>
+                            <div class="col-md-4"></div>
+                            <div class="col-md-4"></div>
+                            <button type="button" id="fakecinq" class="btn btn-primary active"> c'était cool ! retour au bercail !</button>
+                         </div>
+
                         </div>
-
-
-
-                        <div class="row">
-                            <div class="objects col-md-6">
-                               <--    liste des objets / inventaire     -->
-                            </div>
-
-                            <br/><br/>
-
-                            <div class="pages offset-2 col-md-4">
-                                <nav>
-                                    <ul class="pagination">
-                                        <li class="page-item">
-                                            <a class="page-link" href="#">Revenir</a>
-                                        </li>
-
-                                        <li class="page-item">
-                                            <a class="page-link" href="#">Etape suivante</a>
-                                        </li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
+                    </div>
 
                         <br/>
                     </div>

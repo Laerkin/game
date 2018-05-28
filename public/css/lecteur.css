@@ -14,14 +14,15 @@
 .title{
     padding-top: 10px;
     text-align: center;
-    padding-left: 20%;
-    padding-right: 20%;
-}
-
-.pages{
-
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .progress {
     margin-bottom: 15px;
 }
+
+
+/* slides */
+
+
