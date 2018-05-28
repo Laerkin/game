@@ -76,10 +76,10 @@ Route::post('/video', 'videoController@store');
 
 
 
+// routes classement
 
 
-
-
+Route::get('/classement', 'classementController@index');
 
 
 
