@@ -76,7 +76,7 @@
                         </div>
                     @endif
                 </div>
-                <button type="submit" class="reload-form btn-form btn btn-default btn-block shadow mb-3">{{ trans('create_story.form.save')}}</button>
+
             </form>
             <div id="map" class="col-12 col-md-7">
                 {{-- Vue de la carte --}}

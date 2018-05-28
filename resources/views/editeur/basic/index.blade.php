@@ -68,7 +68,7 @@
                         @endif
                     </div>
                     <input id="publish" name="publish" type="hidden" value="0">
-                    <button type="submit" class="reload-form btn-form btn btn-default btn-block shadow mb-3">{{ trans('create_story.form.save')}}</button>
+
                 </form>
             </div>
             <div id="basic-story" class="col-12 col-md-7">
@@ -76,7 +76,7 @@
                 </div>
 
                 <input id="publish" name="publish" type="hidden" value="0">
-                <button type="submit" class="yolo btn btn-outline-success btn-block">{{ trans('create_story.form.save')}}</button>
+
             </form>
 
             <div class="row">

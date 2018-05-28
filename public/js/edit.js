@@ -4,6 +4,8 @@ jQuery(document).ready(function($) {
 
 
 
+
+
     $story = new Object();
 
     $story.lstSlides = [];
@@ -21,13 +23,66 @@ jQuery(document).ready(function($) {
         $t = $(this).text().substring(4);
         switch($t){
             case "Texte":
-                alert("e");
+
+                $('.elementOptions > div').each(function ($id, $content) {
+                    // console.log($this);
+
+                    if($(this).attr('id') === 'toolFontContent'){
+
+                        $(this).css('visibility', 'visible');
+                        $(this).css('position', 'relative');
+                    }else{
+                        $(this).css('visibility', 'hidden');
+                        $(this).css('position', 'absolute');
+                    }
+                });
+
+
+
+
+
                 break;
             case "Image":
+                $('.elementOptions > div').each(function ($id, $content) {
+                    // console.log($this);
+
+                    if($(this).attr('id') === 'toolImageContent'){
+
+                        $(this).css('visibility', 'visible');
+                        $(this).css('position', 'relative');
+                    }else{
+                        $(this).css('visibility', 'hidden');
+                        $(this).css('position', 'absolute');
+                    }
+                });
                 break;
             case "Audio":
+                $('.elementOptions > div').each(function ($id, $content) {
+                    // console.log($this);
+
+                    if($(this).attr('id') === 'toolSonContent'){
+
+                        $(this).css('visibility', 'visible');
+                        $(this).css('position', 'relative');
+                    }else{
+                        $(this).css('visibility', 'hidden');
+                        $(this).css('position', 'absolute');
+                    }
+                });
                 break;
             case "Video":
+                $('.elementOptions > div').each(function ($id, $content) {
+                    // console.log($this);
+
+                    if($(this).attr('id') === 'toolVideoContent'){
+
+                        $(this).css('visibility', 'visible');
+                        $(this).css('position', 'relative');
+                    }else{
+                        $(this).css('visibility', 'hidden');
+                        $(this).css('position', 'absolute');
+                    }
+                });
                 break;
             case "Personnage":
                 break;
@@ -131,7 +186,7 @@ jQuery(document).ready(function($) {
         $mySlide.number = $story.lstSlides.length +1;
         $mySlide.elements = [];
         $mySlide.localisation = "";
-        $mySlide.title = "New Slide";
+        $mySlide.title = "New Slide " + $mySlide.number;
         $mySlide.targets = [];
         $currentSlide = $mySlide;
         return $mySlide;
@@ -169,6 +224,18 @@ jQuery(document).ready(function($) {
             $('.elementLst').append($c);
         })
         }
+        $('.elementOptions > div').each(function ($id, $content) {
+
+
+
+
+
+            $(this).css('visibility', 'hidden');
+            $(this).css('position', 'absolute');
+
+
+
+        });
     }
 
 
@@ -217,6 +284,21 @@ jQuery(document).ready(function($) {
 
 
     });
+
+    $('.elementOptions > div').each(function ($id, $content) {
+
+
+
+
+
+            $(this).css('visibility', 'hidden');
+            $(this).css('position', 'absolute');
+
+
+
+    });
+
+
 
 
     $('.elementItem').click(function($e){
