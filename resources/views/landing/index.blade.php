@@ -10,12 +10,12 @@
     <style>
 
         body {
-
             background-image: url("#");
             background-position: center center;
             background-attachment: fixed;
             background-size: cover;
             background-color: #464646;
+            font-size: 20px;
         }
 
         .box1 {
@@ -36,21 +36,53 @@
             margin-left: -100px;
             margin-top: -100px;
         }
+        a{
+            text-decoration:none;
+        }
         .box1 a{
-            background-color: #90adff;
+            background-color: #d8c15e;
             font-size: large;
             border-radius: 10px 10px 10px 10px;
-            color: #24138b;
+            color: black;
+            padding: 5px;
+        }
+        .box1 a:hover{
+            background-color: #fff38e;
+            font-size: large;
+            border-radius: 10px 10px 10px 10px;
+            color: black;
             padding: 5px;
         }
 
+        .foreground, .midground, .background {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            translate3d(0,0,0);
+        }
 
+        .foreground {
+            animation: parallax_fg linear 10s infinite both;
+            background:  url(https://coclouds.com/wp-content/uploads/2014/11/afternoon-various-clouds-2014-07-11.jpg) 0 100% repeat-x;
+            z-index: 3;
+        }
+
+        @keyframes parallax_fg {
+            0% { background-position: -200px 100%;}
+            100% {background-position: 0 100%; }
+        }
+
+        .card{
+            z-index: 99;
+        }
 
     </style>
 </head>
 <body>
 
-<div class="container-fluid">
+<div class="container-fluid ">
 
     <div class="row">
         <div class=" offset-4 col-md-4 offset-4">
@@ -62,15 +94,28 @@
                     Ne laissez pas une aventure s'envoler sans vous !
                 </p>
                 <br/>
-                    <a class="btn btn-primary btn-large" href="#"> Login !</a>
+                    <a class="btn btn-primary btn-large" href="{{ url('login') }}"> Login</a>
                 <br>
                 <br>
-                    <a class="btn btn-primary btn-large" href="#"> Register !</a>
+
+                    <a class="btn btn-primary btn-large" href="{{ url('register') }}"> Register</a>
+                
+
+
+
+
 
             </div>
         </div>
     </div>
 </div>
+
+<div class="foreground"></div>
+
+</div>
+
+
+
 
 
 </body>
