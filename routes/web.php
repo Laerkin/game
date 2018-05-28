@@ -117,4 +117,3 @@ Route::get('/lecteur', function () {
 Route::get('/endOfStory', function () {
     return view('endOfStory.index');
 });
-    

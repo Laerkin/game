@@ -34,7 +34,7 @@
                 <label class="radio-inline"><input type="radio" name="optradio"> 3 </label>
                 <label class="radio-inline"><input type="radio" name="optradio"> 4 </label>
                 <label class="radio-inline"><input type="radio" name="optradio"> 5 </label>
-                <button type="button" id="fake" class="btn btn-primary active"> Envoyez la note !</button>
+                   <button type="button" id="fake" class="btn btn-primary active"> Envoyez la note !</button>
                </div>
             <div class="success" style="display:none;"> Note envoyée ! merci pour votre soutien !</div>
 

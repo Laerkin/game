@@ -7,44 +7,39 @@
         <div class="row">
             <div class="title col-md-12">
                 <h3>
-                     Vous êtes dans l'aventure : <-- nom de l'histoire  -->
+                     Vous êtes dans l'aventure :
                 </h3>
 
                 <br/><br/>
 
                 <div class="row">
+
                     <div class="lecteur col-md-12">
-                        <br/>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <br/>
+                        <div class="hideun">
+                            <h3> <-- diapo 1 --></h3>
+                            <button type="button" id="fakeun" class="btn btn-primary active"> Envoyez la note !</button>
+                        </div>
 
+                        <div class="hidedeux" style="display: none;">
+                            <h3> <-- diapo 2 --> </h3>
+                            <button type="button" id="fakedeux" class="btn btn-primary active"> Envoyez la note !</button>
+                        </div>
 
+                        <div class="hidetrois" style="display: none;">
+                            <h3> <-- diapo 3 --> </h3>
+                            <button type="button" id="faketrois" class="btn btn-primary active"> Envoyez la note !</button>
+                        </div>
 
-                        <--      METTRE LE ECTEUR ICI    -->
+                        <div class="hidequatre" style="display: none;">
+                            <h3><-- diapo 4 --></h3>
+                            <button type="button" id="fakequatre" class="btn btn-primary active"> Envoyez la note !</button>
+                        </div>
 
+                        <div class="hidecinq" style="display: none;">
+                            <h3> <-- diapo 5 --> </h3>
+                            <button type="button" id="fakecinq" class="btn btn-primary active"> Envoyez la note !</button>
+                        </div>
 
-
-                        <br/>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <br/>
 
 
                         <div class="row">
@@ -70,8 +65,6 @@
                         </div>
 
                         <br/>
-
-                        
                     </div>
                 </div>
             </div>
