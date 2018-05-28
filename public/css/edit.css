@@ -5,6 +5,11 @@
         max-width: 95%;
     }
 }
+/* menu edition */
+a{
+    color:white;
+}
+
 
 #editContent{
     margin-top:20px;
