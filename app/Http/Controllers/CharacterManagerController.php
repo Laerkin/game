@@ -85,12 +85,4 @@ class CharacterManagerController extends Controller
 		->with('name', $name);
 
 	}
-
-	public function delete(){
-    	$peronnage = Peronnage::find([2,1]);
-
-    	foreach ($formulaires as $peronnage){
-    		$peronnage->delete();
-    	}
-    }
 } 
