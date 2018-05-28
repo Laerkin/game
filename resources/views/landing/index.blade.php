@@ -92,10 +92,10 @@
                     Ne laissez pas une aventure s'envoler sans vous !
                 </p>
                 <br/>
-                    <a class="btn btn-primary btn-large" href="#"> Login !</a>
+                    <a class="btn btn-primary btn-large" href="{{ url('login') }}"> Login !</a>
                 <br>
                 <br>
-                    <a class="btn btn-primary btn-large" href="#"> Register !</a>
+                    <a class="btn btn-primary btn-large" href="{{ url('register') }}"> Register !</a>
 
             </div>
         </div>
