@@ -17,7 +17,7 @@ use Illuminate\Http\Request;
 Route::auth();
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('landing.index');
 });
 Route::get('/logout', function() {
     Auth::logout();
