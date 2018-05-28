@@ -1,0 +1,57 @@
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 300px)  {
+    .container{
+        max-width: 95%;
+    }
+}
+
+/* Fonts */
+h3{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight:bold;
+    color: white;
+}
+hr{
+    width: 100px;
+    background-color: white;
+    height: 5px;
+    border-radius: 3px;
+}
+/* Bulle */
+.bulle{
+    background-color: #00bcd4;
+    border-radius: 20px;
+}
+
+/* Personnage */
+.personnage{
+
+    max-width: 250px;
+    max-height: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Visuel */
+.img-visuel{
+    max-height: 500px;
+    border-radius: 20px;
+}
+
+.flexbox-container {
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+
+
+	align-items: center;
+}
+
+
+
+
+

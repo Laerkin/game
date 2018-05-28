@@ -117,3 +117,22 @@ Route::get('/lecteur', function () {
 Route::get('/endOfStory', function () {
     return view('endOfStory.index');
 });
+
+
+// JOUER
+Route::get('/slide1', function () {
+    return view('jouer.slide1');
+});
+Route::get('/slide2', function () {
+    return view('jouer.slide2');
+});
+Route::get('/slide3', function () {
+    return view('jouer.slide3');
+});
+Route::get('/slide4', function () {
+    return view('jouer.slide4');
+});
+Route::get('/slide5', function () {
+    return view('jouer.slide5');
+});
+
