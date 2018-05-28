@@ -95,6 +95,7 @@
                 <br>
                 <br>
                     <a class="btn btn-primary btn-large" href="{{ url('register') }}"> Register !</a>
+                
 
             </div>
         </div>
